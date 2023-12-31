@@ -2,7 +2,7 @@
 
 TIM_嚮導小妖精 Discord.py 版本
 
-![t2i](assets/1.5ι.png)
+![t2i](assets/1.5.ι.png)
 
 ## 近期變動
 ### 1.5.ι (2023 年 12 月 22 日)

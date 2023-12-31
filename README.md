@@ -1,6 +1,6 @@
 # Discord-Bot-Nagato-Sakura-py
 
-TIM_嚮導小妖精 Discord.py 版本
+長門櫻 Discord.py 版本
 
 ## 近期變動
 ### 1.5.ι (2023 年 12 月 22 日)

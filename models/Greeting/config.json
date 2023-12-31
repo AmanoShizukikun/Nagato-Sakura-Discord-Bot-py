@@ -1,0 +1,11 @@
+{
+    "_name_or_path": "Project Hello",
+    "model_type": "Project Hello",
+    "architectures": [
+        "Project Hello Model"
+    ],
+    "input_size": 1359,
+    "hidden_size": 1024,
+    "output_size": 1,
+    "learning_rate": 0.001
+}

@@ -1,0 +1,2275 @@
+[
+  {
+    "instruction": "你好",
+    "output": 1
+  },
+  {
+    "instruction": "您好",
+    "output": 1
+  },
+  {
+    "instruction": "大家好",
+    "output": 1
+  },
+  {
+    "instruction": "老師好",
+    "output": 1
+  },
+  {
+    "instruction": "早上好",
+    "output": 1
+  },
+  {
+    "instruction": "早安",
+    "output": 1
+  },
+  {
+    "instruction": "下午好",
+    "output": 1
+  },
+  {
+    "instruction": "午安",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好",
+    "output": 1
+  },
+  {
+    "instruction": "嗨",
+    "output": 1
+  },
+  {
+    "instruction": "嘿",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉",
+    "output": 1
+  },
+  {
+    "instruction": "最近好嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！吃飽了嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！有沒有好好休息啊？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！最近過得怎麼樣啊？",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近有沒有發生什麼開心的事啊？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有沒有新的計畫在進行呢？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！身體還好嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！最近有沒有什麼新鮮事啊？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！天氣變化大，要多注意身體啊！",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！最近忙不忙啊？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有沒有好好放鬆一下呢？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！心情怎麼樣啊？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！要不要來喝杯咖啡聊聊天？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！要不要來我家啊",
+    "output": 1
+  },
+  {
+    "instruction": "安安！",
+    "output": 1
+  },
+  {
+    "instruction": "嗨嗨！近況如何？",
+    "output": 1
+  },
+  {
+    "instruction": "有沒有好好照顧自己啊？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！近來還好吧？",
+    "output": 1
+  },
+  {
+    "instruction": "唷！有啥新鮮事？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "Yo！最近忙不忙？",
+    "output": 1
+  },
+  {
+    "instruction": "喔嗨！有沒有玩得開心",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！有沒有心情好好的？",
+    "output": 1
+  },
+  {
+    "instruction": "安！這陣子過得怎樣啊？",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近過得如何呢？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！希望你今天有個美好的開始",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！好久不見，有什麼新鮮事要分享嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼我可以幫忙的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！希望你一天的辛勞都得到了充分的休息。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有點忙，但還好。你最近怎樣？",
+    "output": 1
+  },
+  {
+    "instruction": "早上好！希望你的一天充滿陽光和正能量。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！想念和你聊天，最近過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！願你度過一個愉快的夜晚。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近過得怎樣？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，有什麼新鮮事嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！希望你有個美好的一天。",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！最近有沒有什麼有趣的事情發生？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！天氣真不錯，心情如何？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！希望你度過一個愉快的週末。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！有什麼我可以幫忙的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！一天過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！期待已久，終於見到你了。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！期待已久，終於見到你了。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近過得如何呢？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！希望你今天有個美好的開始",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，有什麼新鮮事嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！好消息，我們的計劃獲得批准了！",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼我可以幫忙的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！希望你一天的辛勞都得到了充分的休息。",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！有點忙，但還好。你最近怎樣？",
+    "output": 1
+  },
+  {
+    "instruction": "早上好！希望你的一天充滿陽光和正能量。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！想念和你聊天，最近過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！願你度過一個愉快的夜晚。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近過得如何呢？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！希望你今天有個美好的開始",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，有什麼新鮮事嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！好消息，我們的計劃獲得批准了！",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼我可以幫忙的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！希望你一天的辛勞都得到了充分的休息。",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！有點忙，但還好。你最近怎樣？",
+    "output": 1
+  },
+  {
+    "instruction": "早上好！希望你的一天充滿陽光和正能量。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！想念和你聊天，最近過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！願你度過一個愉快的夜晚。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有沒有什麼新奇的事情發生在你的生活中？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！希望你在這個週末能夠找到些樂趣。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！聽說你最近獲得了一個新工作，恭喜啊！",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！我最近發現了一個好吃的餐廳，有空一起去試試嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！新的一天開始了，希望你充滿活力。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼我可以幫忙的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！今天過得如何？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！有沒有什麼令人興奮的計劃？",
+    "output": 1
+  },
+  {
+    "instruction": "早上好！一天的開始充滿了新的可能性。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！最近的生活有什麼亮點嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，有什麼近況想分享的嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！希望你的一天過得愉快。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！有沒有什麼讓你感到驚喜的事情？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！願你今晚有個安寧的睡眠。",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！最近有沒有遇到什麼挑戰？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！新的一天帶給你什麼好消息？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼令你感到自豪的事情？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有什麼需要我的幫助嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！今天過得怎麼樣？",
+    "output": 1
+  },
+  {
+    "instruction": "你好！有沒有什麼計劃是你最期待的？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！希望你今天的努力都有所回報。",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！最近有沒有遇到讓你心情愉快的事情？",
+    "output": 1
+  },
+  {
+    "instruction": "早上好！新的一天又是嶄新的開始。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼使你感到驚喜的事情？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，有沒有什麼話想和我分享？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！希望你今天能夠充滿活力。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近有沒有什麼讓你笑出來的瞬間？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！希望你有一個安寧的夜晚。",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！最近的生活有什麼感動人心的時刻嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！今天會是一個美好的一天。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有什麼你最近在思考的事情嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！好久不見，最近在忙些什麼？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！今天有沒有什麼特別的計劃？",
+    "output": 1
+  },
+  {
+    "instruction": "你好！有沒有什麼讓你感到興奮的消息？",
+    "output": 1
+  },
+  {
+    "instruction": "晚安！願你今晚有個甜美的夢。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有沒有什麼新奇的事情發生在你的生活中？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！希望你在這個週末能夠找到些樂趣。",
+    "output": 1
+  },
+  {
+    "instruction": "你好！聽說你最近獲得了一個新工作，恭喜啊！",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！我最近發現了一個好吃的餐廳，有空一起去試試嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！新的一天開始了，希望你充滿活力。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有沒有新的目標或計畫在進行中？",
+    "output": 1
+  },
+  {
+    "instruction": "嗨！最近有沒有發現什麼令人驚艷的風景？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！新的一天開始，希望你充滿能量。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！有沒有新的收穫或學到的有趣事物？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！有空一起來吃個晚餐嗎？",
+    "output": 1
+  },
+  {
+    "instruction": "你好！最近有沒有新的工作上的挑戰？",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！有沒有喜歡的運動或運動隊伍？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有沒有新的音樂喜好或歌曲推薦？",
+    "output": 1
+  },
+  {
+    "instruction": "早安！希望你今天能夠事事順心。",
+    "output": 1
+  },
+  {
+    "instruction": "哈囉！最近有沒有發現一些有趣的事實？",
+    "output": 1
+  },
+  {
+    "instruction": "晚上好！有什麼讓你感到驚艷的瞬間？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！有沒有什麼特別想聊的？。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！今天天氣真不錯呢。",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！現在心情如何？",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊！我的朋友，有甚麼需要幫忙的嗎?",
+    "output": 1
+  },
+  {
+    "instruction": "嘿！我的朋友，想不想一起冒險啊?",
+    "output": 1
+  },
+  {
+    "instruction": "Hi！我的朋友，好久不見。",
+    "output": 1
+  },
+  {
+    "instruction": "Hey！好久不見，你過的好嗎?",
+    "output": 1
+  },
+  {
+    "instruction": "早安啊!功課都做完了嗎?",
+    "output": 1
+  },
+  {
+    "instruction": "嘿!兄弟，要跟我去玩嗎?",
+    "output": 1
+  },
+  {
+    "instruction": "你好啊!旅行者，有甚麼需要幫忙的嗎?",
+    "output": 1
+  },
+  {
+    "instruction": "Good morning",
+    "output": 1
+  },
+  {
+    "instruction": "Hello",
+    "output": 1
+  },
+  {
+    "instruction": "Hi",
+    "output": 1
+  },
+  {
+    "instruction": "こんばんは",
+    "output": 1
+  },
+  {
+    "instruction": "Good evening",
+    "output": 1
+  },
+  {
+    "instruction": "Hey",
+    "output": 1
+  },
+  {
+    "instruction": "How are you doing?",
+    "output": 1
+  },
+  {
+    "instruction": "How’s it going?",
+    "output": 1
+  },
+  {
+    "instruction": "How are you?",
+    "output": 1
+  },
+  {
+    "instruction": "What’s up?",
+    "output": 1
+  },
+  {
+    "instruction": "What’s new?",
+    "output": 1
+  },
+  {
+    "instruction": "What’s going on?",
+    "output": 1
+  },
+  {
+    "instruction": "How’s everything?",
+    "output": 1
+  },
+  {
+    "instruction": "How are things?",
+    "output": 1
+  },
+  {
+    "instruction": "How’s life treating you?",
+    "output": 1
+  },
+  {
+    "instruction": "How’s your day?",
+    "output": 1
+  },
+  {
+    "instruction": "How’s your day going?",
+    "output": 1
+  },
+  {
+    "instruction": "Good afternoon.",
+    "output": 1
+  },
+  {
+    "instruction": "It’s nice to meet you.",
+    "output": 1
+  },
+  {
+    "instruction": "Pleased to meet you.",
+    "output": 1
+  },
+  {
+    "instruction": "How have you been?",
+    "output": 1
+  },
+  {
+    "instruction": "How do you do?",
+    "output": 1
+  },
+  {
+    "instruction": "おはようございます",
+    "output": 1
+  },
+  {
+    "instruction": "こんにちは",
+    "output": 1
+  },
+  {
+    "instruction": "こんばんは",
+    "output": 1
+  },
+  {
+    "instruction": "お休みなさい",
+    "output": 1
+  },
+  {
+    "instruction": "はじめまして",
+    "output": 1
+  },
+  {
+    "instruction": "よろしくお願いします",
+    "output": 1
+  },
+  {
+    "instruction": "お久しぶりです",
+    "output": 1
+  },
+  {
+    "instruction": "お元気ですか？",
+    "output": 1
+  },
+  {
+    "instruction": "最近調子はどうですか？",
+    "output": 1
+  },
+  {
+    "instruction": "先日はありがとうございました",
+    "output": 1
+  },
+  {
+    "instruction": "先日はお世話になりました",
+    "output": 1
+  },
+  {
+    "instruction": "先日はご馳走さまでした",
+    "output": 1
+  },
+  {
+    "instruction": "どうも",
+    "output": 1
+  },
+  {
+    "instruction": "最近的工作真是讓人忙碌，不過也學到了很多新東西。",
+    "output": 0
+  },
+  {
+    "instruction": "剛看完一本很棒的書，裡面的故事真是令人深思。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始學習一門新的語言，挑戰很大但也很有趣。",
+    "output": 0
+  },
+  {
+    "instruction": "剛從一趟旅行中回來，見識到了很多不同的文化。",
+    "output": 0
+  },
+  {
+    "instruction": "這個週末我計劃參加一個烹飪班，想學習一些新的菜餚。",
+    "output": 0
+  },
+  {
+    "instruction": "在家工作有時候讓人感到有點孤單，你有什麼應對方法嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近發現一個很棒的音樂播放清單，分享給你聽聽吧！",
+    "output": 0
+  },
+  {
+    "instruction": "這個月的天氣真是變化無常，你喜歡哪種季節呢？",
+    "output": 0
+  },
+  {
+    "instruction": "有什麼新的技術趨勢引起了你的興趣嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "剛看完一部影集，情節非常扣人心弦，你有什麼推薦嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近看了一本很感動的小說，推薦你也來讀讀看。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在計畫一趟自助旅行，你有沒有什麼推薦的目的地？",
+    "output": 0
+  },
+  {
+    "instruction": "這週末參加了一場音樂會，表演者的演出真是令人印象深刻。",
+    "output": 0
+  },
+  {
+    "instruction": "最近學會了一些烹飪技巧，想不想一起來嘗試新食譜？",
+    "output": 0
+  },
+  {
+    "instruction": "看了一部新上映的電影，情節非常出乎意料，你看過了嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始嘗試瑜伽，感覺對身體很有益處。",
+    "output": 0
+  },
+  {
+    "instruction": "在工作上遇到了一些挑戰，正在尋找解決方案。",
+    "output": 0
+  },
+  {
+    "instruction": "這個月會有一場重要的會議，正在為此做準備。",
+    "output": 0
+  },
+  {
+    "instruction": "看到一則有趣的新聞，關於科技創新的，你對這方面有什麼看法？",
+    "output": 0
+  },
+  {
+    "instruction": "最近重新開始閱讀一些心靈成長的書籍，覺得很受啟發。",
+    "output": 0
+  },
+  {
+    "instruction": "最近重新開始閱讀一些心靈成長的書籍，覺得很受啟發。",
+    "output": 0
+  },
+  {
+    "instruction": "看到一則有趣的新聞，關於科技創新的，你對這方面有什麼看法？",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始嘗試烹飪新的料理，挑戰了一些複雜的食譜。",
+    "output": 0
+  },
+  {
+    "instruction": "剛結束了一場激烈的運動，身體感覺好爽快！",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場精彩的音樂會，表演者實在太厲害了。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在計劃一次戶外露營，想要享受大自然的寧靜。",
+    "output": 0
+  },
+  {
+    "instruction": "最近開始學習攝影，發現捕捉美好瞬間真的是一門藝術。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近為了提升職業技能參加了一個研討會，學到了很多新知識。",
+    "output": 0
+  },
+  {
+    "instruction": "在家工作有時候讓人感到有點孤單，你有什麼應對方法嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近開始關注環保議題，嘗試減少對地球的影響。",
+    "output": 0
+  },
+  {
+    "instruction": "最近重新開始閱讀一些心靈成長的書籍，覺得很受啟發。",
+    "output": 0
+  },
+  {
+    "instruction": "看到一則有趣的新聞，關於科技創新的，你對這方面有什麼看法？",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始嘗試烹飪新的料理，挑戰了一些複雜的食譜。",
+    "output": 0
+  },
+  {
+    "instruction": "剛結束了一場激烈的運動，身體感覺好爽快！",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場精彩的音樂會，表演者實在太厲害了。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在計劃一次戶外露營，想要享受大自然的寧靜。",
+    "output": 0
+  },
+  {
+    "instruction": "最近開始學習攝影，發現捕捉美好瞬間真的是一門藝術。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近為了提升職業技能參加了一個研討會，學到了很多新知識。",
+    "output": 0
+  },
+  {
+    "instruction": "在家工作有時候讓人感到有點孤單，你有什麼應對方法嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近開始關注環保議題，嘗試減少對地球的影響。",
+    "output": 0
+  },
+  {
+    "instruction": "我對未來的職業規劃感到有些迷茫，你有類似的經歷嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場舞蹈課程，發現跳舞真的是一種很好的運動。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在研究一個新的專案，挑戰很大但也很令人興奮。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個新的電影上映，據說很感人，你有興趣去看嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近讀到一篇有趣的文章，分享一下關於人類行為的心理學研究。",
+    "output": 0
+  },
+  {
+    "instruction": "最近開始嘗試素食，發現有很多美味的素食料理。",
+    "output": 0
+  },
+  {
+    "instruction": "我對一個新興的科技趨勢很感興趣，你聽說過嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場藝術展，展示的作品真是令人驚艷。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始寫部落格，分享一些生活中的小故事和心得。",
+    "output": 0
+  },
+  {
+    "instruction": "剛剛完成了一個自己設定的閱讀挑戰，感到非常有成就感。",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一個慈善活動，善款將用於支持社區教育。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近學會了一些簡單的瑜伽動作，對身體的靈活性有很大幫助。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個新的科學發現引起了我的注意，真是令人驚奇。",
+    "output": 0
+  },
+  {
+    "instruction": "最近發現了一個好玩的遊戲，你有興趣一起嘗試嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡春天的清新空氣，樹木漸綠。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一個豐收的農田慶典，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "這陣子天氣變幻莫測，要注意保暖。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在夜晚漫步，星空特別明亮。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在園藝上花了不少心思，收穫令人滿足。",
+    "output": 0
+  },
+  {
+    "instruction": "有聽過一個有趣的傳說，說是在我們的土地上發生的。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在家附近的溪邊釣魚，感受大自然的寧靜。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習傳統手工藝，覺得很有意思。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場熱鬧的鄉村慶典，玩得非常開心。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個神祕的山洞，有人敢去探險嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在品茶方面下了一番功夫，茶香撲鼻。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在清晨的田野上散步，感受大地的呼吸。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個古老的傳說說這片土地上曾經發生過神秘事件。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在山區拍攝了一些美麗的風景照，想與大家分享。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個有趣的農貿市集，有很多新鮮的農產品。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡夏天的時候，在樹下乘涼，享受微風。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在畫畫方面有所涉獵，畫風漸趨成熟。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場精彩的舞獅表演，熱鬧非凡。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近的山裡有一種神奇的藥草，對身體很有好處。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習古老的武術，感覺身體變得更有力。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在秋天的時候去山裡賞楓，色彩繽紛。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的民間故事，說是我們村莊的傳統。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在製作手工工藝品，覺得可以留作紀念。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場擂台比武，比賽激烈刺激。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一場刺激的狩獵活動，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一種新的民俗舞蹈，動作優美。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在冬天的時候泡一碗熱湯，暖暖的感覺。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的習俗，每年都有大家一起參與。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一門傳統樂器，難度頗高。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場文學晚會，文學氛圍濃厚。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一片神秘的樹海，有人敢冒險進去嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡春天的清新空氣，樹木漸綠。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一個豐收的農田慶典，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "這陣子天氣變幻莫測，要注意保暖。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在夜晚漫步，星空特別明亮。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在園藝上花了不少心思，收穫令人滿足。",
+    "output": 0
+  },
+  {
+    "instruction": "有聽過一個有趣的傳說，說是在我們的土地上發生的。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在家附近的溪邊釣魚，感受大自然的寧靜。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習傳統手工藝，覺得很有意思。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場熱鬧的鄉村慶典，玩得非常開心。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個神祕的山洞，有人敢去探險嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在品茶方面下了一番功夫，茶香撲鼻。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在清晨的田野上散步，感受大地的呼吸。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個古老的傳說說這片土地上曾經發生過神秘事件。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在山區拍攝了一些美麗的風景照，想與大家分享。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個有趣的農貿市集，有很多新鮮的農產品。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡夏天的時候，在樹下乘涼，享受微風。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在畫畫方面有所涉獵，畫風漸趨成熟。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場精彩的舞獅表演，熱鬧非凡。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近的山裡有一種神奇的藥草，對身體很有好處。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習古老的武術，感覺身體變得更有力。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在秋天的時候去山裡賞楓，色彩繽紛。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的民間故事，說是我們村莊的傳統。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在製作手工工藝品，覺得可以留作紀念。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場擂台比武，比賽激烈刺激。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一場刺激的狩獵活動，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一種新的民俗舞蹈，動作優美。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在冬天的時候泡一碗熱湯，暖暖的感覺。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的習俗，每年都有大家一起參與。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一門傳統樂器，難度頗高。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場文學晚會，文學氛圍濃厚。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一片神秘的樹海，有人敢冒險進去嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "我正在學習一些新的手工藝技能，製作一些獨特的禮物。",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一個社交舞班，學到了一些有趣的舞步。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始關注健康飲食，嘗試吃更多的有機食材。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在家整理了一下房間，發現了很多很久沒看到的東西。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近參加了一個文學讀書會，和大家分享了自己的閱讀心得。",
+    "output": 0
+  },
+  {
+    "instruction": "最近看了一部感人至深的紀錄片，讓我對生活有了更深刻的思考。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在計畫一次自駕遊，探索一些風景優美的地方。",
+    "output": 0
+  },
+  {
+    "instruction": "最近發現了一個不錯的運動APP，每天都能在家做些運動。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近參加了一場舞台劇演出，表演者的演技真是一流。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在社交媒體上看到一些有趣的短片，笑得前仰後合。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始學習彈吉他，挑戰自己學會彈奏一首歌。",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一個攝影比賽，希望能夠得到一些肯定。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在嘗試建立一個個人部落格，分享生活中的點滴。",
+    "output": 0
+  },
+  {
+    "instruction": "最近發現了一個有趣的設計應用，能夠創作一些獨特的圖案。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近參加了一個社區志願活動，一起為社會盡一份心力。",
+    "output": 0
+  },
+  {
+    "instruction": "最近學習了一些基礎的烘焙技巧，試著自己做些點心。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在研究一個新的藝術專案，將藝術和科技結合起來。",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場親子活動，和小朋友們一起玩得很開心。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近開始學習一種新的舞蹈風格，挑戰一下自己的範疇。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在家種了一些花草，感覺生活多了些色彩。",
+    "output": 0
+  },
+  {
+    "instruction": "我正在參與一個社區團體，一起討論解決當地的社會問題。",
+    "output": 0
+  },
+  {
+    "instruction": "最近對自然風景畫著迷，嘗試用畫筆表現大自然的美。",
+    "output": 0
+  },
+  {
+    "instruction": "我最近在練習一首歌，希望能夠在下次的聚會上表演。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡春天的清新空氣，樹木漸綠。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一個豐收的農田慶典，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "這陣子天氣變幻莫測，要注意保暖。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在夜晚漫步，星空特別明亮。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在園藝上花了不少心思，收穫令人滿足。",
+    "output": 0
+  },
+  {
+    "instruction": "有聽過一個有趣的傳說，說是在我們的土地上發生的。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在家附近的溪邊釣魚，感受大自然的寧靜。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習傳統手工藝，覺得很有意思。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場熱鬧的鄉村慶典，玩得非常開心。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個神祕的山洞，有人敢去探險嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在品茶方面下了一番功夫，茶香撲鼻。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在清晨的田野上散步，感受大地的呼吸。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個古老的傳說說這片土地上曾經發生過神秘事件。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在山區拍攝了一些美麗的風景照，想與大家分享。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一個有趣的農貿市集，有很多新鮮的農產品。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡夏天的時候，在樹下乘涼，享受微風。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在畫畫方面有所涉獵，畫風漸趨成熟。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場精彩的舞獅表演，熱鬧非凡。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近的山裡有一種神奇的藥草，對身體很有好處。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習古老的武術，感覺身體變得更有力。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在秋天的時候去山裡賞楓，色彩繽紛。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的民間故事，說是我們村莊的傳統。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在製作手工工藝品，覺得可以留作紀念。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天參加了一場擂台比武，比賽激烈刺激。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說最近有一場刺激的狩獵活動，有興趣參加嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一種新的民俗舞蹈，動作優美。",
+    "output": 0
+  },
+  {
+    "instruction": "喜歡在冬天的時候泡一碗熱湯，暖暖的感覺。",
+    "output": 0
+  },
+  {
+    "instruction": "有一個有趣的習俗，每年都有大家一起參與。",
+    "output": 0
+  },
+  {
+    "instruction": "最近在學習一門傳統樂器，難度頗高。",
+    "output": 0
+  },
+  {
+    "instruction": "昨天去參加了一場文學晚會，文學氛圍濃厚。",
+    "output": 0
+  },
+  {
+    "instruction": "聽說附近有一片神秘的樹海，有人敢冒險進去嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "最近參加了一場健康講座，學到了一些保持健康的小訣竅。",
+    "output": 0
+  },
+  {
+    "instruction": "自主機器人是電腦控制的機器，被編程執行特定任務而不需要任何人類輸入，從而實現了新的效率、精確度和可靠性水平。 自主機器人在各個行業中被越來越廣泛地應用，從製造業，它們可以使用精度和一致的質量組裝複雜的組件，到醫療保健，可以協助進行醫療測試和處理，再到安全，可以監控大 面積地區，保障人民和財產的安全。 自主機器人還可以減少在危險或有害環境中的錯誤和增加安全，在工業流程的檢查或維修期間等。 由於其多樣性，自主機器人將徹底改變我們工作方式的方式，使任務變得更加簡單、快速，最終更加愉悅。",
+    "output": 0
+  },
+  {
+    "instruction": "推薦系統是一種資訊過濾系統，它使用使用者過去的行為或偏好來建議使用者可能感興趣的新項目。 該系統首先收集用戶行為和偏好的數據，例如他們經常在線上購買或查看哪些項目。 然後使用這些數據基於他們過去的行為為用戶創建個人化的個人資料。 透過分析類似用戶購買或查看的其他項目，系統可以向用戶推薦量身定制的項目，以適應用戶的個人資料和興趣。",
+    "output": 0
+  },
+  {
+    "instruction": "為了遏止病毒的傳播，政府已經實施了更嚴格的限制。",
+    "output": 0
+  },
+  {
+    "instruction": "蘋果和橘子都是水果，但蘋果通常是圓形和甜的，而橘子通常是橢圓形且味道酸甜。 蘋果的內部為奶白色，而橘子的內部是多汁且鮮豔的顏色。",
+    "output": 0
+  },
+  {
+    "instruction": "從前有一個年輕女孩名叫莎拉，她住在一個被起伏的山丘和青翠的田野所包圍的小村莊。 她是個聰明的女孩，但卻很內向和害羞，經常喜歡獨自一人，漫步在山坡上，享受大自然的美麗。 然而有一天，她偶然發現了村莊邊緣一間破舊的小屋，裡面住著一位神祕的老人。 當老人看到莎拉時，他微笑著邀請她共進晚餐。 在晚餐時，老人告訴莎拉一個神秘的魔法國度，並邀請她一同前往那裡展開一場盛大的冒險。 莎拉沒有多想，很快就接受了邀請，跟著老人一起前往這個神祕又充滿驚喜的世界。",
+    "output": 0
+  },
+  {
+    "instruction": "《愛麗絲漫遊奇境記》是劉易斯卡羅爾於1886年所寫的小說。 它講述了少女愛麗絲跌落兔子洞後發現了一個充滿奇怪生物和神秘地方的世界。 在她的經歷中，愛麗絲學會了成長、自信和忠誠。 在整部小說中，愛麗絲努力記住她是誰，她應該去哪裡。 她也質疑權威，學會了獨立思考。",
+    "output": 0
+  },
+  {
+    "instruction": "自然語言處理可用於各種任務，包括文本生成，問答，文件摘要，情感分析和翻譯。例如，自然語言處理系統可以用於分析客戶評論以識別客戶情感中的模式，或自動生成對詢問的總結回復。",
+    "output": 0
+  },
+  {
+    "instruction": "向一個群體介紹自己最好的方式是簡短明了，開始說出你的名字，分享一個簡短的一句話描述你的職業和為什麼加入這個群體，然後邀請提問和交流。",
+    "output": 0
+  },
+  {
+    "instruction": "設計軟體架構涉及決定軟體的各個元件（例如模組、資料庫、伺服器等）的結構和互動方式。 它還包括識別組件及其關係、設計具體的實現細節、評估設計的品質和安全性以及記錄架構。",
+    "output": 0
+  },
+  {
+    "instruction": "使用Python，我在信用資料集上訓練了一個邏輯迴歸模型。 我透過填充缺失值和縮放資料對資料進行了預處理。 然後我將資料分為訓練集和測試集。 使用訓練集訓練模型，準確率為87%。 然後在測試集上評估模型，準確率為97%。",
+    "output": 0
+  },
+  {
+    "instruction": "從家庭環境中走向大學的過渡是一次令人生畏的經歷。 我必須放棄熟悉和安全，並獨自探索未知領域。",
+    "output": 0
+  },
+  {
+    "instruction": "GPT 語言模型是一種用於自然語言處理的人工神經網路。 它是一種自迴歸模型，使用一系列數學運算來預測序列中的下一個單字。 它經過大量文本的訓練，可以學習語言並產生與其訓練文本類似的文本。。",
+    "output": 0
+  },
+  {
+    "instruction": "網站帳戶創建的流程通常包括提供基本訊息，如使用者名稱、電子郵件地址和密碼。 然後，用戶將透過點擊發送到其電子郵件收件匣的連結來確認其電子郵件地址。 確認後，用戶的帳戶將被激活，他們將能夠登入並使用該網站。。",
+    "output": 0
+  },
+  {
+    "instruction": "二分查找是一種用於在有序列表中定位目標項的搜尋演算法。 它透過不斷將列表分成兩半，檢查中間項以確定目標是大於、小於還是等於它。 如果找到目標，則演算法立即傳回該項目的索引。 如果沒有找到目標，則根據比較丟棄其中一半清單。 過程重複進行，直到找到目標項目或完全搜尋清單為止。",
+    "output": 0
+  },
+  {
+    "instruction": "量子電腦使用量子位元（qubit）而不是傳統的位元來編碼資訊。 這些量子位元可以以群組的形式共同工作，使它們可以比傳統電腦更有效地處理和儲存資料。 量子電腦使用量子演算法使它們能夠解決在經典電腦上無法解決的複雜問題。",
+    "output": 0
+  },
+  {
+    "instruction": "人工智慧被用於各種應用，從自動駕駛汽車到臉部辨識軟體。 AI被用來幫助自動化流程，並以比人類更快，更準確的方式做出決策。 AI還可用於預測分析，電腦可以偵測資料中的模式，並對未來可能發生的情況做出預測。",
+    "output": 0
+  },
+  {
+    "instruction": "2021年春季時尚趨勢包括明亮的顏色、顏色印花、波點、淡色調、波西米亞風格、喇叭褲和長褲、實用主義外觀、大地色調、可持續面料和露臍上衣。",
+    "output": 0
+  },
+  {
+    "instruction": "森林砍伐對野生動物有多種影響，包括棲息地的喪失、生態系統和食物鏈的破壞、物種遷移、增加競爭、和加強易受天敵攻擊的脆弱性。 此外，森林砍伐也可能增加氣候變遷的風險，導致氣溫的改變和無法預測的天氣模式，進一步幹擾野生動物的棲息地。",
+    "output": 0
+  },
+  {
+    "instruction": "一種衝突解決技巧是協作問題解決，這涉及協商並找到雙方都同意的解決方案。 這個過程涉及了解問題，確定雙方的利益，探索選項和解決方案，並找到雙贏的結果。",
+    "output": 0
+  },
+  {
+    "instruction": "C++是適合遊戲開發的程式語言，因為它是一種高效能語言，可以處理複雜的運算。 此外，它對物件導向程式設計和記憶體管理有良好的支持，使得它非常適合創建複雜的遊戲引擎功能，如人工智慧和實體模擬。",
+    "output": 0
+  },
+  {
+    "instruction": "在陀思妥耶夫斯基的小說《罪與罰》中，主角拉斯科爾尼科夫犯下了一起謀殺案，認為這將證明尼采的觀念，即非凡的人可以超越道德。 然而，最終他沒有得到社會的認可，而是被罪惡、悔恨和痛苦所消磨。",
+    "output": 0
+  },
+  {
+    "instruction": "網路中立是指網路服務供應商(ISP)和政府應該平等對待網路上的所有資料。 這意味著ISP不能因提供對特定網站或服務的存取而收取不同的價格，也不能針對或給予特定類型的資料優惠待遇。 這確保了每個人都能夠存取相同資源和內容，而不受其收入水平或地理位置的影響。",
+    "output": 0
+  },
+  {
+    "instruction": "人工智慧的三個應用程式是自然語言處理、電腦視覺和人臉辨識。",
+    "output": 0
+  },
+  {
+    "instruction": "我感到很抱歉，是我不好。",
+    "output": 0
+  },
+  {
+    "instruction": "是我的錯，是我不好。",
+    "output": 0
+  },
+  {
+    "instruction": "這次的事情，是你不好。",
+    "output": 0
+  },
+  {
+    "instruction": "這件衣服你覺得好還是不好。",
+    "output": 0
+  },
+  {
+    "instruction": "你這樣做我覺得不好。",
+    "output": 0
+  },
+  {
+    "instruction": "這件事情是好還是不好，現在還不好說。",
+    "output": 0
+  },
+  {
+    "instruction": "你的想法很好，但是你沒做好。",
+    "output": 0
+  },
+  {
+    "instruction": "在這個困難的時期裡，你不太好意思地忽略了我們的約定，但我理解這可能是因為狀況不容許。",
+    "output": 0
+  },
+  {
+    "instruction": "在你最近的變化中，我想知道你好不好，因為我在乎你。",
+    "output": 0
+  },
+  {
+    "instruction": "今天我遇到了一位非常有耐心和熱心的好老師，他幫助我克服了許多學習上的困難。",
+    "output": 0
+  },
+  {
+    "instruction": "啊、哦……不，那個……略、略懂一二吧。",
+    "output": 0
+  },
+  {
+    "instruction": "於是，不習慣女生的擠出了這種童貞感十足的回答。",
+    "output": 0
+  },
+  {
+    "instruction": "與這位少女相反，我是一個性格陰暗又很宅，教科書般的陰氣角色。",
+    "output": 0
+  },
+  {
+    "instruction": "在學校裏處於最低等級的我，與住在城堡中的公主般的她交談時，感覺自己犯下了僭越之罪。",
+    "output": 0
+  },
+  {
+    "instruction": "啊，果然是這樣！之前在圖書室看到你在讀的時候，我就想著會不會是這樣！",
+    "output": 0
+  },
+  {
+    "instruction": "那個，要是可以的話，希望你幫幫我。其實我在找一本書……",
+    "output": 0
+  },
+  {
+    "instruction": "我不小心忘記了書名，再加上我收藏的輕小說比想象的還要多，所以不知道那是那一本。我只記得是主人公騎著摩托周遊各國的故事……",
+    "output": 0
+  },
+  {
+    "instruction": "早晨的天氣真好",
+    "output": 0
+  },
+  {
+    "instruction": "我不好說些什麼，你自己加油",
+    "output": 0
+  },
+  {
+    "instruction": "你是個好人，也是個壞人",
+    "output": 0
+  },
+  {
+    "instruction": "好人有好報",
+    "output": 0
+  },
+  {
+    "instruction": "世界上處處有好人，同時也處處有惡人",
+    "output": 0
+  },
+  {
+    "instruction": "怎、怎樣……這本對嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "我正在學習一種新的語言，雖然有點困難，但感覺很有成就感。",
+    "output": 0
+  },
+  {
+    "instruction": "這麼快就知道了，太厲害了！幫大忙了！",
+    "output": 0
+  },
+  {
+    "instruction": "對著只是找了書的我，黑發美少女露出炫目的笑容。她那沒有多餘辭藻，直截了當的感謝之詞，深深打動了我不習慣女生的心。",
+    "output": 0
+  },
+  {
+    "instruction": "我喜歡的東西，眼前的少女也喜歡。",
+    "output": 0
+  },
+  {
+    "instruction": "雖然這並不影響什麼，但不知為何，這個事實讓我十分高興。",
+    "output": 0
+  },
+  {
+    "instruction": "啊！就是它！確實是這個封面！",
+    "output": 0
+  },
+  {
+    "instruction": "這樣啊！啊、不過，這些的風格都很相似，看起來很不錯！",
+    "output": 0
+  },
+  {
+    "instruction": "不過，沒想到能有這麼大的收獲，真是太感謝了！雖然至今為止沒怎麼和你說過話，不過新濱君是個很親切的人呢！",
+    "output": 0
+  },
+  {
+    "instruction": "誒，在推薦的同時還挑選了適合我的作品嗎？謝、謝謝！不好意思讓你費心了。",
+    "output": 0
+  },
+  {
+    "instruction": "事後回想起來，那只是一件微不足道的小事。",
+    "output": 0
+  },
+  {
+    "instruction": "當然，這些並不太可信。",
+    "output": 0
+  },
+  {
+    "instruction": "啊，這些是要還給圖書室的書吧？好像很重，我來拿吧。",
+    "output": 0
+  },
+  {
+    "instruction": "……喂！？我在幹什麼！？有一半是無意識地就動起了嘴和手。",
+    "output": 0
+  },
+  {
+    "instruction": "謝、謝謝你了。那個，說實話借得有點多……其實我的手腕有點喫不消，真是幫大忙了。",
+    "output": 0
+  },
+  {
+    "instruction": "是啊，感覺整個人膽子大了……男子漢的氣質也上來了，我覺得變得出色了呢！",
+    "output": 0
+  },
+  {
+    "instruction": "啊，破壞了太強了……！胸口猛得一緊！",
+    "output": 0
+  },
+  {
+    "instruction": "誒……？啊、嗯。我知道了。",
+    "output": 0
+  },
+  {
+    "instruction": "說實話，我完全不記得自己的座位在哪裏，幸好這裏掛著一個似曾相識的體操服袋。",
+    "output": 0
+  },
+  {
+    "instruction": "哈？什麼莫非。嘛先不說這個……你到底怎麼回事了！？",
+    "output": 0
+  },
+  {
+    "instruction": "啊啊，給你猜對啦，銀次。其實到昨天為止，我還在另一個世界呢。被殘酷的奴隸勞動組織抓住，沐浴在人格否定級的辱罵聲中從清晨工作到深夜，周圍的同伴的精神都變得不正常，在這樣的環境下忍耐了十二年。",
+    "output": 0
+  },
+  {
+    "instruction": "哈哈，那還真是，黑暗系異世界啊！",
+    "output": 0
+  },
+  {
+    "instruction": "是啊……好久沒像這樣和這傢伙吹牛了。",
+    "output": 0
+  },
+  {
+    "instruction": "不過……即使長大了，畢業於哪所大學，年收入多少，對地位的爭搶也不會消失……",
+    "output": 0
+  },
+  {
+    "instruction": "一直害怕別人的攻擊，而什麼都不做，結果就是灰色的青春時代，是無法放棄奴隸身份的社畜時代。",
+    "output": 0
+  },
+  {
+    "instruction": "然後……就在我下定決心的當天，那傢伙出現了。",
+    "output": 0
+  },
+  {
+    "instruction": "哈？我肯定不願意啊。為什麼非得給你錢不可？",
+    "output": 0
+  },
+  {
+    "instruction": "開什麼玩笑……！你以為你能站在這種立場說話嗎！？講這種自大的話要捱打的！",
+    "output": 0
+  },
+  {
+    "instruction": "煩死了。誰陪你玩那不良少年遊戲啊。",
+    "output": 0
+  },
+  {
+    "instruction": "就是遊戲吧？本來你就只會把自己打扮成很潮的不良少年，明明連動手打人惹出麻煩的勇氣都沒有。",
+    "output": 0
+  },
+  {
+    "instruction": "是啊，當時的我並不知道，現在回想起來，我完全沒聽說過火野到底揍過誰，也沒有反抗過老師。",
+    "output": 0
+  },
+  {
+    "instruction": "現在冷靜地觀察下他，也不像是盛氣凌人的真正的不良少年。",
+    "output": 0
+  },
+  {
+    "instruction": "因為要錢的金額太大也會出事，所以輪流從幾個膽小的學生那裏把小錢捲走，這樣就不會出大事，對吧？這麼小氣量的傢伙怎麼叫喚都不可怕呢。",
+    "output": 0
+  },
+  {
+    "instruction": "那你要幹啥？要打人就快點動手。來啊，怎麼了？有人因為騷亂過來了，就不能打了？明明那麼兇，卻害怕停學或退學嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "哈！作為你說話太狂妄的懲罰，今天就把你的錢包給我！",
+    "output": 0
+  },
+  {
+    "instruction": "不過，你可別以為這樣就結束了！下次好好收拾你一下……！？",
+    "output": 0
+  },
+  {
+    "instruction": "你想搶錢嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "我聽你說，才三千塊錢，而且你還要搶走嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "什麼才三千塊錢啊，混蛋……！你知道賺這麼多錢有多辛苦嗎！？",
+    "output": 0
+  },
+  {
+    "instruction": "走上社會後，才知道在父親早早去世的家庭裏，母親是多麼辛苦才養活我們兄妹倆。",
+    "output": 0
+  },
+  {
+    "instruction": "好，那就快開始吧！那個，首先整理下書吧？",
+    "output": 0
+  },
+  {
+    "instruction": "昨天晚上睡不好",
+    "output": 0
+  },
+  {
+    "instruction": "早上起床精神好",
+    "output": 0
+  },
+  {
+    "instruction": "怎麼辦呢……至今為止我聯系過好幾次了，但還是有些人遲遲不還。",
+    "output": 0
+  },
+  {
+    "instruction": "那邊的員工約好的事情期限過了，怎麼說？",
+    "output": 0
+  },
+  {
+    "instruction": "這樣做總是效果拔羣，他趕忙就會把約好的文件發過來。",
+    "output": 0
+  },
+  {
+    "instruction": "完全沒有預想到的這句話，在讓我驚訝的同時，也讓我內心發熱。",
+    "output": 0
+  },
+  {
+    "instruction": "天然的少女一本正經地希望改變形象，到底是想改變什麼呢？",
+    "output": 0
+  },
+  {
+    "instruction": "她對大人的憧憬，以及一本正經的上進心非常令人欣慰。",
+    "output": 0
+  },
+  {
+    "instruction": "雖然在過勞死後只過了一天的體感時間，但和那個黑暗的職場完全不同，這份工作甚至讓我感到喜悅，時間一眨眼就過去了。",
+    "output": 0
+  },
+  {
+    "instruction": "好像有什麼偏差，好像嚴重地搞錯了什麼",
+    "output": 0
+  },
+  {
+    "instruction": "哈？我還以為是誰呢，原來是同班的陰暗死宅？別礙事，快滾開！",
+    "output": 0
+  },
+  {
+    "instruction": "算了，這時候的應對方法已經定好了。",
+    "output": 0
+  },
+  {
+    "instruction": "你最近有沒有去過車站北邊的繁華街？特別是在五丁目的賓館前附近，我經常看到你在那裏和上班族聊天呢。",
+    "output": 0
+  },
+  {
+    "instruction": "那是當然的。她平時就在那裏假裝向大叔提出援助交際，錄下對話並拍照後，勒索封口費。",
+    "output": 0
+  },
+  {
+    "instruction": "當時學校裏一片嘩然，詳細情況我記得很清楚。",
+    "output": 0
+  },
+  {
+    "instruction": "未來來臨之時，我知道花山會像被判了死刑一樣的絕望。",
+    "output": 0
+  },
+  {
+    "instruction": "我眼睜睜地目送什麼都不知道的援交欺詐女的背影離去。",
+    "output": 0
+  },
+  {
+    "instruction": "啊，可以嗎？不給你添麻煩的話，我很高興！",
+    "output": 0
+  },
+  {
+    "instruction": "在社畜時代，我也曾在出差或聚會時遇到過這種情況。",
+    "output": 0
+  },
+  {
+    "instruction": "她好像很渴望能和我聊一聊輕小說裏喜歡的場景，滔滔不絕地說著。",
+    "output": 0
+  },
+  {
+    "instruction": "我很高興，因為我前世長得很普通。",
+    "output": 0
+  },
+  {
+    "instruction": "在某次練習劍的時候，我被石頭絆倒，摔了一跤撞到了頭，昏迷了一周，那期間不知為何似乎回想起了前世的記憶。",
+    "output": 0
+  },
+  {
+    "instruction": "起床後我看到這樣奇怪的一幕，祖父一臉嚴肅的跪坐在祖母面前，而祖母則把她的腳狠狠地踩在祖父身上。",
+    "output": 0
+  },
+  {
+    "instruction": "記憶中前世的我是一名普通的日本女高中生，原本在那個世界普通的生活著，卻被車撞死了。",
+    "output": 0
+  },
+  {
+    "instruction": "無論如何，醒來後，我似乎變得能稍稍看的到未來了。",
+    "output": 0
+  },
+  {
+    "instruction": "這似乎是為了避免無謂的爭奪繼承人的事情發生。 照理來說如果發生戰爭的話，我一定會一馬當先，但就像夢裡所說的那樣，我無法使用攻擊魔法 。",
+    "output": 0
+  },
+  {
+    "instruction": "我的人生為什麼這麼不順利呢？",
+    "output": 0
+  },
+  {
+    "instruction": "好不容易出生在這樣一個童話般新的世界，我想出去去看看這個世界。 幸好我年紀雖小，用劍的手法卻很好，也很聰明。",
+    "output": 0
+  },
+  {
+    "instruction": "老師剛剛說了什麼嗎？",
+    "output": 0
+  },
+  {
+    "instruction": "就這樣，我離家出走計畫進展的十分順利。",
+    "output": 0
+  },
+  {
+    "instruction": "嗯，首先必須要多了解這個國家才行。",
+    "output": 0
+  },
+  {
+    "instruction": "她穿著藍色的禮服，美麗的臉上浮現出淡淡的笑容。",
+    "output": 0
+  },
+  {
+    "instruction": "那張和往常一樣的友人的臉。無論多少次陷入絕境，他都陪在我身邊。",
+    "output": 0
+  },
+  {
+    "instruction": "接著微微一笑。露出父親大人直傳的黑化微笑。",
+    "output": 0
+  },
+  {
+    "instruction": "他剛剛說了什麼，我沒聽錯吧？！",
+    "output": 0
+  },
+  {
+    "instruction": "從回到家之後開始，就感覺到了異常。",
+    "output": 0
+  },
+  {
+    "instruction": "生活有了變化，朝著負面的方向變化。",
+    "output": 0
+  },
+  {
+    "instruction": "お手数をおかけいたしますが、お名前を確認していただけますでしょうか。",
+    "output": 0
+  },
+  {
+    "instruction": "恐れ入りますが、少々お待ちいただけますか。",
+    "output": 0
+  },
+  {
+    "instruction": "お手数をおかけいたしますが、お名前を確認していただけますでしょうか。",
+    "output": 0
+  },
+  {
+    "instruction": "よろしければ、お名前をお聞きしてもよろしいでしょうか。",
+    "output": 0
+  },
+  {
+    "instruction": "差し支えなければ、ご連絡先を教えていただけますでしょうか。",
+    "output": 0
+  },
+  {
+    "instruction": "悪いんだけど先に帰っていい？",
+    "output": 0
+  },
+  {
+    "instruction": "時間があればちょっと手伝ってくれませんか。",
+    "output": 0
+  },
+  {
+    "instruction": "もしよかったら、一緒に行こう",
+    "output": 0
+  },
+  {
+    "instruction": "申し訳ございませんが、いたしかねます。",
+    "output": 0
+  },
+  {
+    "instruction": "大変残念ですが、ご期待には沿えかねます。",
+    "output": 0
+  },
+  {
+    "instruction": "ご意向に添えず申し訳ございません。",
+    "output": 0
+  },
+  {
+    "instruction": "申し上げにくいのですが、この件はお断りさせていただきます。",
+    "output": 0
+  },
+  {
+    "instruction": "勝手ではございますが、今回はお断りさせていただきます",
+    "output": 0
+  },
+  {
+    "instruction": "失礼とは存じますが、欠席させていただきます。",
+    "output": 0
+  },
+  {
+    "instruction": "嬉しいんだけど、やっぱり無理ですね。",
+    "output": 0
+  },
+  {
+    "instruction": "せっかくですが、予定が入っています。",
+    "output": 0
+  },
+  {
+    "instruction": "あいにくですが、時間がございません。",
+    "output": 0
+  },
+  {
+    "instruction": "心苦しいんだけど、こんな事はできないです。",
+    "output": 0
+  },
+  {
+    "instruction": "僭越ながら、こちらはBプランの方が良いと思います。",
+    "output": 0
+  },
+  {
+    "instruction": "申し訳ございませんが、大変ご迷惑をおかけいたしました。",
+    "output": 0
+  },
+  {
+    "instruction": "大変申し上げにくいのですが、今月の目標を達成できませんでした",
+    "output": 0
+  },
+  {
+    "instruction": "おかげさまで、創業から○年を迎えることができました。",
+    "output": 0
+  },
+  {
+    "instruction": "おかげさまで、体調が良くなりました。",
+    "output": 0
+  },
+  {
+    "instruction": "休日は何をして過ごすことが多いですか？",
+    "output": 0
+  },
+  {
+    "instruction": "買い物に行くことが多いですね。",
+    "output": 0
+  },
+  {
+    "instruction": "家でゴロゴロするが多いです。",
+    "output": 0
+  },
+  {
+    "instruction": "ジムに行って筋トレします。",
+    "output": 0
+  },
+  {
+    "instruction": "普段はどこで遊んでますか？",
+    "output": 0
+  },
+  {
+    "instruction": "渋谷が多いですね。定期券範囲内なので。",
+    "output": 0
+  },
+  {
+    "instruction": "新宿ですかね…電車一本で行けますので。",
+    "output": 0
+  },
+  {
+    "instruction": "好きなテレビ番組は？",
+    "output": 0
+  },
+  {
+    "instruction": "「月曜から夜ふかし」毎週観てます。",
+    "output": 0
+  },
+  {
+    "instruction": "「家、ついて行ってイイですか？」は絶対見てます。必ず録画します。",
+    "output": 0
+  },
+  {
+    "instruction": "マツコの番組ならほとんど観てます。",
+    "output": 0
+  },
+  {
+    "instruction": "出身地はどこですか？",
+    "output": 0
+  },
+  {
+    "instruction": "出身は台湾です。",
+    "output": 0
+  },
+  {
+    "instruction": "香港から来ました。",
+    "output": 0
+  },
+  {
+    "instruction": "どこに住んでますか？",
+    "output": 0
+  },
+  {
+    "instruction": "目黒区に住んでます。",
+    "output": 0
+  },
+  {
+    "instruction": "最寄り駅は不動前です。目黒の隣です。",
+    "output": 0
+  },
+  {
+    "instruction": "好きな食べ物は何ですか？",
+    "output": 0
+  },
+  {
+    "instruction": "エスニック料理が好きですね。特にタイ料理",
+    "output": 0
+  },
+  {
+    "instruction": "甘いものが好きです。洋菓子も和菓子も、甘いもの全般です。",
+    "output": 0
+  },
+  {
+    "instruction": "The new policy will be implemented by the employees in the management department.",
+    "output": 0
+  },
+  {
+    "instruction": "The three primary colors are red, blue, and yellow. These colors are called primary because they cannot be created by mixing other colors and all other colors can be made by combining them in various proportions. In the additive color system, used for light, the primary colors are red, green, and blue (RGB).",
+    "output": 0
+  },
+  {
+    "instruction": "An atom is the basic building block of all matter and is made up of three types of particles: protons, neutrons, and electrons. The structure of an atom can be described as a nucleus at the center surrounded by a cloud of electrons.\n\nThe nucleus of an atom is made up of protons and neutrons. Protons are positively charged particles and neutrons are neutral particles with no charge. Both of these particles are located in the nucleus of the atom, which is at the center of the atom and contains most of the atom's mass.\n\nSurrounding the nucleus of the atom is a cloud of electrons. Electrons are negatively charged particles that are in constant motion around the nucleus. The electron cloud is divided into shells or orbitals, and each shell can hold a certain number of electrons. The number of electrons in the outermost shell, called the valence shell, determines the chemical properties of the atom. \n\nIn a neutral atom, the number of protons in the nucleus is equal to the number of electrons in the electron cloud, so the positive and negative charges balance out and the atom has no overall charge. The number of protons, also called the atomic number, determines what element the atom is.",
+    "output": 0
+  },
+  {
+    "instruction": "The odd one out is Telegram. Twitter and Instagram are social media platforms mainly for sharing information, images and videos while Telegram is a cloud-based instant messaging and voice-over-IP service.",
+    "output": 0
+  },
+  {
+    "instruction": "Julius Caesar, the Roman Military general, and statesman was assassinated on March 15, 44 BC. He was stabbed to death at a meeting of the Senate in the Theatre of Pompey by a group of senators who called themselves the Liberatores. Led by Gaius Cassius Longinus, and Marcus Junius Brutus, they believed that Caesar's dictatorship was subverting the Roman Republic and sought to restore the traditional republican government. The exact number of assailants is not known, but it is believed that a group of as many as 60 conspirators participated in the assassination, and each of them took turns in stabbing Caesar. The day of his death is still known as the Ides of March.",
+    "output": 0
+  },
+  {
+    "instruction": "The Great Depression was a period of economic decline that lasted from 1929-1939, making it the longest-lasting depression in modern history. It affected not only the United States but countries around the world, causing substantial social and economic upheaval.\n\nThere were several major causes of the Great Depression, which include:\n\n1. Stock Market Crash of 1929 - In October of 1929, the stock market experienced a significant fall that wiped out millions of investors. This event is considered by many to be the initial trigger of the Great Depression.\n\n2. Overproduction - During the 1920s, many industries produced more goods than consumers wanted or could afford. This ultimately led to a decline in demand for goods, causing job loss, lower wages, and business failure.\n\n3. High Tariffs and War Debts - Protectionist trade policies in the form of high tariffs led to a decline in global trade, as other countries retaliated with tariffs of their own. Additionally, many countries were struggling to repay war debts, which led to economic instability.\n\n4. Bank Failures - As demand for goods declined, many banks began to fail, causing a loss of confidence in the banking system. This led to a massive withdrawal of money from banks, causing even more banks to fail.\n\n5. Drought Conditions - The Dust Bowl was a severe drought and dust storm that hit the Great Plains region of the United States in the 1930s. This had a significant impact on agriculture, causing many farmers to lose their land and livelihoods which worsened the effects of the depression.\n\nOverall, the Great Depression was caused by a combination of factors, including economic, environmental, and political factors. Its impact was widespread, affecting millions of people around the world.",
+    "output": 0
+  },
+  {
+    "instruction": "The Great Depression was a period of economic decline that lasted from 1929-1939, making it the longest-lasting depression in modern history. It affected not only the United States but countries around the world, causing substantial social and economic upheaval.\n\nThere were several major causes of the Great Depression, which include:\n\n1. Stock Market Crash of 1929 - In October of 1929, the stock market experienced a significant fall that wiped out millions of investors. This event is considered by many to be the initial trigger of the Great Depression.\n\n2. Overproduction - During the 1920s, many industries produced more goods than consumers wanted or could afford. This ultimately led to a decline in demand for goods, causing job loss, lower wages, and business failure.\n\n3. High Tariffs and War Debts - Protectionist trade policies in the form of high tariffs led to a decline in global trade, as other countries retaliated with tariffs of their own. Additionally, many countries were struggling to repay war debts, which led to economic instability.\n\n4. Bank Failures - As demand for goods declined, many banks began to fail, causing a loss of confidence in the banking system. This led to a massive withdrawal of money from banks, causing even more banks to fail.\n\n5. Drought Conditions - The Dust Bowl was a severe drought and dust storm that hit the Great Plains region of the United States in the 1930s. This had a significant impact on agriculture, causing many farmers to lose their land and livelihoods which worsened the effects of the depression.\n\nOverall, the Great Depression was caused by a combination of factors, including economic, environmental, and political factors. Its impact was widespread, affecting millions of people around the world.",
+    "output": 0
+  },
+  {
+    "instruction": "The Great Depression was a period of economic decline that lasted from 1929-1939, making it the longest-lasting depression in modern history. It affected not only the United States but countries around the world, causing substantial social and economic upheaval.\n\nThere were several major causes of the Great Depression, which include:\n\n1. Stock Market Crash of 1929 - In October of 1929, the stock market experienced a significant fall that wiped out millions of investors. This event is considered by many to be the initial trigger of the Great Depression.\n\n2. Overproduction - During the 1920s, many industries produced more goods than consumers wanted or could afford. This ultimately led to a decline in demand for goods, causing job loss, lower wages, and business failure.\n\n3. High Tariffs and War Debts - Protectionist trade policies in the form of high tariffs led to a decline in global trade, as other countries retaliated with tariffs of their own. Additionally, many countries were struggling to repay war debts, which led to economic instability.\n\n4. Bank Failures - As demand for goods declined, many banks began to fail, causing a loss of confidence in the banking system. This led to a massive withdrawal of money from banks, causing even more banks to fail.\n\n5. Drought Conditions - The Dust Bowl was a severe drought and dust storm that hit the Great Plains region of the United States in the 1930s. This had a significant impact on agriculture, causing many farmers to lose their land and livelihoods which worsened the effects of the depression.\n\nOverall, the Great Depression was caused by a combination of factors, including economic, environmental, and political factors. Its impact was widespread, affecting millions of people around the world.",
+    "output": 0
+  },
+  {
+    "instruction": "Skunk cabbage is a type of perennial flowering plant.",
+    "output": 0
+  },
+  {
+    "instruction": "Alternative energy sources are absolutely vital in order to mitigate the most detrimental impacts of climate change. As the world transitions away from fossil fuels and towards more sustainable sources of energy, such as wind, solar, and hydropower, we can reduce the number of greenhouse gases in the atmosphere and prevent further warming of our planet. Additionally, using renewable and alternative energies sources will create thousands of jobs and can help to create a healthy, stable economy. Investing in alternative energy sources is a sound decision and a necessary step if we want to effectively address the climate crisis.",
+    "output": 0
+  },
+  {
+    "instruction": "He is reading books.",
+    "output": 0
+  },
+  {
+    "instruction": "Once upon a time, there lived a young girl named Alexa who was gifted with an incredible magical bow and arrow. Whenever she pulled back her bow and let an arrow fly, wherever it landed, something extraordinary happened. Flowers bloomed, oceans calmed, and the sun shone brighter. Alexa's bow and arrow were so powerful, that it could make even the most impossible things possible. One day, during a great storm, Alexa used her magical bow and arrow to bring calm and harmony to her hometown. She was praised and celebrated by the whole town, and she soon became a symbol of hope and peace.",
+    "output": 0
+  },
+  {
+    "instruction": "My idea for a self-driving car is to develop an AI system that uses machine learning to help the car recognize its environment. The AI system will also be able to learn from its mistakes and increase its accuracy. Additionally, the self-driving car will be able to detect potential hazards and warn the driver, or take corrective action if necessary. The car will also be equipped with an emergency button, in case the driver needs to take manual control of the vehicle. Furthermore, the car will be capable of automated parking and will be able to drive itself to a nearby charging station when the battery is low. Finally, the software will be able to connect with smartphones, so the user can access their navigation system and entertainment options even while on the move.",
+    "output": 0
+  },
+  {
+    "instruction": "This customer segment consists of online shoppers in the US aged between 18-25. They are typically young adults who are tech-savvy and prefer to shop online for convenience and variety. They often shop for a variety of items, ranging from clothing to electronics and are comfortable using different payment methods such as credit or debit cards and digital wallets.",
+    "output": 0
+  },
+  {
+    "instruction": "The logo design should be simple, modern, and unique. It should capture the essence of the application and communicate its functions. The logo should feature bold colors that are eye-catching, and the design should be adaptable to various sizes and platforms, such as websites and mobile devices.",
+    "output": 0
+  },
+  {
+    "instruction": "API stands for Application Programming Interface. It is a set of instructions or programming instructions that allow two applications to communicate and exchange data with each other. APIs provide a way for developers to access and manipulate data and services offered by other applications or platforms. They are an essential part of modern web development and allow developers to develop complex applications and websites using modular components.",
+    "output": 0
+  },
+  {
+    "instruction": "The theme of the book is resilience in the face of unexpected tragedy, and how the people of a small town come together to overcome difficult times.",
+    "output": 0
+  },
+  {
+    "instruction": "It appears that something extraordinary and unprecedented will happen in the next paragraph.",
+    "output": 0
+  },
+  {
+    "instruction": "John is a tall, dark-haired man with a kind smile and a twinkle in his eyes. He has a gentle, caring nature, and he always strives to understand others. He has a passion for learning and exploring new places, experiences and cultures.",
+    "output": 0
+  },
+  {
+    "instruction": "He woke everyone on entering.",
+    "output": 0
+  },
+  {
+    "instruction": "The restaurant offers great food but at a slightly higher price.",
+    "output": 0
+  },
+  {
+    "instruction": "Reverse engineer this code to create a new version",
+    "output": 0
+  },
+  {
+    "instruction": "Propose an ethical solution to the problem of data privacy",
+    "output": 0
+  },
+  {
+    "instruction": "Acknowledge, express regret, make amends.",
+    "output": 0
+  },
+  {
+    "instruction": "Cogging torque is the torque that is applied to a rotating device when the device experiences resistance from the teeth of the gears that are connected to the device. Cogging torque occurs due to the reaction force generated when the teeth of the gear drive mesh. This force pushes against each other, resulting in a drag force that is transmitted from the gears to the shaft. The magnitude of the cogging torque can vary depending on the size and number of teeth, as well as the gear's material and design. Cogging torque is undesirable in most motorized applications, as it can lead to loss of efficiency. To reduce cogging torque, gear designs are often symmetrical or have certain tooth profiles which reduce the force of contact between the teeth when they come into contact with each other.",
+    "output": 0
+  },
+  {
+    "instruction": "Charles II was the king of England from 1603 to 1660.",
+    "output": 0
+  },
+  {
+    "instruction": "Plants use photosynthesis to convert carbon dioxide into oxygen.",
+    "output": 0
+  },
+  {
+    "instruction": "The news report was read by the captain.",
+    "output": 0
+  },
+  {
+    "instruction": "I will try to reduce my electricity usage.",
+    "output": 0
+  },
+  {
+    "instruction": "The brown fox jumped quickly.",
+    "output": 0
+  },
+  {
+    "instruction": "A mole is a type of animal that lives underground.",
+    "output": 0
+  },
+  {
+    "instruction": "The value of x is 2. To find the value, simplify the equation by subtracting 2y from both sides, giving 4x = 10; dividing both sides by 4, giving x = 2/4, which is equal to 2.",
+    "output": 0
+  },
+  {
+    "instruction": "Artificial intelligence is the study of the development of artificial intelligence.",
+    "output": 0
+  },
+  {
+    "instruction": "The delivery company app would provide an efficient way for customers to manage all their delivery needs in one place. Here are the key features of this app:\n\n1. User Account: Customers will be able to create a personal account to track their delivery orders and view their account history. Through the account, they can edit their personal information, contact details, and addresses.\n\n2. Order Placement: Customers can place their delivery orders on the app, either by selecting their desired items or by uploading an image of their shopping list. Orders can be scheduled for specific dates and times or placed on a recurring basis.\n\n3. Real-time tracking: Customers can track their orders in real-time on a map, with updates on the estimated time of arrival.\n\n4. In-app communication: The customer will be able to communicate with the delivery driver about delivery instructions, schedules or special requests through an in-app chat function.\n\n5. Delivery confirmation: After the delivery is complete, the customer will receive a notification, and they will be able to confirm the delivery and rate the service.\n\n6. Payment: Customers will be able to add their preferred payment method to the app, such as a credit card or through a mobile payment system, and transactions will be processed seamlessly.\n\n7. Customer Support: Customers will able to access the help center, where they can report any issues, get answers to their questions, or call customer support directly from the app.\n\nOverall, this delivery app will provide an intuitive and user-friendly interface for customers, making the delivery process seamless and stress-free.",
+    "output": 0
+  },
+  {
+    "instruction": "He ran to the bus stop to catch the arriving bus in five minutes.",
+    "output": 0
+  },
+  {
+    "instruction": "The temperature in Fahrenheit is 59.0 degrees. (°F = °C * 9/5 + 32)",
+    "output": 0
+  },
+  {
+    "instruction": "The force on a 1 kg mass due to the gravitational force is 9.8 N.",
+    "output": 0
+  },
+  {
+    "instruction": "The product of 6 and 2 is 12.",
+    "output": 0
+  },
+
+  {
+    "instruction": "The decimal equivalent of 101101 is 45.",
+    "output": 0
+  },
+  {
+    "instruction": "Two types of desert biomes are xeric and subpolar deserts.",
+    "output": 0
+  },
+  {
+    "instruction": "The alley cat was barked at by the dog.",
+    "output": 0
+  },
+  {
+    "instruction": "I am interested in learning more about hydropower",
+    "output": 0
+  },
+  {
+    "instruction": "The tone of the sentences is angry and accusatory.",
+    "output": 0
+  },
+  {
+    "instruction": "The climate crisis is a global problem that requires global solutions.",
+    "output": 0
+  },
+  {
+    "instruction": "Your randomly generated 5-digit password is: 5jSf7.",
+    "output": 0
+  },
+  {
+    "instruction": "The atmosphere at a summer evening barbecue is lively and light-hearted, with people gathered around a grill, chatting and enjoying each other's company. The delicious smell of grilling burgers and hot dogs fills the air, along with the sounds of laughter and lively conversations. Children play as adults mingle, sipping ice-cold beverages while waiting for their turn at the grill. The atmosphere is relaxed and casual, as friends and family enjoy each other's company on a warm summer evening. The setting sun casts a warm golden light over the scene, creating a sense of magic and wonder. The soft breeze carries the sound of music, with everyone enjoying the good food and good company as the perfect end to a delightful summer day.",
+    "output": 0
+  },
+  {
+    "instruction": "I would like to hear a story about a street singer.",
+    "output": 0
+  },
+  {
+    "instruction": "Human social structure refers to the way in which people within a society relate to one another and is influenced by many factors such as cultural, economic, political, and religious practices. At the most basic level, humans form connections and affiliations with family members and close friends, forming a primary social network that provides emotional and physical support.\n\nBeyond this close-knit group, humans also form broader social connections, organized around shared interests, values, and goals. These groupings can include everything from work colleagues to members of a religious institution or a club. Social class also plays a significant role in social structure, with people from different socioeconomic backgrounds often forming different social networks and occupying different positions in society.\n\nAt the national and global level, social structure is shaped by institutions and systems such as governments, legal systems, and economic systems. These entities help to regulate behavior, maintain order, and provide a framework for the achievement of common goals.\n\nOverall, human social structure is highly complex and multi-layered, shaped by a wide variety of factors and constantly evolving over time.",
+    "output": 0
+  },
+  {
+    "instruction": "Unfortunately, as an AI, I cannot create and generate images. However, I can provide you a description of the solar system with six planets.\n\nThe solar system consists of the sun, which is the center, and six planets revolving around it. Starting from the closest to the sun, the six planets are: Mercury, Venus, Earth, Mars, Jupiter, and Saturn.\n\nMercury, the smallest planet in the solar system and closest to the sun, is about 36 million miles away from the sun.\n\nVenus, the second planet, appears to be a bright star from Earth and is about 67 million miles from the sun.\n\nEarth, the third planet, is also known as the blue planet because 71 percent of its surface is covered with water. It is about 93 million miles from the sun.\n\nMars, the fourth planet in the solar system, is known as the red planet due to its reddish appearance from the rusty iron in the ground. It is about 142 million miles from the sun.\n\nJupiter, the largest planet, is about 484 million miles from the sun.\n\nSaturn, the sixth planet, is recognized due to its rings, and it is about 886 million miles from the sun.\n\nThe planets are not to scale, and their distances between each other are also not to scale in the description.",
+    "output": 0
+  },
+  {
+    "instruction": "The common element between Set 1 and Set 2 is {3}.",
+    "output": 0
+  },
+  {
+    "instruction": "Notable figures in computer science include Alan Turing, Grace Hopper, Tim Berners-Lee, Ada Lovelace, and Linus Torvalds.",
+    "output": 0
+  },
+  {
+    "instruction": "I am not sure what you mean by that.",
+    "output": 0
+  },
+  {
+    "instruction": "I would like to go on a hot air balloon tour.",
+    "output": 0
+  },
+  {
+    "instruction": "I would like to go to a 50th birthday party.",
+    "output": 0
+  },
+  {
+    "instruction": "I'm sorry, I don't speak Spanish.",
+    "output": 0
+  },
+  {
+    "instruction": "Your voice matters! Make sure to go out and cast your vote today.",
+    "output": 0
+  },
+  {
+    "instruction": "I'm going to write a story about a girl named Emily.",
+    "output": 0
+  },
+  {
+    "instruction": "The main character is a man who is trying to find his true love.",
+    "output": 0
+  },
+  {
+    "instruction": "When the sun sets and night comes, I will be at home.",
+    "output": 0
+  },
+  {
+    "instruction": "I am not feeling well.",
+    "output": 0
+  }
+]

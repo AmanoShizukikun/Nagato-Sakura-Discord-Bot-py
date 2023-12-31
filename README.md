@@ -55,7 +55,7 @@ pip install youtube_dl
 ```shell
 "C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\youtube_dl\extractor\youtube.py"
 ```
-1. 修改youtube.py
+2. 修改youtube.py
 修改第1794行 :
 ```shell
 'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
@@ -64,4 +64,4 @@ pip install youtube_dl
 ```shell
 #'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
 ```
-1. 儲存youtube.py
+3. 儲存youtube.py

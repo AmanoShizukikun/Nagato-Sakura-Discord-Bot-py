@@ -51,8 +51,9 @@ pip install beautifulsoup4
 pip install --upgrade httpcore
 ```
 ### 環境變數
-- C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
-
+```shell
+C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
+```
 ### youtube_dl修復
 1. 尋找youtube-dl中的youtube.py
 ```shell

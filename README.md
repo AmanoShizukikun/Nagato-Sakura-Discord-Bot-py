@@ -45,7 +45,7 @@ TIM_嚮導小妖精 Discord.py 版本
 - NVIDIA cuDNN
 - 下載: https://developer.nvidia.com/cudnn
 - **FFMPEG**
-- 下載: https://ffmpeg.zeranoe.com/builds/
+- 下載: https://ffmpeg.org/download.html
 ```shell
 python3 -m pip install -U discord.py
 python3 -m pip install -U discord.py[voice]

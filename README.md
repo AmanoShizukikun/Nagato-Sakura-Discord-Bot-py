@@ -46,6 +46,9 @@ pip install googletrans==3.1.0a0
 pip install requests
 pip install openai
 pip install youtube_dl
+pip install Pillow
+pip install beautifulsoup4
+pip install --upgrade httpcore
 ```
 ### 環境變數
 - C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
@@ -55,8 +58,7 @@ pip install youtube_dl
 ```shell
 "C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\youtube_dl\extractor\youtube.py"
 ```
-2. 修改youtube.py
-修改第1794行 :
+2. 修改youtube.py 修改第1794行 :
 ```shell
 'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
 ```
@@ -65,3 +67,18 @@ pip install youtube_dl
 #'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
 ```
 3. 儲存youtube.py
+
+### Translate.py 修復(11月Google更新後的新錯誤)
+1. 尋找googletrans中的client.py
+```shell
+"C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\googletrans\client.py"
+```
+2. 修改client.py 修改第57行 :
+```shell
+proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,
+```
+改為
+```shell
+proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
+```
+3. 儲存client.py

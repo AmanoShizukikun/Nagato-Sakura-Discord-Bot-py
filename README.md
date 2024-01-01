@@ -1,6 +1,7 @@
 # Discord-Bot-Nagato-Sakura-py
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py?style=social)](https://github.com/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py)](https://github.com/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py/commits/main)
 
 長門櫻 Discord.py 版本
 

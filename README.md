@@ -56,9 +56,13 @@ pip install googletrans==3.1.0a0
 pip install requests
 pip install openai
 pip install youtube_dl
-pip install Pillow
+pip install Pillow==9.5.0
 pip install beautifulsoup4
 pip install --upgrade httpcore
+pip install moviepy
+pip install ffmpeg
+pip install qrcode
+pip install python-barcode
 ```
 ### 環境變數
 ```shell

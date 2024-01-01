@@ -2,7 +2,7 @@
 
 長門櫻 Discord.py 版本
 
-\[ 中文 | [English](README_en.md) | 日本語(README_jp.md) \]
+\[ 中文 | [English](README_en.md) | [日本語](README_jp.md) \]
 
 ## 公告
 

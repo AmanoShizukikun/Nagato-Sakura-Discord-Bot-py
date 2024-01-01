@@ -17,7 +17,7 @@ class GenerateCode(commands.Cog):
             os.makedirs(directory)
         return directory
     
-    @commands.command(aliases=["GBC"])
+    @commands.command(aliases=["GBC","generatebarcode","GENERATEBARCODE"])
     async def GenerateBarCode(self, ctx, number):
         try:
             directory = await self.create_directory()
@@ -30,7 +30,7 @@ class GenerateCode(commands.Cog):
             print(f"生成條碼時發生錯誤：{e}")
             await ctx.send("無法生成條碼請輸入12位數字")
 
-    @commands.command(aliases=["GQRC"])
+    @commands.command(aliases=["GQRC","generateqrcode","GENERATEQRCODE"])
     async def GenerateQRCode(self, ctx, *args):
         directory = await self.create_directory()
         output_path = f"{directory}QRCode.png"

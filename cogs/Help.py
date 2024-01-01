@@ -31,6 +31,8 @@ class Help(commands.Cog):
     help_embed.add_field(name="!Dice [骰子面數] [擲骰次數]",value="擲骰子",inline=False)
     help_embed.add_field(name="!Del [數字]",value="一次刪除大量訊息",inline=False)
     help_embed.add_field(name="!DM",value="邀請長門櫻私訊",inline=False)
+    help_embed.add_field(name="!GenerateBarCode [12位數字]",value="生成EAN13條碼",inline=False)
+    help_embed.add_field(name="!GenerateQRCode [內容] [數字]",value="生成QRCode",inline=False)
     help_embed.add_field(name="!Greeting [文字]",value="自製小型AI模型判斷文字是否為打招呼",inline=False)
     help_embed.add_field(name="!GuessingGameStart",value="開啟猜數字遊戲",inline=False)
     help_embed.add_field(name="!Guess [數字]",value="猜數字",inline=False)
@@ -46,6 +48,7 @@ class Help(commands.Cog):
     help_embed.add_field(name="!TranslateTo [語系] [翻譯內容]",value="將翻譯內容翻譯成所選語系",inline=False)
     help_embed.add_field(name="!TranslateHelp",value="顯示可翻譯語系",inline=False)
     help_embed.add_field(name="!Userinfo [用戶名稱]",value="顯示詳細用戶資訊",inline=False)
+    help_embed.add_field(name="!VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數]",value="將影片生成Gif",inline=False)
     help_embed.add_field(name="!Weather",value="顯示六都的天氣預報",inline=False)
     
     yes_button = Button(label="是", style=discord.ButtonStyle.blurple)

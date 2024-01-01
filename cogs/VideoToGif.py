@@ -13,7 +13,7 @@ class VideoToGif(commands.Cog):
             os.makedirs(directory)
         return directory
 
-    @commands.command()
+    @commands.command(aliases=["VTG","videotogif","VIDEOTOGIF"])
     async def VideoToGif(self, ctx, *args):
         if not ctx.message.attachments:
             await ctx.send("請上傳影片檔")

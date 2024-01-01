@@ -1,4 +1,4 @@
-#Discord-Bot-Nagato-Sakura-py
+# Discord-Bot-Nagato-Sakura-py
 
 Nagato Sakura Discord.py version
 

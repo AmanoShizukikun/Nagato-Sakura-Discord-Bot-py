@@ -23,12 +23,6 @@ class Greeting(commands.Cog):
                 vector[self.vocab.index(word)] = 1
         return torch.tensor(vector, dtype=torch.float, device=self.device)
 
-    def predict_greeting(self, text):
-        input_vector = self.text_to_vector(text)
-        output = self.model(input_vector)
-        prediction = output.item()
-        return prediction
-
     def load_model(self, model_path, vocab_path, config_path, device):
         with open(vocab_path, 'r') as json_file:
             vocab = json.load(json_file)
@@ -42,6 +36,12 @@ class Greeting(commands.Cog):
         model.eval()
 
         return model, vocab
+    
+    def predict_greeting(self, text):
+        input_vector = self.text_to_vector(text)
+        output = self.model(input_vector)
+        prediction = output.item()
+        return prediction
 
     @commands.command(aliases=["greet","greeting","GREETING","Greet"])
     async def Greeting(self, ctx, *, text=None):
@@ -69,7 +69,6 @@ class GreetingClassifier(nn.Module):
         x = self.fc2(x)
         x = self.sigmoid(x)
         return x
-
 
 async def setup(bot):
     await bot.add_cog(Greeting(bot))

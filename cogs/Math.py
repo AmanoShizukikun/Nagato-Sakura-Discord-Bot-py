@@ -19,7 +19,7 @@ class Math(commands.Cog):
   @commands.command(aliases=["MH","mathhelp","MATHHELP"])
   async def MathHelp(self,ctx):
     mathhelp_embed = discord.Embed(
-      title="TIM_嚮導小妖精 提供的計算服務喔~❤",
+      title="長門櫻 提供的計算服務喔~❤",
       description="關於計算的指令~❤(^^) ",
       color=discord.Color.random()
       )

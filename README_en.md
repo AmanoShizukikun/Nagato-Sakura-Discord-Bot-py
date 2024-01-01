@@ -2,7 +2,7 @@
 
 Nagato Sakura Discord.py version
 
-\[ [中文](README.md) | English \]
+\[ [中文](README.md) | English  | [日本語](README_jp.md) \]
 
 ## Recent changes
 ### 1.5.κ (January 1, 2024)

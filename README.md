@@ -3,9 +3,26 @@
 長門櫻 Discord.py 版本
 
 ## 近期變動
+### 1.5.κ (2024 年 1 月 1 日)
+![t2i](assets/1.5.κ.png)
+### 重要變更
+- TAG 長門櫻 並且附加檔案上去後，長門櫻會自動把檔案下載到運行伺服器上 (Beta)
+
+### 新增功能
+- !CheckSMS [文字] - 自製小型AI模型判斷簡訊類別 (模型版本 : Project SMS Model 50)
+- !GenerateBarCode [12位數字] - 生成EAN13條碼
+- !GenerateQRCode [內容] [數字] - 生成QRCode，數字決定QRCode造型可有可無
+- !GenerateQRCode [內容] [數字] [附加圖片] - 生成崁入圖片的QRCode
+- !VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif檔
+
+### 已知問題
+- !play [網址] - Youtube 複數影片清單無法播放
+- !play [網址] - Youtube 無法累加播放清單
+
+
 ### 1.5.ι (2023 年 12 月 22 日)
 ![t2i](assets/1.5.ι.png)
-### 重要公告
+### 重要變更
 - 首個對外公開的版本
 - 調整伺服器資料的儲存方式 (存放方式改為將資料存到server/伺服器ID/資料伺服器ID.json)
 - 重製等級系統，所有等級歸0，大幅降低每等所需經驗值 (原本6等級^4/2.5改為6等級^2/2.5)
@@ -16,14 +33,14 @@
 - !VoteResult [問題] - 顯示投票結果
 - !join - 機器人進入語音聊天室
 - !leave - 機器人離開語音聊天室 
-- !play [網址] - 播放音樂(目前支援以下平台:StreetVoice)
+- !play [網址] - 播放音樂(目前支援以下平台:StreetVoice，Youtube)
 - !GuessingGameStart - 開啟猜數字遊戲
 - !Guess [數字] - 猜數字
 - !Tarot - 抽塔羅牌
 - !PrimeNumber [整數] - 判斷是否為質數
 - !Greeting [文字] - 自製小型AI模型判斷文字是否為打招呼 (模型版本 : Project Hello Model 500)
 
-### 已知故障
+### 已知問題
 - !play [網址] - Youtube 複數影片清單無法播放
 - !play [網址] - Youtube 無法累加播放清單
 

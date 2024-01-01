@@ -2,6 +2,8 @@
 
 長門櫻 Discord.py 版本
 
+\[ [English](README_en.md) | 中文 \]
+
 ## 近期變動
 ### 1.5.κ (2024 年 1 月 1 日)
 ![t2i](assets/1.5.κ.png)

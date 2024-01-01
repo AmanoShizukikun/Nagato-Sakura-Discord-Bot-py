@@ -50,7 +50,6 @@ class CheckSMS(commands.Cog):
         probabilities = nn.functional.softmax(output, dim=-1)
         predicted_prob, predicted_class = torch.max(probabilities, dim=-1)
         return predicted_class.item(), predicted_prob.item()
-        
 
     @commands.command(aliases=["checksms","CHECKSMS","SMS"])
     async def CheckSMS(self, ctx, *, text=None):
@@ -61,7 +60,6 @@ class CheckSMS(commands.Cog):
         predicted_label = list(self.label_mapping.keys())[list(self.label_mapping.values()).index(predicted_class)]
         await ctx.send(f"長門櫻判斷 '{text}' 是 {predicted_label}，預測概率為: {predicted_prob}")
 
-# 定義神經網路模型
 class CheckSMSClassifier(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(CheckSMSClassifier, self).__init__()

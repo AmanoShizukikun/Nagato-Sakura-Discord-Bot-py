@@ -14,7 +14,6 @@ class Test(commands.Cog):
     else:
       self.view = View(timeout=None)
       
-      
     button = Button(label="Test", style=discord.ButtonStyle.blurple)
     button.callback = self.button_callback
     self.view.add_item(button)

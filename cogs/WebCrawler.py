@@ -11,15 +11,13 @@ class WebCrawler(commands.Cog):
   async def WebCrawler(self,ctx, url: str , output_type: str = "title"): 
         try:
             res = requests.get(url)
-            res.raise_for_status()  # 检查请求是否成功
+            res.raise_for_status()  
             html = res.content.decode()
             soup = BeautifulSoup(html, 'html.parser')
             
             if output_type == "title":
                 content = soup.title.string
             elif output_type == "text":
-                # 这里可以根据需要选择提取其他类型的信息
-                # 例如，提取正文文本
                 content = soup.get_text()
             else:
                 content = "不支持的輸出類別"

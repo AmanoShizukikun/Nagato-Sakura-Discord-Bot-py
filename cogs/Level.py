@@ -76,7 +76,6 @@ class Level(commands.Cog):
   async def Remove_error(self,ctx,error):
     if isinstance(error, commands.MissingRequiredArgument):
       await ctx.reply("噫~糟糕！出現了一個錯誤：「多於輸入」不開放查看別人的個人資料卡")      
-                
         
 async def setup(bot):
   await bot.add_cog(Level(bot))

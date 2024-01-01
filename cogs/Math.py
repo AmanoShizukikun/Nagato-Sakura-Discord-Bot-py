@@ -3,7 +3,6 @@ from discord.ext import commands
 from numpy import *
 import numexpr
 
-
 class Math(commands.Cog):
   def __init__(self,bot):
     self.bot = bot
@@ -39,8 +38,7 @@ class Math(commands.Cog):
     mathhelp_embed.add_field(name="complex(float, float)",value="由實部和虛部組成的複數",inline=False)
     mathhelp_embed.add_field(name="contains(np.str, np.str)",value="對於op1包含 的每個字符串返回 True op2",inline=False)
     await ctx.send(embed=mathhelp_embed)          
-        
-      
+             
   @Math.error
   async def Math_error(self,ctx,error):
     if isinstance(error, commands.MissingRequiredArgument):

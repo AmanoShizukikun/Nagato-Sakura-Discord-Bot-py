@@ -8,6 +8,22 @@
 Nagato Sakura Discord bot Python version
 
 ## Recent changes
+### 1.5.λ (January 3, 2024)
+![t2i](assets/preview/1.5.λ.png)
+
+### Major Changes
+- Upgraded AutoReply.py to AutoReply_v2.py, utilizing a smaller classification model for user responses, significantly enhancing reliability.
+- Added beta classification and introduced main_beta.py for a clearer differentiation between testing and regular functionalities.
+- Unified the format for plugins under 'cogs' and beta, making code modifications more comfortable.
+
+### New Features
+- !Version - Displays the current bot version.
+
+### Known Issues
+- !play [URL] - Unable to play multiple video playlists from YouTube.
+- !play [URL] - Unable to queue YouTube playlist items.
+- !Help - Inability to send out help messages due to excessive length.
+
 ### 1.5.κ (January 1, 2024)
 ![t2i](assets/1.5.κ.png)
 ### Important changes

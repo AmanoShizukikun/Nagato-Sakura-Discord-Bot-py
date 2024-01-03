@@ -61,4 +61,4 @@ async def load():
     print('------測試擴展加載完畢')
                 
 #運行機器人
-bot.run('MTE1MDQyNjc2MzgxMDMyNDU1Mg.GEVWZr.INEBQETjUSCn0_Nnnru_Sp-vNGUCsdAax8iMrE')
+bot.run('Your bot token')

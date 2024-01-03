@@ -1,0 +1,11 @@
+{
+    "_name_or_path": "Project AutoReply",
+    "model_type": "Project AutoReply",
+    "architectures": [
+        "Project AutoReply Model"
+    ],
+    "input_size": 177,
+    "hidden_size": 4096,
+    "output_size": 78,
+    "learning_rate": 0.005
+}

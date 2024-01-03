@@ -25,7 +25,7 @@ Nagato Sakura Discord bot Python version
 - !Help - Inability to send out help messages due to excessive length.
 
 ### 1.5.κ (January 1, 2024)
-![t2i](assets/1.5.κ.png)
+![t2i](assets/preview/1.5.κ.png)
 ### Important changes
 - TAG Nagato Sakura and after attaching the file, Nagato Sakura will automatically download the file to the running server (Beta)
 
@@ -41,7 +41,7 @@ Nagato Sakura Discord bot Python version
 - !play [url] - Youtube cannot accumulate playlists
 
 - ### 1.5.ι (December 22, 2023)
-![t2i](assets/1.5.ι.png)
+![t2i](assets/preview/1.5.ι.png)
 ### Important changes
 - The first public version
 - Adjust the storage method of server data (the storage method is changed to save data to server/server ID/data server ID.json)

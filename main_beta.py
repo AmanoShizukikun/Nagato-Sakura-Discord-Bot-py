@@ -51,6 +51,14 @@ async def load():
             except Exception as e:
                 print(f"加載擴展失敗 {filename[:-3]}: {e}")
     print('------一般擴展加載完畢')
+    
+    for filename in os.listdir("./beta"):
+        if filename.endswith(".py"):
+            try:
+                await bot.load_extension(f"beta.{filename[:-3]}")
+            except Exception as e:
+                print(f"加載擴展失敗 {filename[:-3]}: {e}")
+    print('------測試擴展加載完畢')
                 
 #運行機器人
 bot.run('MTE1MDQyNjc2MzgxMDMyNDU1Mg.GEVWZr.INEBQETjUSCn0_Nnnru_Sp-vNGUCsdAax8iMrE')

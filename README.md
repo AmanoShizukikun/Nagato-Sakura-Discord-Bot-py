@@ -36,6 +36,7 @@
 - !GenerateQRCode [內容] [數字] - 生成QRCode，數字決定QRCode造型可有可無
 - !GenerateQRCode [內容] [數字] [附加圖片] - 生成崁入圖片的QRCode
 - !VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif檔
+- !PingIP [網址] - 查詢網站 IP
 
 ### 已知問題
 - !play [網址] - Youtube 複數影片清單無法播放

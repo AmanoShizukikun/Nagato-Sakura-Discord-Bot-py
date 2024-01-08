@@ -80,6 +80,9 @@
 - 下載: https://www.python.org/downloads/windows/
 - **PyTorch**
 - 下載: https://pytorch.org/
+ ```shell
+- pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
 - NVIDIA GPU驅動程式
 - 下載: https://www.nvidia.com/zh-tw/geforce/drivers/
 - NVIDIA CUDA Toolkit

@@ -111,9 +111,15 @@ C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
 ```
 ### youtube_dl修復
 1. 尋找youtube-dl中的youtube.py
+Microsoft Store 版本路徑
 ```shell
-"C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\youtube_dl\extractor\youtube.py"
+"C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.<Python版本>\LocalCache\local-packages\Python310\site-packages\youtube_dl\extractor\youtube.py"
 ```
+一般版本路徑
+```shell
+"C:\Users\使用者名稱\AppData\Local\Programs\Python\<Python版本>\Lib\site-packages\youtube_dl\extractor\youtube.py"
+```
+
 2. 修改youtube.py 修改第1794行 :
 ```shell
 'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
@@ -126,9 +132,15 @@ C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
 
 ### Translate.py 修復(11月Google更新後的新錯誤)
 1. 尋找googletrans中的client.py
+Microsoft Store 版本路徑
 ```shell
-"C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\googletrans\client.py"
+"C:\Users\使用者名稱\AppData\Local\Packages\PythonSoftwareFoundation.<Python版本>\LocalCache\local-packages\Python310\site-packages\googletrans\client.py"
 ```
+一般版本路徑
+```shell
+"C:\Users\使用者名稱\AppData\Local\Programs\Python\<Python版本>\Lib\site-packages\googletrans\client.py"
+```
+
 2. 修改client.py 修改第57行 :
 ```shell
 proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,

@@ -89,8 +89,8 @@
 - **FFMPEG**
 - 下載: https://ffmpeg.org/download.html
 ```shell
-python3 -m pip install -U discord.py
-python3 -m pip install -U discord.py[voice]
+py -3 -m pip install -U discord.py
+py -3 -m pip install -U discord.py[voice]
 pip install numpy
 pip install numexpr
 pip install googletrans==3.1.0a0

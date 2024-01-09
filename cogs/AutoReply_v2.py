@@ -44,7 +44,7 @@ class AutoReply_v2(commands.Cog):
 
         return model, vocab, label_mapping
     
-    def predict_SMS(self, text):
+    def predict_AutoReply(self, text):
         input_vector = self.text_to_vector(text)
         output = self.model(input_vector)
         probabilities = nn.functional.softmax(output, dim=-1)
@@ -55,19 +55,18 @@ class AutoReply_v2(commands.Cog):
     async def on_message(self, message):
         if message.author == self.bot.user:
             return
-        mentioned = self.bot.user.mentioned_in(message)  # 檢查是否有tag機器人
-        has_content = bool(message.content.strip())  # 檢查訊息是否有內容
-
-        if mentioned and has_content:
+        mentioned = self.bot.user.mentioned_in(message) 
+        has_content = bool(message.content.strip()) 
+        if mentioned and has_content and len(message.content) > len(self.bot.user.mention):
             text = message.content
-            predicted_class, predicted_prob = self.predict_SMS(text)
+            predicted_class, predicted_prob = self.predict_AutoReply(text)
             predicted_label = list(self.label_mapping.keys())[list(self.label_mapping.values()).index(predicted_class)]
             
             threshold = 0.03
             if predicted_prob > threshold:
                 await message.channel.send(f"{predicted_label}")
             else:
-                await message.channel.send(f"抱歉啊主人~長門櫻無法理解主人在講甚麼")
+                await message.channel.send(f"抱歉啊主人~長門櫻無法理解主人在講甚麼。錯誤代碼: ({predicted_prob})")
                 
 class AutoReplyClassifier(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):

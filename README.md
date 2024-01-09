@@ -10,12 +10,11 @@
 ## 公告
 
 ## 近期變動
-### 1.5.λ (2024 年 1 月 3 日)
-![t2i](assets/preview/1.5.λ.png)
+### 1.5.μ (2024 年 1 月 3 日)
+![t2i](assets/preview/1.5.μ.png)
 ### 重要變更
-- AutoReply.py 升級為 AutoReply_v2.py 改為使用小型分類模型來回覆使用者，大幅提升可靠度
-- 新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能
-- 統一外掛 cogs 及 beta 的格式，更改代碼更舒服了
+- 刪除了Music.py改為Youtube.py(不再支持streetvoice)，修正了Youtube 複數影片清單無法播放及Youtube 無法累加播放清單的問題
+- 修正了並且改善了!Help - 幫助訊息過長無法傳出的問題
 
 ### 新增功能
 - !Version - 顯示當前機器人版本
@@ -24,6 +23,20 @@
 - !play [網址] - Youtube 複數影片清單無法播放
 - !play [網址] - Youtube 無法累加播放清單
 - !Help - 幫助訊息過長無法傳出
+
+### 1.5.λ (2024 年 1 月 3 日)
+![t2i](assets/preview/1.5.λ.png)
+### 重要變更
+- AutoReply.py 升級為 AutoReply_v2.py 改為使用小型分類模型來回覆使用者，大幅提升可靠度
+- 新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能
+- 統一外掛 cogs 及 beta 的格式，更改代碼更舒服了
+
+### 新增功能
+- !List - 長門櫻顯示撥放清單
+- !Skip [數字] - 跳過 [數字] 首歌
+
+### 已知問題
+- N/A 
 
 ### 1.5.κ (2024 年 1 月 1 日)
 ![t2i](assets/preview/1.5.κ.png)

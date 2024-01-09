@@ -73,7 +73,7 @@ class Youtube(commands.Cog):
         if ctx.voice_client and ctx.voice_client.is_playing():
             while ctx.voice_client.is_playing():
                 await asyncio.sleep(1)
-        if self.queue:
+        if self.queue and ctx.voice_client:
             song_info = self.queue.pop(0)
             source = discord.FFmpegPCMAudio(song_info['url'], **FFMPEG_OPTS)
             ctx.voice_client.play(source, after=lambda e: self.bot.loop.create_task(self.play_next(ctx)))        

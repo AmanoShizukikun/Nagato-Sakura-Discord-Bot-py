@@ -141,6 +141,7 @@ pip install moviepy
 pip install ffmpeg
 pip install qrcode
 pip install python-barcode
+pip install matplotlib
 ```
 ### 環境變數
 ```shell

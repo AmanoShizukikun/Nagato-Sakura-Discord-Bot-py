@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from PIL import Image as PILImage, ImageEnhance, ImageFilter
+from PIL import Image as PILImage, ImageEnhance, ImageFilter, ImageDraw, ImageFont
 import io
 
 class Image(commands.Cog):
@@ -139,6 +139,33 @@ class Image(commands.Cog):
         except commands.BadArgument:
             await ctx.send("主人~使用!Color指令時調整飽和度的正確方法為!Color [0~100的整數]。")
 
+    @commands.command(aliases=['icon', 'ICON'])
+    async def Icon(self, ctx, opacity: int = 70):
+        if not ctx.message.attachments:
+            await ctx.send("主人~使用!Icon指令時請記得附上圖片")
+            return
+
+        try:
+            attachment = ctx.message.attachments[0]
+            image_bytes = await attachment.read()
+            img = PILImage.open(io.BytesIO(image_bytes))
+            opacity = max(0, min(100, opacity))
+            watermark = PILImage.open("assets/icon/1.5.μ.png").convert("RGBA")
+            watermark = watermark.resize((128, 128))
+            watermark.putalpha(int(255 * (opacity / 100.0)))
+            position = (img.width - watermark.width, img.height - watermark.height)
+            img.paste(watermark, position, watermark)
+            output_bytes = io.BytesIO()
+            img.save(output_bytes, format='PNG')
+            output_bytes.seek(0)
+            await ctx.send(f"長門櫻已將圖片加上浮水印（透明度：{opacity}）")
+            await ctx.send(file=discord.File(output_bytes, filename='watermarked_image.png'))
+
+        except commands.BadArgument:
+            await ctx.send("主人~使用!Icon指令時調整透明度的正確方法為!Icon [0~100的整數]。")
+
+
+
     @Sharpen.error
     async def sharpen_error(self, ctx, error):
         if isinstance(error, commands.BadArgument):
@@ -168,6 +195,11 @@ class Image(commands.Cog):
     async def color_error(self, ctx, error):
         if isinstance(error, commands.BadArgument):
             await ctx.send("主人~使用!Color指令時調整飽和度的正確方法為!Color [0~100的整數]。")
+
+    @Icon.error
+    async def icon_error(self, ctx, error):
+        if isinstance(error, commands.BadArgument):
+            await ctx.send("主人~使用!Icon指令時調整透明度的正確方法為!Icon [1~100的整數]。")
 
 async def setup(bot):
     await bot.add_cog(Image(bot))

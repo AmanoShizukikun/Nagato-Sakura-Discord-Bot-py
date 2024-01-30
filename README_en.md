@@ -8,10 +8,31 @@
 Nagato Sakura Discord bot Python version
 
 ## Recent changes
+### 1.5.ν (January 30, 2024)
+![t2i](assets/preview/1.5.ν.png)
+### Important Changes
+- Added Audio.py and Image.py
+
+### New Features
+- !AudioInfo with attached audio file - View music information and display waveform.
+- !AudioReverse with attached audio file - Reverse the audio file.
+- !AudioSpeed [speed] with attached audio file - Adjust the speed of the audio.
+- !AudioBit [bits] with attached audio file - Adjust the bit depth of the audio.
+- !Sharpen [1~100 integer] with attached image - Adjust the sharpness level.
+- !Blur [1~100 integer] with attached image - Adjust the blur level.
+- !Mosaic [integer] with attached image - Apply a mosaic effect.
+- !Brightness [0~100 integer] with attached image - Adjust the brightness.
+- !Contrast [0~100 integer] with attached image - Adjust the contrast.
+- !Color [0~100 integer] with attached image - Adjust the saturation.
+- !Icon [opacity (0~100 integer)] with attached image - Add a watermark.
+
+### Known Issues
+- N/A
+  
 ### 1.5.λ (January 3, 2024)
 ![t2i](assets/preview/1.5.λ.png)
 
-### Major Changes
+### Important Changes
 - Upgraded AutoReply.py to AutoReply_v2.py, utilizing a smaller classification model for user responses, significantly enhancing reliability.
 - Added beta classification and introduced main_beta.py for a clearer differentiation between testing and regular functionalities.
 - Unified the format for plugins under 'cogs' and beta, making code modifications more comfortable.
@@ -26,28 +47,28 @@ Nagato Sakura Discord bot Python version
 
 ### 1.5.κ (January 1, 2024)
 ![t2i](assets/preview/1.5.κ.png)
-### Important changes
+### Important Changes
 - TAG Nagato Sakura and after attaching the file, Nagato Sakura will automatically download the file to the running server (Beta)
 
-### new features
+### New Features
 - !CheckSMS [Text] - Self-made small AI model to determine the message category (Model version: Project SMS Model 50)
 - !GenerateBarCode [12 digits] - Generate EAN13 barcode
 - !GenerateQRCode [content] [number] - Generate QRCode, the number determines whether the QRCode shape is optional
 - !GenerateQRCode [Content] [Number] [Additional Image] - Generate QRCode embedded in the image
 - !VideoToGif [Attach video file] [Width] [Height] [Start time] [End time] [Frame number] - Generate video into Gif file
 
-### Known issues
+### Known Issues
 - !play [URL] - Youtube multiple video list cannot be played
 - !play [url] - Youtube cannot accumulate playlists
 
 - ### 1.5.ι (December 22, 2023)
 ![t2i](assets/preview/1.5.ι.png)
-### Important changes
+### Important Changes
 - The first public version
 - Adjust the storage method of server data (the storage method is changed to save data to server/server ID/data server ID.json)
 - Reworked the level system, all levels are reset to 0, and the experience points required for each level are greatly reduced (original level 6^4/2.5 is changed to level 6^2/2.5)
 
-### new features
+### New Features
 - !VoteCreate [Question] [Option 1] [Option 2] [Option N] - Create a vote
 - !Vote [question] [option name] - Vote
 - !VoteResult [question] - displays the vote results
@@ -60,7 +81,7 @@ Nagato Sakura Discord bot Python version
 - !PrimeNumber [integer] - Determine whether it is a prime number
 - !Greeting [Text] - Self-made small AI model to determine whether the text is a greeting (Model version: Project Hello Model 500)
 
-### Known issues
+### Known Issues
 - !play [URL] - Youtube multiple video list cannot be played
 - !play [url] - Youtube cannot accumulate playlists
 

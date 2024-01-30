@@ -75,7 +75,7 @@ class Audio(commands.Cog):
             speeded_output_file = discord.File(speeded_output_path)
             await ctx.send(f"長門櫻已將聲音撥放速度調整為 {speed} 倍，這是調整速度後的聲音檔：", file=speeded_output_file)
 
-    @commands.command()
+    @commands.command(aliases=['audiobit', 'AUDIOBIT'])
     async def AudioBit(self, ctx, bit: int):
         if ctx.message.attachments and ctx.message.attachments[0].filename.endswith(('.mp3', '.wav', '.ogg', '.m4a')):
             attachment = ctx.message.attachments[0]

@@ -150,7 +150,7 @@ class Image(commands.Cog):
             image_bytes = await attachment.read()
             img = PILImage.open(io.BytesIO(image_bytes))
             opacity = max(0, min(100, opacity))
-            watermark = PILImage.open("assets/icon/1.5.μ.png").convert("RGBA")
+            watermark = PILImage.open("assets/icon/1.5.ν.png").convert("RGBA")
             watermark = watermark.resize((128, 128))
             watermark.putalpha(int(255 * (opacity / 100.0)))
             position = (img.width - watermark.width, img.height - watermark.height)
@@ -163,8 +163,6 @@ class Image(commands.Cog):
 
         except commands.BadArgument:
             await ctx.send("主人~使用!Icon指令時調整透明度的正確方法為!Icon [0~100的整數]。")
-
-
 
     @Sharpen.error
     async def sharpen_error(self, ctx, error):

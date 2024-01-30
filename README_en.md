@@ -28,6 +28,18 @@ Nagato Sakura Discord bot Python version
 
 ### Known Issues
 - N/A
+
+### 1.5.μ (January 9, 2024)
+![t2i](assets/preview/1.5.μ.png)
+### Important Changes
+- Removed Music.py and replaced it with Youtube.py (no longer supports streetvoice). Fixed issues with playing multiple videos in a Youtube playlist and the inability to accumulate a Youtube playlist.
+- Fixed and improved the issue where the !Help command could not send due to excessively long help message.
+
+### New Features
+- !List - Display the current playlist with Haruhi Suzumiya.
+- !Skip [number] - Skip [number] songs.
+### Known Issues
+- N/A 
   
 ### 1.5.λ (January 3, 2024)
 ![t2i](assets/preview/1.5.λ.png)

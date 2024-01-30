@@ -133,6 +133,7 @@ pip install moviepy
 pip install ffmpeg
 pip install qrcode
 pip install python-barcode
+pip install matplotlib
 ```
 ### Environment variables
 ```shell

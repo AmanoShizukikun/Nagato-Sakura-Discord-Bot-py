@@ -5,7 +5,7 @@
 
 \[ 中文 | [English](README_en.md) | [日本語](README_jp.md) \]
 
-長門櫻 Discord 機器人 Python 版本
+Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是以 Python 撰寫的多功能 Discord 機器人
 
 ## 公告
 

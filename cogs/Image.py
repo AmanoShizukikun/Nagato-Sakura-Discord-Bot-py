@@ -2,10 +2,28 @@ import discord
 from discord.ext import commands
 from PIL import Image as PILImage, ImageEnhance, ImageFilter, ImageDraw, ImageFont
 import io
+import dlib
+import os
+import numpy as np
+import cv2
 
 class Image(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        self.line_width = 6
+        shape_predictor_path = os.path.join("models", "Image", "shape_predictor_68_face_landmarks.dat")
+        eye_cascade_path = os.path.join("models", "Image", "haarcascade_eye.xml")
+        mouth_cascade_path = os.path.join("models", "Image", "haarcascade_mcs_mouth.xml")
+        nose_cascade_path = os.path.join("models", "Image", "haarcascade_mcs_nose.xml")
+        for file_path in [shape_predictor_path, eye_cascade_path, mouth_cascade_path, nose_cascade_path]:
+            if not os.path.isfile(file_path):
+                raise FileNotFoundError(f"The file {file_path} was not found.")
+
+        self.detector = dlib.get_frontal_face_detector()
+        self.predictor = dlib.shape_predictor(shape_predictor_path)
+        self.eye_cascade = cv2.CascadeClassifier(eye_cascade_path)
+        self.mouth_cascade = cv2.CascadeClassifier(mouth_cascade_path)
+        self.nose_cascade = cv2.CascadeClassifier(nose_cascade_path)
 
     @commands.command(aliases=['sharpen', 'SHARPEN'])
     async def Sharpen(self, ctx, strength: int = 25):
@@ -163,6 +181,97 @@ class Image(commands.Cog):
 
         except commands.BadArgument:
             await ctx.send("主人~使用!Icon指令時調整透明度的正確方法為!Icon [0~100的整數]。")
+            
+    @commands.command(aliases=['facialfeaturesdetection', 'FACIALFEATURESDETECTION'])
+    async def FacialFeaturesDetection(self, ctx, line_width: int = None):
+        if not ctx.message.attachments:
+            await ctx.send("主人~使用!FacialFeaturesDetection指令時請記得附上圖片")
+            return
+
+        try:
+            attachment = ctx.message.attachments[0]
+            image_bytes = await attachment.read()
+            img = PILImage.open(io.BytesIO(image_bytes))
+            img_np = np.array(img)
+            gray = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
+            faces = self.detector(gray)
+            if len(faces) > 0:
+                landmarks = self.predictor(gray, faces[0])
+                draw = ImageDraw.Draw(img)
+                line_width = line_width or self.line_width
+                for i in range(36, 48):  # 36-47 is for the mouth
+                    draw.line([tuple([landmarks.part(i).x, landmarks.part(i).y]), 
+                               tuple([landmarks.part((i + 1) % 48).x, landmarks.part((i + 1) % 48).y])], 
+                              fill=(255, 0, 0), width=line_width)
+
+                for i in range(17, 27):  # 17-26 is for the nose
+                    draw.line([tuple([landmarks.part(i).x, landmarks.part(i).y]), 
+                               tuple([landmarks.part((i + 1) % 27).x, landmarks.part((i + 1) % 27).y])], 
+                              fill=(0, 255, 0), width=line_width)
+
+                for i in range(42, 60):  # 42-59 is for the eyes
+                    draw.line([tuple([landmarks.part(i).x, landmarks.part(i).y]), 
+                               tuple([landmarks.part((i + 1) % 60).x, landmarks.part((i + 1) % 60).y])], 
+                              fill=(0, 0, 255), width=line_width)
+
+                output_bytes = io.BytesIO()
+                img.save(output_bytes, format='PNG')
+                output_bytes.seek(0)
+
+                await ctx.send("長門櫻已完成五官偵測並標記")
+                await ctx.send(file=discord.File(output_bytes, filename='facial_features_detection.png'))
+            else:
+                await ctx.send("主人~找不到圖片中的臉部")
+
+        except Exception as e:
+            print(e)
+            await ctx.send("主人~發生了一點錯誤，請稍後再試。")
+
+    @commands.command(aliases=['facialfeaturesdetectmultiscale', 'FACIALFEATURESDETECTMULTISCALE'])
+    async def FacialFeaturesDetectMultiScale(self, ctx, line_width: int = None):
+        if not ctx.message.attachments:
+            await ctx.send("主人~使用!FacialFeaturesDetectMultiScale指令時請記得附上圖片")
+            return
+
+        try:
+            attachment = ctx.message.attachments[0]
+            image_bytes = await attachment.read()
+            img = PILImage.open(io.BytesIO(image_bytes))
+            img_np = np.array(img)
+            gray = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
+            eyes = self.eye_cascade.detectMultiScale(gray)
+            for (x, y, w, h) in eyes:
+                cv2.rectangle(img_np, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
+            mouths = self.mouth_cascade.detectMultiScale(gray)
+            for (x, y, w, h) in mouths:
+                cv2.rectangle(img_np, (x, y), (x+w, y+h), (0, 0, 255), 2)
+
+            noses = self.nose_cascade.detectMultiScale(gray)
+            for (x, y, w, h) in noses:
+                cv2.rectangle(img_np, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
+            img_with_boxes = PILImage.fromarray(img_np)
+            line_width = line_width or self.line_width
+            draw = ImageDraw.Draw(img_with_boxes)
+            for (x, y, w, h) in eyes:
+                draw.rectangle([x, y, x+w, y+h], outline=(0, 255, 0), width=line_width)
+
+            for (x, y, w, h) in mouths:
+                draw.rectangle([x, y, x+w, y+h], outline=(0, 0, 255), width=line_width)
+
+            for (x, y, w, h) in noses:
+                draw.rectangle([x, y, x+w, y+h], outline=(255, 0, 0), width=line_width)
+
+            output_bytes = io.BytesIO()
+            img_with_boxes.save(output_bytes, format='PNG')
+            output_bytes.seek(0)
+            await ctx.send("長門櫻已完成多尺度五官偵測並標記(眼睛綠色方框、嘴巴紅色方框、鼻子藍色方框)")
+            await ctx.send(file=discord.File(output_bytes, filename='facial_features_detect_multiscale.png'))
+
+        except Exception as e:
+            print(e)
+            await ctx.send("主人~發生了一點錯誤，請稍後再試。")
 
     @Sharpen.error
     async def sharpen_error(self, ctx, error):
@@ -198,6 +307,16 @@ class Image(commands.Cog):
     async def icon_error(self, ctx, error):
         if isinstance(error, commands.BadArgument):
             await ctx.send("主人~使用!Icon指令時調整透明度的正確方法為!Icon [1~100的整數]。")
+    
+    @FacialFeaturesDetection.error
+    async def facial_features_detection_error(self, ctx, error):
+        if isinstance(error, commands.BadArgument):
+            await ctx.send("主人~使用!FacialFeaturesDetection指令時請記得附上圖片。")
+            
+    @FacialFeaturesDetectMultiScale.error
+    async def facial_features_detect_multiscale_error(self, ctx, error):
+        if isinstance(error, commands.BadArgument):
+            await ctx.send("主人~使用!FacialFeaturesDetectMultiScale指令時請記得附上圖片。")
 
 async def setup(bot):
     await bot.add_cog(Image(bot))

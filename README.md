@@ -21,7 +21,7 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 - !FestivalEvent - 當特殊的日子來臨之時會有彩蛋
 
 ### 已知問題
-- N/A
+- !Tarot - 無法產生正確圖片及正逆為牌意
 
 ### 1.5.ν (2024 年 1 月 30 日)
 ![t2i](assets/preview/1.5.ν.png)

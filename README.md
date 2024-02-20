@@ -157,6 +157,8 @@ pip install ffmpeg
 pip install qrcode
 pip install python-barcode
 pip install matplotlib
+pip install dlib
+pip install opencv-python
 ```
 ### 環境變數
 ```shell

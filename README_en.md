@@ -2,6 +2,7 @@
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py?style=social)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/commits/main)
+[![GitHub release](https://img.shields.io/github/v/release/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/releases)
 
 \[ [中文](README.md) | English  | [日本語](README_jp.md) \]
 
@@ -141,6 +142,8 @@ pip install ffmpeg
 pip install qrcode
 pip install python-barcode
 pip install matplotlib
+pip install dlib
+pip install opencv-python
 ```
 ### Environment variables
 ```shell

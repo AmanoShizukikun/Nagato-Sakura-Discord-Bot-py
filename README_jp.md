@@ -2,6 +2,7 @@
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py?style=social)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/commits/main)
+[![GitHub release](https://img.shields.io/github/v/release/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/releases)
 
 \[ [中文](README.md) | [English](README_en.md) | 日本語 \]
 
@@ -127,6 +128,7 @@ Nagato-Sakura-Discord-Bot-py は「長門桜計画」の一部で、Pythonで書
   - ダウンロード: [cuDNN](https://developer.nvidia.com/cudnn)
 - **FFMPEG**
   - ダウンロード: [FFMPEG](https://ffmpeg.org/download.html)
+  
 ```shell
 python3 -m pip install -U discord.py
 python3 -m pip install -U discord.py[voice]
@@ -144,8 +146,9 @@ pip install ffmpeg
 pip install qrcode
 pip install python-barcode
 pip install matplotlib
+pip install dlib
+pip install opencv-python
 ```
-
 
 ### 環境変数
 ```shell

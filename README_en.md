@@ -125,8 +125,8 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 - **FFMPEG**
 - Download: https://ffmpeg.org/download.html
 ```shell
-python3 -m pip install -U discord.py
-python3 -m pip install -U discord.py[voice]
+py -3 -m pip install -U discord.py
+py -3 -m pip install -U discord.py[voice]
 pip install numpy
 pip install numexpr
 pip install googletrans==3.1.0a0
@@ -140,6 +140,7 @@ pip install moviepy
 pip install ffmpeg
 pip install qrcode
 pip install python-barcode
+pip install matplotlib
 ```
 ### Environment variables
 ```shell

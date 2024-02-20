@@ -1,57 +1,67 @@
-# Nagato-Sakura-Discord-Bot-py
+# Discord-Bot-Nagato-Sakura-py
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py?style=social)](https://github.com/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py)](https://github.com/AmanoShizukikun/Discord-Bot-Nagato-Sakura-py/commits/main)
+[![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py?style=social)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/commits/main)
 
 \[ [中文](README.md) | English  | [日本語](README_jp.md) \]
 
-Nagato Sakura Discord bot Python version
+## Introduction
+Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Project," a multifunctional Discord bot written in Python.
 
-## Recent changes
+
+## Announcements
+
+
+## Recent Changes
+### 1.6.0 (February 17, 2024)
+![t2i](assets/preview/1.6.0.png)
+#### Important Changes
+- Added `/` commands to `DM.py` and `Tarot.py`, improving the intuitiveness of command invocation.
+- Enhanced `main_beta.py` with functionalities such as loading command program files, unloading command files, reloading program files, and loading slash commands.
+- Optimized code in certain areas to improve efficiency.
+#### New Features
+- !FestivalEvent - Easter eggs for special occasions
+#### Known Issues
+- !Tarot - Unable to generate correct images and reversed card meanings
+
 ### 1.5.ν (January 30, 2024)
 ![t2i](assets/preview/1.5.ν.png)
 ### Important Changes
 - Added Audio.py and Image.py
-
 ### New Features
-- !AudioInfo with attached audio file - View music information and display waveform.
-- !AudioReverse with attached audio file - Reverse the audio file.
-- !AudioSpeed [speed] with attached audio file - Adjust the speed of the audio.
-- !AudioBit [bits] with attached audio file - Adjust the bit depth of the audio.
-- !Sharpen [1~100 integer] with attached image - Adjust the sharpness level.
-- !Blur [1~100 integer] with attached image - Adjust the blur level.
-- !Mosaic [integer] with attached image - Apply a mosaic effect.
-- !Brightness [0~100 integer] with attached image - Adjust the brightness.
-- !Contrast [0~100 integer] with attached image - Adjust the contrast.
-- !Color [0~100 integer] with attached image - Adjust the saturation.
-- !Icon [opacity (0~100 integer)] with attached image - Add a watermark.
-
+- !AudioInfo [sound file] - View music information and display waveform
+- !AudioReverse [sound file] - Reverse sound file
+- !AudioSpeed [speed] [sound file] - Adjust sound speed
+- !AudioBit [bitrate] [sound file] - Adjust sound bitrate
+- !Sharpen [1~100 integer] [image] - Adjust sharpness
+- !Blur [1~100 integer] [image] - Adjust blur
+- !Mosaic [integer] [image] - Apply mosaic effect
+- !Brightness [0~100 integer] [image] - Adjust brightness
+- !Contrast [0~100 integer] [image] - Adjust contrast
+- !Color [0~100 integer] [image] - Adjust saturation
+- !Icon [transparency (0~100 integer)] [image] - Add watermark
 ### Known Issues
 - N/A
 
 ### 1.5.μ (January 9, 2024)
 ![t2i](assets/preview/1.5.μ.png)
 ### Important Changes
-- Removed Music.py and replaced it with Youtube.py (no longer supports streetvoice). Fixed issues with playing multiple videos in a Youtube playlist and the inability to accumulate a Youtube playlist.
-- Fixed and improved the issue where the !Help command could not send due to excessively long help message.
-
+- Music.py has been replaced with Youtube.py (no longer supports StreetVoice), fixing issues with playing multiple YouTube video playlists and adding playlists
+- Improved and fixed the issue where !Help message was too long to send
 ### New Features
-- !List - Display the current playlist with Haruhi Suzumiya.
-- !Skip [number] - Skip [number] songs.
+- !List - Display Nagato-Sakura's playlist
+- !Skip [number] - Skip [number] songs
 ### Known Issues
-- N/A 
-  
+- N/A
+
 ### 1.5.λ (January 3, 2024)
 ![t2i](assets/preview/1.5.λ.png)
-
 ### Important Changes
 - Upgraded AutoReply.py to AutoReply_v2.py, utilizing a smaller classification model for user responses, significantly enhancing reliability.
 - Added beta classification and introduced main_beta.py for a clearer differentiation between testing and regular functionalities.
 - Unified the format for plugins under 'cogs' and beta, making code modifications more comfortable.
-
 ### New Features
 - !Version - Displays the current bot version.
-
 ### Known Issues
 - !play [URL] - Unable to play multiple video playlists from YouTube.
 - !play [URL] - Unable to queue YouTube playlist items.
@@ -61,15 +71,13 @@ Nagato Sakura Discord bot Python version
 ![t2i](assets/preview/1.5.κ.png)
 ### Important Changes
 - TAG Nagato Sakura and after attaching the file, Nagato Sakura will automatically download the file to the running server (Beta)
-
 ### New Features
 - !CheckSMS [Text] - Self-made small AI model to determine the message category (Model version: Project SMS Model 50)
 - !GenerateBarCode [12 digits] - Generate EAN13 barcode
 - !GenerateQRCode [content] [number] - Generate QRCode, the number determines whether the QRCode shape is optional
 - !GenerateQRCode [Content] [Number] [Additional Image] - Generate QRCode embedded in the image
 - !VideoToGif [Attach video file] [Width] [Height] [Start time] [End time] [Frame number] - Generate video into Gif file
-
-### Known Issues
+### Known issues
 - !play [URL] - Youtube multiple video list cannot be played
 - !play [url] - Youtube cannot accumulate playlists
 
@@ -79,7 +87,6 @@ Nagato Sakura Discord bot Python version
 - The first public version
 - Adjust the storage method of server data (the storage method is changed to save data to server/server ID/data server ID.json)
 - Reworked the level system, all levels are reset to 0, and the experience points required for each level are greatly reduced (original level 6^4/2.5 is changed to level 6^2/2.5)
-
 ### New Features
 - !VoteCreate [Question] [Option 1] [Option 2] [Option N] - Create a vote
 - !Vote [question] [option name] - Vote
@@ -92,10 +99,10 @@ Nagato Sakura Discord bot Python version
 - !Tarot - draw tarot cards
 - !PrimeNumber [integer] - Determine whether it is a prime number
 - !Greeting [Text] - Self-made small AI model to determine whether the text is a greeting (Model version: Project Hello Model 500)
-
-### Known Issues
+### Known issues
 - !play [URL] - Youtube multiple video list cannot be played
 - !play [url] - Youtube cannot accumulate playlists
+
 
 ## Quick start
   **Bold** are mandatory.
@@ -133,7 +140,6 @@ pip install moviepy
 pip install ffmpeg
 pip install qrcode
 pip install python-barcode
-pip install matplotlib
 ```
 ### Environment variables
 ```shell

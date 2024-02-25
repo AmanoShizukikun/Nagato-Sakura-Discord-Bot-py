@@ -1,4 +1,5 @@
 import discord
+from discord import app_commands
 from discord.ext import commands, tasks 
 import json
 import os
@@ -62,7 +63,7 @@ class Level(commands.Cog):
             user = ctx.author
         elif user is not None:
             user = user
-        roles = ', '.join([role.name for role in user.roles[1:]])  # 跳过 @everyone
+        roles = ', '.join([role.name for role in user.roles[1:]])  
         Lv_card = discord.Embed(title=f"{user.name}的個人資料卡",color=discord.Color.random()) 
         Lv_card.set_thumbnail(url=user.avatar.url)
         Lv_card.add_field(name=f"稱號: {roles}", value="", inline=False)
@@ -76,7 +77,21 @@ class Level(commands.Cog):
     async def Remove_error(self,ctx,error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.reply("噫~糟糕！出現了一個錯誤：「多於輸入」不開放查看別人的個人資料卡")      
+            
+    @app_commands.command(name="level", description="!Level [用戶] - 顯示[用戶]資料卡")
+    async def level(self, interaction: discord.Interaction, user: discord.User = None):
+        if user is None:
+            user = interaction.user
+        roles = ', '.join([role.name for role in user.roles[1:]])  
+        Lv_card = discord.Embed(title=f"{user.name}的個人資料卡", color=discord.Color.random()) 
+        Lv_card.set_thumbnail(url=user.avatar.url)
+        Lv_card.add_field(name=f"稱號: {roles}", value="", inline=False)
+        Lv_card.add_field(name="角色等級: ", value=self.users[str(user.id)]['Lv'])
+        Lv_card.add_field(name="角色經驗: ", value=self.users[str(user.id)]['EXP'])
+        Lv_card.add_field(name="角色ID: ", value=f"{user.id}")
+        Lv_card.add_field(name="加入伺服器日期", value=user.joined_at.strftime("%Y-%m-%d %H:%M:%S"))
+        await interaction.response.send_message(embed=Lv_card)
         
-async def setup(bot):
+async def setup(bot: commands.Bot):
     await bot.add_cog(Level(bot))
     print("Level.py is ready")

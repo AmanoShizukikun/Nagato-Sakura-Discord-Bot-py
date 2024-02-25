@@ -1,4 +1,5 @@
 import discord
+from discord import app_commands
 from discord.ext import commands
 from numpy import *
 import numexpr
@@ -44,7 +45,40 @@ class Math(commands.Cog):
     async def Math_error(self,ctx,error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.reply("請輸入您想要計算的公式(可以輸入指令 !MathHelp 查詢公式)，正確的格式是：!Math [計算的公式] 喔~❤") 
+            
+    @app_commands.command(name="math", description="!Math [計算公式] - 長門櫻幫您計算數學")
+    async def math(self, interaction: discord.Interaction, expression: str):
+        try:
+            answer = numexpr.evaluate(expression)
+            await interaction.response.send_message(f"{expression} = {answer}") 
+        except:
+            await interaction.response.send_message("噫~糟糕！出現了一個錯誤：「無效的表達式」 >.< 輸入 !MathHelp - 來顯示計算指令 (^^) ❤")
+            
+    @app_commands.command(name="mathhelp", description="!Math - 計算指令")
+    async def mathhelp(self, interaction: discord.Interaction):
+        mathhelp_embed = discord.Embed(
+            title="長門櫻 提供的計算服務喔~❤",
+            description="關於計算的指令~❤(^^) ",
+            color=discord.Color.random()
+            )
         
-async def setup(bot):
+        mathhelp_embed.set_thumbnail(url=interaction.user.avatar)
+        mathhelp_embed.add_field(name="where(bool, num1, num2)",value="如果布爾條件為 true，則為 num1，否則為 num2。",inline=False)
+        mathhelp_embed.add_field(name="{sin,cos,tan}(float|complex)",value="三角正弦、餘弦或正切",inline=False)
+        mathhelp_embed.add_field(name="{arcsin,arccos,arctan}(float|complex)",value="三角函數反正弦、餘弦或正切",inline=False)
+        mathhelp_embed.add_field(name="arctan2(float1, float2)",value="float1/float2 的三角反正切",inline=False)
+        mathhelp_embed.add_field(name="{sinh,cosh,tanh}(float|complex)",value="雙曲正弦、餘弦或正切",inline=False)
+        mathhelp_embed.add_field(name="{arcsinh,arccosh,arctanh}(float|complex)",value="雙曲反正弦、餘弦或正切",inline=False)
+        mathhelp_embed.add_field(name="{log,log10,log1p}(float|complex)",value="自然對數、以 10 為底的對數和 log(1+x) 對數",inline=False)
+        mathhelp_embed.add_field(name="{exp,expm1}(float|complex)",value="指數和指數減一",inline=False)
+        mathhelp_embed.add_field(name="sqrt(float|complex)",value="平方根",inline=False)
+        mathhelp_embed.add_field(name="abs(float|complex)",value="絕對值",inline=False)
+        mathhelp_embed.add_field(name="conj(complex)",value="共軛值",inline=False)
+        mathhelp_embed.add_field(name="{real,imag}(complex)",value="複數的實部或虛部",inline=False)
+        mathhelp_embed.add_field(name="complex(float, float)",value="由實部和虛部組成的複數",inline=False)
+        mathhelp_embed.add_field(name="contains(np.str, np.str)",value="對於op1包含 的每個字符串返回 True op2",inline=False)
+        await interaction.response.send_message(embed=mathhelp_embed)          
+        
+async def setup(bot: commands.Bot):
     await bot.add_cog(Math(bot))
     print("Math.py is ready")

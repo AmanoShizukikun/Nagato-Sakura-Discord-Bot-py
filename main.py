@@ -25,7 +25,8 @@ logger.addHandler(handler)
 # 定義機器人的意圖
 intents = discord.Intents.default()
 intents.message_content = True
-intents.guilds = True  #
+intents.guilds = True  
+
 # 創建 commands.Bot 實例
 bot = commands.Bot(command_prefix="!",intents=discord.Intents.all())
 
@@ -42,6 +43,26 @@ async def on_ready():
     change_status.start()
     print('------正在加載擴展')
     await load()
+    slash = await bot.tree.sync()
+    print(f"載入 {len(slash)} 個斜線指令")
+
+# 載入指令程式檔案
+@bot.command()
+async def load(ctx: commands.Context, extension):
+    await bot.load_extension(f"cogs.{extension}")
+    await ctx.send(f"Loaded {extension} done.")
+
+# 卸載指令檔案
+@bot.command()
+async def unload(ctx: commands.Context, extension):
+    await bot.unload_extension(f"cogs.{extension}")
+    await ctx.send(f"UnLoaded {extension} done.")
+
+# 重新載入程式檔案
+@bot.command()
+async def reload(ctx: commands.Context, extension):
+    await bot.reload_extension(f"cogs.{extension}")
+    await ctx.send(f"ReLoaded {extension} done.")
     
 async def load():
     for filename in os.listdir("./cogs"):

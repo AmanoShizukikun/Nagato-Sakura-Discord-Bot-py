@@ -13,15 +13,15 @@ class FestivalEvent(commands.Cog):
         current_date = datetime.datetime.now().date()
 
         festivals = {
-            "NewYear": (datetime.date(current_date.year, 12, 27), datetime.date(current_date.year + 1, 1, 2)),
-            "AdultDay": (datetime.date(current_date.year, 1, 6), datetime.date(current_date.year, 1, 10)),
-            "Valentine": (datetime.date(current_date.year, 2, 11), datetime.date(current_date.year, 2, 15)),
+            "NewYear": (datetime.date(current_date.year, 12, 31), datetime.date(current_date.year + 1, 2)),
+            "AdultDay": (datetime.date(current_date.year, 1, 8), datetime.date(current_date.year, 1, 10)),
+            "Valentine": (datetime.date(current_date.year, 2, 13), datetime.date(current_date.year, 2, 15)),
             "OceanDay": (datetime.date(current_date.year, 7, 14), datetime.date(current_date.year, 7, 18)),
             "MountainDay": (datetime.date(current_date.year, 8, 10), datetime.date(current_date.year, 8, 13)),
             "ObonFestival": (datetime.date(current_date.year, 8, 14), datetime.date(current_date.year, 8, 17)),
-            "SportsDay": (datetime.date(current_date.year, 10, 5), datetime.date(current_date.year, 10, 9)),
-            "Halloween": (datetime.date(current_date.year, 10, 28), datetime.date(current_date.year, 11, 2)),
-            "Christmas": (datetime.date(current_date.year, 12, 22), datetime.date(current_date.year, 12, 26))
+            "SportsDay": (datetime.date(current_date.year, 10, 8), datetime.date(current_date.year, 10, 9)),
+            "Halloween": (datetime.date(current_date.year, 10, 30), datetime.date(current_date.year, 11, 2)),
+            "Christmas": (datetime.date(current_date.year, 12, 23), datetime.date(current_date.year, 12, 26))
         }
 
         current_festival = None

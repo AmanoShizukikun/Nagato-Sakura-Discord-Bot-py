@@ -70,6 +70,8 @@ class Youtube(commands.Cog):
             await ctx.send("請主人先加入一個語音頻道再使用!Play來添加歌曲")
             
     async def play_next(self, ctx, retry_count=3):
+        if not ctx.voice_client or not ctx.voice_client.is_connected():
+            return
         if ctx.voice_client and ctx.voice_client.is_playing():
             while ctx.voice_client.is_playing():
                 await asyncio.sleep(1)
@@ -104,8 +106,7 @@ class Youtube(commands.Cog):
         embedMsg.add_field(name="YouTube 曲名", value=video_title, inline=False)
         embedMsg.add_field(name="曲目長度", value=video_length, inline=False)
         embedMsg.set_footer(text=f"添加者：{added_by}")
-        await ctx.send(embed=embedMsg)
-            
+        await ctx.send(embed=embedMsg) 
             
     @commands.command(aliases=["JOIN","join"])
     async def Join(self, ctx):

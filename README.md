@@ -12,117 +12,121 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 ## 公告
 
 ## 近期變動
+### 1.6.1 (2024 年 2 月 26 日)
+![t2i](assets/preview/1.6.1.png)
+### 重要變更
+- N/A
+### 新增功能
+- 【新增】!SuperDeformed - 可以隨機抽取長門櫻的Q版圖片。
+- 【更新】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py及Weather.py新增了/指令。
+- 【更新】!CheckSMS [文字] - 更新模型版本，現在可以判斷簡訊的類別、簡訊中的電話、簡訊中的網址並且能檢測網址的安全性。
+- 【測試】!SnakeGame - 玩貪吃蛇遊戲，!SnakeGameReset - 重置貪吃蛇遊戲。
+### 已知問題
+- N/A
+
 ### 1.6.0 (2024 年 2 月 17 日)
 ![t2i](assets/preview/1.6.0.png)
 ### 重要變更
-- DM.py 及 Tarot.py 新增了 / 指令現在能更直觀的調用指令了
-- main_beta.py 新增了 載入指令程式檔案、卸載指令檔案、重新載入程式檔案、載入斜線指令
-- 精簡了部分程式的行數提高了效率
-
+- 【重大】main_beta.py 新增了 載入指令程式檔案、卸載指令檔案、重新載入程式檔案、載入斜線指令。
+- 【調整】大幅精簡了部分程式的行數，並且提高了程式的效率。
 ### 新增功能
-- !FestivalEvent - 當特殊的日子來臨之時會有彩蛋
-
+- 【新增】!FestivalEvent - 當特殊的日子來臨之時會有彩蛋。
+- 【更新】DM.py 及 Tarot.py 新增了/指令。
 ### 已知問題
-- !Tarot - 無法產生正確圖片及正逆為牌意
+- 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
 ### 1.5.ν (2024 年 1 月 30 日)
 ![t2i](assets/preview/1.5.ν.png)
 ### 重要變更
-- 新增Audio.py、Image.py
-
+- N/A
 ### 新增功能
-- !AudioInfo 附上聲音檔 - 查看音樂資訊並顯示波型
-- !AudioReverse 附上聲音檔 - 反轉聲音檔
-- !AudioSpeed [倍速] 附上聲音檔 - 調整聲音速度
-- !AudioBit [位元] 附上聲音檔 - 調整聲音位元
-- !Sharpen [1~100的整數] 附上圖片 - 調整銳化程度
-- !Blur [1~100的整數] 附上圖片 - 調整模糊程度
-- !Mosaic [整數] 附上圖片 - 套上馬賽克效果
-- !Brightness [0~100的整數] 附上圖片 - 調整亮度
-- !Contrast [0~100的整數] 附上圖片 - 調整對比度
-- !Color [0~100的整數] 附上圖片 - 調整飽和度
-- !Icon [透明度(0~100的整數)] 附上圖片 - 添加浮水印
-
+- 【新增】!AudioInfo 附上聲音檔 - 查看音樂資訊並顯示波型。
+- 【新增】!AudioReverse 附上聲音檔 - 反轉聲音檔。
+- 【新增】!AudioSpeed [倍速] 附上聲音檔 - 調整聲音速度。
+- 【新增】!AudioBit [位元] 附上聲音檔 - 調整聲音位元。
+- 【新增】!Sharpen [1~100的整數] 附上圖片 - 調整銳化程度。
+- 【新增】!Blur [1~100的整數] 附上圖片 - 調整模糊程度。
+- 【新增】!Mosaic [整數] 附上圖片 - 套上馬賽克效果。
+- 【新增】!Brightness [0~100的整數] 附上圖片 - 調整亮度。
+- 【新增】!Contrast [0~100的整數] 附上圖片 - 調整對比度。
+- 【新增】!Color [0~100的整數] 附上圖片 - 調整飽和度。
+- 【新增】!Icon [透明度(0~100的整數)] 附上圖片 - 添加浮水印。
 ### 已知問題
 - N/A
   
 ### 1.5.μ (2024 年 1 月 9 日)
 ![t2i](assets/preview/1.5.μ.png)
 ### 重要變更
-- 刪除了Music.py改為Youtube.py(不再支持streetvoice)，修正了Youtube 複數影片清單無法播放及Youtube 無法累加播放清單的問題
-- 修正了並且改善了!Help - 幫助訊息過長無法傳出的問題
-
+- 【重大】刪除了Music.py改為Youtube.py。(不再支持streetvoice)
 ### 新增功能
-- !List - 長門櫻顯示撥放清單
-- !Skip [數字] - 跳過 [數字] 首歌
-
+- 【新增】!List - 長門櫻顯示撥放清單。
+- 【新增】!Skip [數字] - 跳過 [數字] 首歌。
+- 【修復】!Help - 解決了幫助訊息過長無法傳出的問題。
+- 【修復】修復了 Youtube 複數影片清單無法播放及 Youtube 無法累加播放清單的問題。
 ### 已知問題
 - N/A 
 
 ### 1.5.λ (2024 年 1 月 3 日)
 ![t2i](assets/preview/1.5.λ.png)
 ### 重要變更
-- AutoReply.py 升級為 AutoReply_v2.py 改為使用小型分類模型來回覆使用者，大幅提升可靠度
-- 新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能
-- 統一外掛 cogs 及 beta 的格式，更改代碼更舒服了
-
+- 【重大】新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能。
+- 【重大】統一外掛 cogs 及 beta 的格式，更改代碼更舒服了。
 ### 新增功能
-- !Version - 顯示當前機器人版本
-
+- 【新增】!Version - 顯示當前機器人版本。
+- 【更新】AutoReply.py 更新為 AutoReply_v2.py 改用小型分類模型來回覆使用者，大幅提升可靠度。
 ### 已知問題
-- !play [網址] - Youtube 複數影片清單無法播放
-- !play [網址] - Youtube 無法累加播放清單
-- !Help - 幫助訊息過長無法傳出
+- 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
+- 【錯誤】!play [網址] - Youtube 無法累加播放清單。
+- 【錯誤】!Help - 幫助訊息過長無法傳出。
 
 ### 1.5.κ (2024 年 1 月 1 日)
 ![t2i](assets/preview/1.5.κ.png)
 ### 重要變更
-- TAG 長門櫻 並且附加檔案上去後，長門櫻會自動把檔案下載到運行伺服器上 (Beta)
-
+- 【重大】TAG 長門櫻 並且附加檔案上去後，長門櫻會自動把檔案下載到運行伺服器上。
 ### 新增功能
-- !CheckSMS [文字] - 自製小型AI模型判斷簡訊類別 (模型版本 : Project SMS Model 50)
-- !GenerateBarCode [12位數字] - 生成EAN13條碼
-- !GenerateQRCode [內容] [數字] - 生成QRCode，數字決定QRCode造型可有可無
-- !GenerateQRCode [內容] [數字] [附加圖片] - 生成崁入圖片的QRCode
-- !VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif檔
-- !PingIP [網址] - 查詢網站 IP
-
+- 【新增】!CheckSMS [文字] - 自製小型AI模型判斷簡訊類別。
+- 【新增】!GenerateBarCode [12位數字] - 生成EAN13條碼。
+- 【新增】!GenerateQRCode [內容] [數字] - 生成QRCode，數字決定QRCode造型可有可無。
+- 【新增】!GenerateQRCode [內容] [數字] [附加圖片] - 生成崁入圖片的QRCode。
+- 【新增】!VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif檔。
+- 【新增】!PingIP [網址] - 查詢網站 IP。
 ### 已知問題
-- !play [網址] - Youtube 複數影片清單無法播放
-- !play [網址] - Youtube 無法累加播放清單
-- !Help - 幫助訊息過長無法傳出
-
+- 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
+- 【錯誤】!play [網址] - Youtube 無法累加播放清單。
+- 【錯誤】!Help - 幫助訊息過長無法傳出。
 
 ### 1.5.ι (2023 年 12 月 22 日)
 ![t2i](assets/preview/1.5.ι.png)
 ### 重要變更
-- 首個對外公開的版本
-- 調整伺服器資料的儲存方式 (存放方式改為將資料存到server/伺服器ID/資料伺服器ID.json)
-- 重製等級系統，所有等級歸0，大幅降低每等所需經驗值 (原本6等級^4/2.5改為6等級^2/2.5)
-
+- 【重大】首個公開的版本。
+- 【重大】調整伺服器資料的儲存方式。(存放方式改為將資料存到server/伺服器ID/資料伺服器ID.json)
+- 【重大】重製等級系統，所有等級歸0，大幅降低每等所需經驗值。(原本6等級^4/2.5改為6等級^2/2.5)
 ### 新增功能
-- !VoteCreate [問題] [選項1] [選項2] [選項N] - 創建投票
-- !Vote [問題] [選項名稱] - 投票
-- !VoteResult [問題] - 顯示投票結果
-- !join - 機器人進入語音聊天室
-- !leave - 機器人離開語音聊天室 
-- !play [網址] - 播放音樂(目前支援以下平台:StreetVoice，Youtube)
-- !GuessingGameStart - 開啟猜數字遊戲
-- !Guess [數字] - 猜數字
-- !Tarot - 抽塔羅牌
-- !PrimeNumber [整數] - 判斷是否為質數
-- !Greeting [文字] - 自製小型AI模型判斷文字是否為打招呼 (模型版本 : Project Hello Model 500)
-
+- 【新增】!VoteCreate [問題] [選項1] [選項2] [選項N] - 創建投票。
+- 【新增】!Vote [問題] [選項名稱] - 投票。
+- 【新增】!VoteResult [問題] - 顯示投票結果。
+- 【新增】!join - 機器人進入語音聊天室。
+- 【新增】!leave - 機器人離開語音聊天室 。
+- 【新增】!play [網址] - 播放音樂。(目前支援以下平台:StreetVoice，Youtube)
+- 【新增】!GuessingGameStart - 開啟猜數字遊戲。
+- 【新增】!Guess [數字] - 猜數字。
+- 【新增】!Tarot - 抽塔羅牌。
+- 【新增】!PrimeNumber [整數] - 判斷是否為質數。
+- 【新增】!Greeting [文字] - 自製小型AI模型判斷文字是否為打招呼。
 ### 已知問題
-- !play [網址] - Youtube 複數影片清單無法播放
-- !play [網址] - Youtube 無法累加播放清單
+- 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
+- 【錯誤】!play [網址] - Youtube 無法累加播放清單。
+ 
 
 ## 快速開始
  **粗體** 的是強制要求的。
- 
-### 硬體要求
-1. 作業系統：Windows
-1. **CPU** / Nvidia GPU
+
+### 系統需求
+- 系統需求: 64-bit Windows
+- **處理器**: 64 位元的處理器
+- **記憶體**: 2GB
+- 顯示卡: 1GB VRAM 且支援 CUDA 加速的 NVIDIA 顯示卡
+- **儲存空間**: 3GB 可用空間
 
 ### 環境設置
 - **Python 3**
@@ -205,3 +209,45 @@ proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,
 proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 ```
 3. 儲存client.py
+
+## 待辦事項
+- [ ] **高優先度：**
+  - [x] 用户指南。
+
+- [ ] **功能:**
+  - 整合/指令
+    - [ ] Audio.py
+    - [ ] CheckSMS.py
+    - [x] Choices.py
+    - [x] CustomCommands.py
+    - [ ] Del.py
+    - [ ] Dice.py
+    - [x] DM.py
+    - [ ] FestivalEvent.py
+    - [ ] GenerateCode.py
+    - [ ] Greeting.py
+    - [ ] GuessingGame.py
+    - [ ] Help.py
+    - [ ] Image.py
+    - [x] Level.py
+    - [x] Math.py
+    - [ ] Ping.py
+    - [ ] PrimeNumber.py
+    - [ ] SuperDeformed.py
+    - [x] Tarot.py
+    - [x] Translate.py
+    - [ ] Userinfo.py
+    - [x] Version.py
+    - [ ] VideoToGif.py
+    - [ ] Vote.py
+    - [x] Weather.py
+    - [ ] Youtube.py
+     
+## 致謝
+特別感謝以下項目和貢獻者：
+
+## 感謝所有貢獻者的努力
+
+<a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Discord-Bot-py" />
+</a>

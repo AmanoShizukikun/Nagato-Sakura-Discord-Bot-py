@@ -246,6 +246,18 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 ## 致謝
 特別感謝以下項目和貢獻者：
 
+- [dlib-models](https://github.com/davisking/dlib-models)
+- [FFmpeg](https://github.com/FFmpeg/FFmpeg)
+- [moviepy](https://github.com/Zulko/moviepy)
+- [node-opencv](https://github.com/peterbraden/node-opencv)
+- [numexpr](https://github.com/pydata/numexpr)
+- [opencv-python](https://github.com/opencv/opencv-python)
+- [py-googletrans](https://github.com/ssut/py-googletrans)
+- [pydub](https://github.com/jiaaro/pydub)
+- [python-qrcode](https://github.com/lincolnloop/python-qrcode)
+- [requests](https://github.com/psf/requests)
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+
 ## 感謝所有貢獻者的努力
 
 <a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/graphs/contributors" target="_blank">

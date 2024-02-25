@@ -21,7 +21,7 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 - [New] !SuperDeformed - Randomly fetches chibi images of Nagato Sakura.
 - [Updated] Choices.py, CustomCommands.py, Level.py, Translate.py, Version.py, and Weather.py added / commands.
 - [Updated] !CheckSMS [text] - Updated model version, now capable of identifying SMS category, phone numbers in SMS, URLs in SMS, and checking URL safety.
-- **Testing:** !SnakeGame - Play the snake game, !SnakeGameReset - Reset the snake game.
+- [Beta] !SnakeGame - Play the snake game, !SnakeGameReset - Reset the snake game.
 ### Known Issues
 - N/A
 

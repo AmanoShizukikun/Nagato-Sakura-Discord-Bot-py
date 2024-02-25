@@ -12,108 +12,119 @@ Nagato-Sakura-Discord-Bot-py は「長門桜計画」の一部で、Pythonで書
 ## 公告
 
 ## 最近の変更
-### 1.6.0 (2024年2月17日)
+### 1.6.1（2024年2月26日）
+![t2i](assets/preview/1.6.1.png)
+### 重要な変更
+- N/A
+### 新機能
+- 【追加】!SuperDeformed - 長門さくらのチビキャラ画像をランダムに抽出できます。
+- 【更新】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py、Weather.pyに「/」コマンドを追加しました。
+- 【更新】!CheckSMS [テキスト] - モデルバージョンを更新し、今ではSMSの種類、電話番号、URLの検出、およびURLの安全性を判断できます。
+- 【テスト】!SnakeGame - スネークゲームをプレイします。!SnakeGameReset - スネークゲームをリセットします。
+###既知の問題
+- N/A
+
+### 1.6.0（2024年2月17日）
 ![t2i](assets/preview/1.6.0.png)
-### 主な変更点
-- DM.pyおよびTarot.pyに / コマンドが追加され、コマンドの呼び出しがより直感的になりました。
-- main_beta.pyにコマンドファイルのロード、コマンドファイルのアンロード、コマンドファイルの再ロード、スラッシュコマンドのロードが追加されました。
-- 一部のプログラムの行数を削減して効率を向上させました。
+### 重要な変更
+- 【重要】main_beta.pyにコマンドファイルの読み込み、アンインストール、ファイルの再読み込み、スラッシュコマンドの追加が追加されました。
+- 【調整】一部のプログラムの行数を大幅に削減し、プログラムの効率を向上させました。
 ### 新機能
-- !FestivalEvent - 特別な日にちが来るとイースターエッグが表示されます。
+- 【追加】!FestivalEvent - 特別な日にはイースターエッグが表示されます。
+- 【更新】DM.pyおよびTarot.pyに「/」コマンドを追加しました。
 ### 既知の問題
-- !Tarot - 正しい画像を生成できず、正逆が牌意に反映されない
+- 【エラー】!Tarot - 正しい画像を生成できず、正逆がカードの意味に反映されません。
 
-### 1.5.ν (2024年1月30日)
+### 1.5.ν（2024年1月30日）
 ![t2i](assets/preview/1.5.ν.png)
-### 主な変更点
-- Audio.py、Image.pyが追加されました。
+### 重要な変更
+- N/A
 ### 新機能
-- !AudioInfo [音声ファイルを添付] - 音楽情報を表示して波形を表示します。
-- !AudioReverse [音声ファイルを添付] - 音声ファイルを逆再生します。
-- !AudioSpeed [倍速] [音声ファイルを添付] - 音声速度を調整します。
-- !AudioBit [ビット] [音声ファイルを添付] - 音声ビットを調整します。
-- !Sharpen [1〜100の整数] [画像を添付] - シャープネスを調整します。
-- !Blur [1〜100の整数] [画像を添付] - ぼかし度を調整します。
-- !Mosaic [整数] [画像を添付] - モザイク効果を追加します。
-- !Brightness [0〜100の整数] [画像を添付] - 明るさを調整します。
-- !Contrast [0〜100の整数] [画像を添付] - コントラストを調整します。
-- !Color [0〜100の整数] [画像を添付] - 彩度を調整します。
-- !Icon [透明度(0〜100の整数)] [画像を添付] - 透かしを追加します。
+- 【追加】!AudioInfo - 音声ファイルを添付して音楽情報を表示し、波形を表示します。
+- 【追加】!AudioReverse - 音声ファイルを逆再生します。
+- 【追加】!AudioSpeed [スピード] - 音声の速度を調整します。
+- 【追加】!AudioBit [ビット] - 音声のビットを調整します。
+- 【追加】!Sharpen [1〜100の整数] - 画像のシャープネスを調整します。
+- 【追加】!Blur [1〜100の整数] - 画像のぼかしを調整します。
+- 【追加】!Mosaic [整数] - 画像にモザイク効果を適用します。
+- 【追加】!Brightness [0〜100の整数] - 明るさを調整します。
+- 【追加】!Contrast [0〜100の整数] - コントラストを調整します。
+- 【追加】!Color [0〜100の整数] - 彩度を調整します。
+- 【追加】!Icon [透明度(0〜100の整数)] - 透かしを追加します。
 ### 既知の問題
-- なし
+- N/A
   
-### 1.5.μ (2024年1月9日)
+### 1.5.μ（2024年1月9日）
 ![t2i](assets/preview/1.5.μ.png)
-### 主な変更点
-- Music.pyを削除し、Youtube.pyに変更しました（StreetVoiceはサポートされなくなりました）。複数のYouTubeビデオプレイリストを再生できない問題や、YouTubeプレイリストを追加できない問題を修正しました。
-- !Help - ヘルプメッセージが長すぎて送信できない問題を修正および改善しました。
+### 重要な変更
+- 【重大】Music.pyを削除してYoutube.pyに変更しました（streetvoiceはサポートされなくなりました）。
 ### 新機能
-- !List - プレイリストを表示します。
-- !Skip [数字] - [数字]曲スキップします。
+- 【追加】!List - 長門さくらのプレイリストを表示します。
+- 【追加】!Skip [番号] - [番号]曲をスキップします。
+- 【修正】!Help - ヘルプメッセージが長すぎて送信されない問題を修正しました。
+- 【修正】複数のYoutubeビデオリストを再生できない問題やYoutubeプレイリストを累積できない問題を修正しました。
 ### 既知の問題
-- なし
+- N/A 
 
-### 1.5.λ (2024年1月3日)
+### 1.5.λ（2024年1月3日）
 ![t2i](assets/preview/1.5.λ.png)
-### 主な変更点
-- AutoReply.pyがAutoReply_v2.pyにアップグレードされ、ユーザーに返信するために小規模な分類モデルが使用され、信頼性が大幅に向上しました。
-- ベータ分類とmain_beta.pyが追加され、どれがテスト機能でどれが通常の機能かがより直感的にわかります。
-- プラグインcogsとベータのフォーマットを統一し、コードの変更がより快適になりました。
+### 重要な変更
+- 【重大】ベータカテゴリとmain_beta.pyを追加しました。テスト機能と通常の機能がより直感的に表示されるようになりました。
+- 【重大】プラグインの形式を統一し、コードの変更がより快適になりました。
 ### 新機能
-- !Version - 現在のボットのバージョンを表示します。
+- 【追加】!Version - 現在のボットのバージョンを表示します。
+- 【更新】AutoReply.pyをAutoReply_v2.pyに更新し、ユーザーに返信するために小規模な分類モデルを使用し、信頼性が大幅に向上しました。
 ### 既知の問題
-- !play [URL] - YouTube複数のビデオプレイリストを再生できません
-- !play [URL] - YouTubeプレイリストを追加できません
-- !Help - ヘルプメッセージが長すぎて送信できません
+- 【エラー】!play [URL] - Youtube複数ビデオリストが再生できません。
+- 【エラー】!play [URL] - Youtubeプレイリストを累積できません。
+- 【エラー】!Help - ヘルプメッセージが長すぎて送信されません。
 
-### 1.5.κ (2024年1月1日)
+### 1.5.κ（2024年1月1日）
 ![t2i](assets/preview/1.5.κ.png)
-### 主な変更点
-- 長門桜をタグ付けし、ファイルを添付した場合、長門桜は自動的にファイルを実行中のサーバーにダウンロードします（ベータ版）。
+### 重要な変更
+- 【重大】TAGを長門さくらに付けてファイルを添付すると、長門さくらはファイルを自動的に実行サーバーにダウンロードします。
 ### 新機能
-- !CheckSMS [テキスト] - SMSカテゴリを判別するためのカスタム小規模AIモデル（モデルバージョン：プロジェクトSMSモデル50）
-- !GenerateBarCode [12桁の数字] - EAN13バーコードを生成します。
-- !GenerateQRCode [内容] [数字] - QRコードを生成し、数字でQRコードのスタイルを含めるかどうかを決定します。
-- !GenerateQRCode [内容] [数字] [追加画像] - 画像を埋め込んだQRコードを生成します。
-- !VideoToGif [ビデオファイル] [幅] [高さ] [開始時間] [終了時間] [フレームレート] - ビデオをGifファイルに変換します。
-- !PingIP [URL] - ウェブサイトのIPを調べます。
+- 【追加】!CheckSMS [テキスト] - 独自の小規模AIモデルを使用してSMSのカテゴリを判断します。
+- 【追加】!GenerateBarCode [12桁の数字] - EAN13バーコードを生成します。
+- 【追加】!GenerateQRCode [内容] [数字] - QRコードを生成します。数字はQRコードのスタイルの有無を決定します。
+- 【追加】!GenerateQRCode [内容] [数字] [添付画像] - 画像を埋め込んだQRコードを生成します。
+- 【追加】!VideoToGif [添付ビデオファイル] [幅] [高さ] [開始時間] [終了時間] [フレーム数] - ビデオからGIFを生成します。
+- 【追加】!PingIP [URL] - ウェブサイトのIPを確認します。
 ### 既知の問題
-- !play [URL] - YouTube複数のビデオプレイリストを再生できません
-- !play [URL] - YouTubeプレイリストを追加できません
-- !Help - ヘルプメッセージが長すぎて送信できません
+- 【エラー】!play [URL] - Youtube複数ビデオリストが再生できません。
+- 【エラー】!play [URL] - Youtubeプレイリストを累積できません。
+- 【エラー】!Help - ヘルプメッセージが長すぎて送信されません。
 
-
-### 1.5.ι (2023年12月22日)
+### 1.5.ι（2023年12月22日）
 ![t2i](assets/preview/1.5.ι.png)
-### 主な変更点
-- 初の公開リリース
-- サーバーデータの保存方法を調整しました（データをserver/server ID/data server ID.jsonに保存するように変更）
-- レベルシステムをリセットし、すべてのレベルを0にリセットし、必要な経験値を大幅に減らしました（以前は6レベル^4/2.5から6レベル^2/2.5に変更）
+### 重要な変更
+- 【重大】初の公開バージョン。
+- 【重大】サーバーデータの保存方法を変更しました。（データをserver/サーバーID/データサーバーID.jsonに保存）
+- 【重大】レベルシステムをリセットし、すべてのレベルを0に戻しました。必要な経験値が大幅に減少しました。（以前は6レベル^4/2.5から6レベル^2/2.5に変更されました）
 ### 新機能
-- !VoteCreate [質問] [オプション1] [オプション2] [オプションN] - 投票を作成します。
-- !Vote [質問] [オプション名] - 投票します。
-- !VoteResult [質問] - 投票結果を表示します。
-- !join - ボットがボイスチャットルームに参加します。
-- !leave - ボットがボイスチャットルームから退出します。
-- !play [URL] - 音楽を再生します（現在、StreetVoice、Youtubeなどのプラットフォームをサポートしています）。
-- !GuessingGameStart - 推測ゲームを開始します。
-- !Guess [数字] - 数字を推測します。
-- !Tarot - タロットカードを引きます。
-- !PrimeNumber [整数] - 素数かどうかを判定します。
-- !Greeting [テキスト] - カスタム小規模AIモデルを使用してテキストが挨拶かどうかを判定します（モデルバージョン：Project Hello Model 500）。
+- 【追加】!VoteCreate [質問] [オプション1] [オプション2] [オプションN] - 投票を作成します。
+- 【追加】!Vote [質問] [オプション名] - 投票します。
+- 【追加】!VoteResult [質問] - 投票結果を表示します。
+- 【追加】!join - ボットが音声チャットに参加します。
+- 【追加】!leave - ボットが音声チャットから退出します。
+- 【追加】!play [URL] - 音楽を再生します。（現在サポートされているプラットフォーム：StreetVoice、Youtube）
+- 【追加】!GuessingGameStart - 数当てゲームを開始します。
+- 【追加】!Guess [数字] - 数字を推測します。
+- 【追加】!Tarot - タロットカードを引きます。
+- 【追加】!PrimeNumber [整数] - 素数かどうかを判断します。
+- 【追加】!Greeting [テキスト] - 独自の小規模AIモデルでテキストが挨拶かどうかを判断します。
 ### 既知の問題
-- !play [URL] - YouTube複数のビデオプレイリストを再生できません
-- !play [URL] - YouTubeプレイリストを追加できません
+- 【エラー】!play [URL] - Youtube複数ビデオリストが再生できません。
+- 【エラー】!play [URL] - Youtubeプレイリストを累積できません。
 
-
-## はじめに
- **太字** は必須の要件です。
-
-
-### ハードウェア要件
-1. オペレーティングシステム：Windows
-2. **CPU** / Nvidia GPU
-
+## クイックスタート
+ **太字** は必須項目です。
+### システム要件
+- システム要件: 64ビットWindows
+- **プロセッサー**: 64ビットプロセッサー
+- **メモリ**: 2GB
+- グラフィックスカード: 1GB VRAM およびCUDAアクセラレーションをサポートするNVIDIAグラフィックスカード
+- **ストレージ**: 3GBの空き容量
 
 ### 環境のセットアップ
 - **Python 3**
@@ -186,3 +197,56 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 ```
 3. client.pyを保存
 
+## タスクリスト
+- [ ] **高優先度:**
+  - [x] ユーザーガイド。
+
+- [ ] **機能:**
+  - 統合/コマンド
+    - [ ] Audio.py
+    - [ ] CheckSMS.py
+    - [x] Choices.py
+    - [x] CustomCommands.py
+    - [ ] Del.py
+    - [ ] Dice.py
+    - [x] DM.py
+    - [ ] FestivalEvent.py
+    - [ ] GenerateCode.py
+    - [ ] Greeting.py
+    - [ ] GuessingGame.py
+    - [ ] Help.py
+    - [ ] Image.py
+    - [x] Level.py
+    - [x] Math.py
+    - [ ] Ping.py
+    - [ ] PrimeNumber.py
+    - [ ] SuperDeformed.py
+    - [x] Tarot.py
+    - [x] Translate.py
+    - [ ] Userinfo.py
+    - [x] Version.py
+    - [ ] VideoToGif.py
+    - [ ] Vote.py
+    - [x] Weather.py
+    - [ ] Youtube.py
+     
+## 謝辞
+以下のプロジェクトと貢献者に特別な感謝をします：
+
+- [dlib-models](https://github.com/davisking/dlib-models)
+- [FFmpeg](https://github.com/FFmpeg/FFmpeg)
+- [moviepy](https://github.com/Zulko/moviepy)
+- [node-opencv](https://github.com/peterbraden/node-opencv)
+- [numexpr](https://github.com/pydata/numexpr)
+- [opencv-python](https://github.com/opencv/opencv-python)
+- [py-googletrans](https://github.com/ssut/py-googletrans)
+- [pydub](https://github.com/jiaaro/pydub)
+- [python-qrcode](https://github.com/lincolnloop/python-qrcode)
+- [requests](https://github.com/psf/requests)
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+
+## すべての貢献者に感謝します
+
+<a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Discord-Bot-py" />
+</a>

@@ -18,6 +18,8 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 ### 重要變更
 - N/A
 ### 新增功能
+- 【新增】!FacialFeaturesDetection 附上圖片 - 五官偵測標記
+- 【新增】!FacialFeaturesDetectMultiScale 附上圖片 - 五官偵測並標記(眼睛綠色方框、嘴巴紅色方框、鼻子藍色方框)
 - 【新增】!SuperDeformed - 可以隨機抽取長門櫻的Q版圖片。
 - 【更新】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py及Weather.py新增了/指令。
 - 【更新】!CheckSMS [文字] - 更新模型版本，現在可以判斷簡訊的類別、簡訊中的電話、簡訊中的網址並且能檢測網址的安全性。
@@ -228,7 +230,7 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
     - [ ] FestivalEvent.py
     - [ ] GenerateCode.py
     - [ ] Game.py
-    - [ ] Help.py
+    - [x] Help.py
     - [ ] Image.py
     - [x] Level.py
     - [x] Math.py

@@ -83,7 +83,7 @@ class Math(commands.Cog):
             color=discord.Color.random()
             )
         
-        mathhelp_embed.set_thumbnail(url=interaction.user.avatar)
+        mathhelp_embed.set_thumbnail(url=self.bot.user.avatar)
         mathhelp_embed.add_field(name="where(bool, num1, num2)",value="如果布爾條件為 true，則為 num1，否則為 num2。",inline=False)
         mathhelp_embed.add_field(name="{sin,cos,tan}(float|complex)",value="三角正弦、餘弦或正切",inline=False)
         mathhelp_embed.add_field(name="{arcsin,arccos,arctan}(float|complex)",value="三角函數反正弦、餘弦或正切",inline=False)

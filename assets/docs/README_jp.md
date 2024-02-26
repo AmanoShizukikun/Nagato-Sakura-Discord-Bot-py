@@ -4,7 +4,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/commits/main)
 [![GitHub release](https://img.shields.io/github/v/release/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py)](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/releases)
 
-\[ [中文](README.md) | [English](README_en.md) | 日本語 \]
+\[ [中文](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/README.md) | [English](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/README_en.md) | 日本語 \]
 
 ## 介紹
 Nagato-Sakura-Discord-Bot-py は「長門桜計画」の一部で、Pythonで書かれた多機能Discordボットです。

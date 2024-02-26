@@ -9,27 +9,47 @@
 ## 介紹
 Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是以 Python 撰寫的多功能 Discord 機器人
 
+
 ## 公告
 - ### 1.6.2 版本將對 cogs 進行大幅度整合，刪除重複度高的 cogs 並將類似功能的 cogs 整合在一起，這樣可以大幅縮短擴展的加載時間。
 - ### 1.6.2 版本將對資產進行調整，將原本的 png 改為 jpg 大幅減少了儲存庫容量並且提升了部分程式在 discord 的回應速度。
 
+
 ## 近期變動
+### 1.6.2 (即將推出)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.2.jpg)
+### 重要變更
+- 【重大】儲存庫文件整理，將部分說明文件移至assets/docs中。
+- 【重大】資產調整，將原本的 png 改為 jpg 大幅減少了儲存庫容量並且提升了部分程式在 discord 的回應速度。
+- 【重大】Del.py 移動至 beta - 刪除權限過大個人認為不適合在一般模式使用他，避免惡意使用。
+- 【整合】Game.py 整合了 GuessingGame.py 及 SnakeGame.py 以後遊戲相關的功能將全部整合在這裡。
+- 【整合】Image.py 整合了 Image.py 及 SuperDeformed.py 以後圖像相關的功能將全部整合在這裡。
+- 【整合】Math.py 整合了 Math.py 及 PrimeNumber.py 以後計算相關的功能將全部整合在這裡。
+- 【移除】!Userinfo [用戶名稱] - 由於與 !Level 功能過於類似故將其移除。
+- 【移除】!Greeting [文字] - 該程式為 AutoReply.py 判斷的前身，他已經完美完成了他的任務是時候讓他走了。
+### 新增功能
+- 【更新】Del.py、Dice.py、Help.py、Ping.py 及 Vote.py 新增了/指令。
+- 【更新】!Version - 更新為符合新版資產的輸出格式。
+- 【更新】!Help.py - 刪除了按鈕並且重新改寫了鑲入內容。
+### 已知問題
+- N/A
+
 ### 1.6.1 (2024 年 2 月 26 日)
-![t2i](assets/preview/1.6.1.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### 重要變更
 - N/A
 ### 新增功能
 - 【新增】!FacialFeaturesDetection 附上圖片 - 五官偵測標記
 - 【新增】!FacialFeaturesDetectMultiScale 附上圖片 - 五官偵測並標記(眼睛綠色方框、嘴巴紅色方框、鼻子藍色方框)
 - 【新增】!SuperDeformed - 可以隨機抽取長門櫻的Q版圖片。
-- 【更新】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py及Weather.py新增了/指令。
+- 【新增】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py 及 Weather.py 新增了/指令。
 - 【更新】!CheckSMS [文字] - 更新模型版本，現在可以判斷簡訊的類別、簡訊中的電話、簡訊中的網址並且能檢測網址的安全性。
 - 【測試】!SnakeGame - 玩貪吃蛇遊戲，!SnakeGameReset - 重置貪吃蛇遊戲。
 ### 已知問題
 - N/A
 
 ### 1.6.0 (2024 年 2 月 17 日)
-![t2i](assets/preview/1.6.0.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.0.jpg)
 ### 重要變更
 - 【重大】main_beta.py 新增了 載入指令程式檔案、卸載指令檔案、重新載入程式檔案、載入斜線指令。
 - 【調整】大幅精簡了部分程式的行數，並且提高了程式的效率。
@@ -39,24 +59,7 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 ### 已知問題
 - 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
-### 1.5.ν (2024 年 1 月 30 日)
-![t2i](assets/preview/1.5.ν.jpg)
-### 重要變更
-- N/A
-### 新增功能
-- 【新增】!AudioInfo 附上聲音檔 - 查看音樂資訊並顯示波型。
-- 【新增】!AudioReverse 附上聲音檔 - 反轉聲音檔。
-- 【新增】!AudioSpeed [倍速] 附上聲音檔 - 調整聲音速度。
-- 【新增】!AudioBit [位元] 附上聲音檔 - 調整聲音位元。
-- 【新增】!Sharpen [1~100的整數] 附上圖片 - 調整銳化程度。
-- 【新增】!Blur [1~100的整數] 附上圖片 - 調整模糊程度。
-- 【新增】!Mosaic [整數] 附上圖片 - 套上馬賽克效果。
-- 【新增】!Brightness [0~100的整數] 附上圖片 - 調整亮度。
-- 【新增】!Contrast [0~100的整數] 附上圖片 - 調整對比度。
-- 【新增】!Color [0~100的整數] 附上圖片 - 調整飽和度。
-- 【新增】!Icon [透明度(0~100的整數)] 附上圖片 - 添加浮水印。
-### 已知問題
-- N/A
+### [所有變動](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
 
 ## 快速開始
  **粗體** 的是強制要求的。

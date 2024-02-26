@@ -163,30 +163,17 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
   - 整合/指令
     - [ ] Audio.py
     - [ ] CheckSMS.py (檢查網址會導致程式超時，暫時跳過添加/指令)
-    - [x] Choices.py
-    - [x] CustomCommands.py
-    - [x] Del.py
-    - [X] Dice.py
-    - [x] DM.py
     - [ ] FestivalEvent.py
     - [ ] GenerateCode.py
     - [ ] Game.py
-    - [x] Help.py
     - [ ] Image.py
-    - [x] Level.py
-    - [x] Math.py
-    - [X] Ping.py
-    - [x] Tarot.py
-    - [x] Translate.py
-    - [x] Version.py
     - [ ] Video.py
-    - [x] Vote.py
-    - [x] Weather.py
     - [ ] Youtube.py
      
 ## 致謝
 特別感謝以下項目和貢獻者：
 
+### 項目
 - [dlib-models](https://github.com/davisking/dlib-models)
 - [FFmpeg](https://github.com/FFmpeg/FFmpeg)
 - [moviepy](https://github.com/Zulko/moviepy)
@@ -199,8 +186,7 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 - [requests](https://github.com/psf/requests)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
-## 感謝所有貢獻者的努力
-
+### 貢獻者
 <a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/graphs/contributors" target="_blank">
   <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Discord-Bot-py" />
 </a>

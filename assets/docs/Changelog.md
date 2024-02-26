@@ -1,5 +1,5 @@
 ### 1.6.1 (2024 年 2 月 26 日)
-![t2i](assets/preview/1.6.1.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### 重要變更
 - N/A
 ### 新增功能
@@ -13,7 +13,7 @@
 - N/A
 
 ### 1.6.0 (2024 年 2 月 17 日)
-![t2i](assets/preview/1.6.0.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.0.jpg)
 ### 重要變更
 - 【重大】main_beta.py 新增了 載入指令程式檔案、卸載指令檔案、重新載入程式檔案、載入斜線指令。
 - 【調整】大幅精簡了部分程式的行數，並且提高了程式的效率。
@@ -24,7 +24,7 @@
 - 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
 ### 1.5.ν (2024 年 1 月 30 日)
-![t2i](assets/preview/1.5.ν.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BD.jpg)
 ### 重要變更
 - N/A
 ### 新增功能
@@ -43,7 +43,7 @@
 - N/A
   
 ### 1.5.μ (2024 年 1 月 9 日)
-![t2i](assets/preview/1.5.μ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BC.jpg)
 ### 重要變更
 - 【重大】刪除了Music.py改為Youtube.py。(不再支持streetvoice)
 ### 新增功能
@@ -55,7 +55,7 @@
 - N/A 
 
 ### 1.5.λ (2024 年 1 月 3 日)
-![t2i](assets/preview/1.5.λ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BB.jpg)
 ### 重要變更
 - 【重大】新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能。
 - 【重大】統一外掛 cogs 及 beta 的格式，更改代碼更舒服了。
@@ -68,7 +68,7 @@
 - 【錯誤】!Help - 幫助訊息過長無法傳出。
 
 ### 1.5.κ (2024 年 1 月 1 日)
-![t2i](assets/preview/1.5.κ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BA.jpg)
 ### 重要變更
 - 【重大】TAG 長門櫻 並且附加檔案上去後，長門櫻會自動把檔案下載到運行伺服器上。
 ### 新增功能
@@ -84,7 +84,7 @@
 - 【錯誤】!Help - 幫助訊息過長無法傳出。
 
 ### 1.5.ι (2023 年 12 月 22 日)
-![t2i](assets/preview/1.5.ι.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B9.jpg)
 ### 重要變更
 - 【重大】首個 Github 公開版本。
 ### 新增功能

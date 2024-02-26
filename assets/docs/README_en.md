@@ -14,7 +14,7 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 
 ## Recent Changes
 ### 1.6.1 (February 26, 2024)
-![t2i](assets/preview/1.6.1.png)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### Major Changes
 - N/A
 ### New Features
@@ -26,7 +26,7 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 - N/A
 
 ### 1.6.0 (February 17, 2024)
-![t2i](assets/preview/1.6.0.png)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.0.jpg)
 ### Major Changes
 - [Major] main_beta.py added functionality for loading command scripts, unloading command files, reloading program files, loading slash commands.
 - [Adjustment] Drastically reduced the number of lines in some scripts and improved program efficiency.
@@ -37,7 +37,7 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 - [Error] !Tarot - Unable to generate correct images and incorrect interpretation of upright and reverse meanings.
 
 ### 1.5.ν (January 30, 2024)
-![t2i](assets/preview/1.5.ν.png)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BD.jpg)
 ### Major Changes
 - N/A
 ### New Features
@@ -54,68 +54,6 @@ Nagato-Sakura-Discord-Bot-py is one of the branches of the "Nagato-Sakura Projec
 - [New] !Icon [opacity (0~100 integer)] with image - Add watermark.
 ### Known Issues
 - N/A
-  
-### 1.5.μ (January 9, 2024)
-![t2i](assets/preview/1.5.μ.png)
-### Major Changes
-- [Major] Removed Music.py and replaced it with Youtube.py. (No longer supports streetvoice)
-### New Features
-- [New] !List - Nagato Sakura displays playlist.
-- [New] !Skip [number] - Skip [number] songs.
-- **Fixed:** !Help - Resolved issue of help message being too long to send.
-- **Fixed:** Fixed issue of inability to play multiple video playlists on YouTube and inability to accumulate video playlists on YouTube.
-### Known Issues
-- N/A 
-
-### 1.5.λ (January 3, 2024)
-![t2i](assets/preview/1.5.λ.png)
-### Major Changes
-- [Major] Added beta category and main_beta.py, for easier identification of test and regular features.
-- [Major] Unified format for plugins cogs and beta, making code changes more comfortable.
-### New Features
-- [New] !Version - Display current bot version.
-- [Updated] AutoReply.py updated to AutoReply_v2.py, using a small-scale classification model for user responses, greatly improving reliability.
-### Known Issues
-- [Error] !play [URL] - Unable to play multiple video playlists on YouTube.
-- [Error] !play [URL] - Unable to accumulate video playlists on YouTube.
-- [Error] !Help - Help message too long to send.
-
-### 1.5.κ (January 1, 2024)
-![t2i](assets/preview/1.5.κ.png)
-### Major Changes
-- [Major] TAG Nagato Sakura and attach files, Nagato Sakura will automatically download files to the running server.
-### New Features
-- [New] !CheckSMS [text] - Custom AI model to determine SMS category.
-- [New] !GenerateBarCode [12-digit number] - Generate EAN13 barcode.
-- [New] !GenerateQRCode [content] [number] - Generate QRCode, with optional number determining QRCode style.
-- [New] !GenerateQRCode [content] [number] [embedded image] - Generate QRCode with embedded image.
-- [New] !VideoToGif [attached video file] [width] [height] [start time] [end time] [frame rate] - Convert video to Gif.
-- [New] !PingIP [URL] - Look up website IP.
-### Known Issues
-- [Error] !play [URL] - Unable to play multiple video playlists on YouTube.
-- [Error] !play [URL] - Unable to accumulate video playlists on YouTube.
-
-### 1.5.ι (December 22, 2023)
-![t2i](assets/preview/1.5.ι.png)
-### Major Changes
-- [Major] First public release.
-- [Major] Adjusted server data storage method. (Data storage changed to store data in server/server ID/data server ID.json)
-- [Major] Reset level system, all levels reset to 0, significantly reducing experience required per level. (Originally 6 levels^4/2.5 changed to 6 levels^2/2.5)
-### New Features
-- [New] !VoteCreate [question] [option1] [option2] [optionN] - Create a vote.
-- [New] !Vote [question] [option name] - Vote.
-- [New] !VoteResult [question] - Display vote results.
-- [New] !join - Bot joins voice chat.
-- [New] !leave - Bot leaves voice chat.
-- [New] !play [URL] - Play music. (Currently supports platforms: StreetVoice, Youtube)
-- [New] !GuessingGameStart - Start the guessing game.
-- [New] !Guess [number] - Guess the number.
-- [New] !Tarot - Draw a tarot card.
-- [New] !PrimeNumber [integer] - Determine if it's a prime number.
-- [New] !Greeting [text] - Custom AI model to determine if text is a greeting.
-### Known Issues
-- [Error] !play [URL] - Unable to play multiple video playlists on YouTube.
-- [Error] !play [URL] - Unable to accumulate video playlists on YouTube.
 
 ## Quick Start
  **Bold** indicates mandatory.

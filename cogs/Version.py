@@ -14,7 +14,7 @@ class Version(commands.Cog):
         self.bot = bot
         self.directory = 'assets/preview/'
         self.version = "1.6.1"
-        self.output_path = f"{self.directory}{self.version}.png"
+        self.output_path = f"{self.directory}{self.version}.jpg"
         
     @commands.command(aliases=["VERSION","version","Ver"])
     async def Version(self, ctx):

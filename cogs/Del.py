@@ -1,4 +1,5 @@
 import discord
+from discord import app_commands
 from discord.ext import commands
 
 class Del(commands.Cog):
@@ -16,6 +17,12 @@ class Del(commands.Cog):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.reply("嗚嗚~對不起，這好像是一個小小的錯誤呢，缺少了必需的參數 >.< 正確的格式應該是：「!Del [數字]」 這樣就沒問題啦！❤") 
     
-async def setup(bot):
+    @app_commands.command(name="del", description="!Del [數字] - 一次刪除大量訊息")
+    @commands.has_permissions(manage_messages=True)
+    async def delete_messages(self, interaction: discord.Interaction, count: int):
+        await interaction.channel.purge(limit=count)
+        await interaction.response.send_message(f"嘿嘿~ {count} 條訊息已經被刪除啦(^^) ღ 有什麼其他的事情我可以幫助您的嗎？") 
+    
+async def setup(bot: commands.Bot):
     await bot.add_cog(Del(bot))
     print("Del.py is ready")

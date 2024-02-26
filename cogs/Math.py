@@ -3,6 +3,7 @@ from discord import app_commands
 from discord.ext import commands
 from numpy import *
 import numexpr
+import math
 
 class Math(commands.Cog):
     def __init__(self,bot):
@@ -15,7 +16,27 @@ class Math(commands.Cog):
             await ctx.reply(f"{expression} = {answer}") 
         except:
             await ctx.reply("噫~糟糕！出現了一個錯誤：「無效的表達式」 >.< 輸入 !MathHelp - 來顯示計算指令 (^^) ❤")   
-      
+    
+    @commands.command(aliases=["primenumber", "PRIMENUMBER"])
+    async def PrimeNumber(self, ctx, num: int):
+        if num < 2:
+            await ctx.reply(f"{num} 不是質數")
+        elif num == 2:
+            await ctx.reply(f"{num} 是質數")
+        elif num % 2 == 0:
+            await ctx.reply(f"{num} 不是質數")
+        else:
+            is_prime = True
+            sqrt_num = int(math.sqrt(num))
+            for i in range(3, sqrt_num + 1, 2):
+                if num % i == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                await ctx.reply(f"{num} 是質數")
+            else:
+                await ctx.reply(f"{num} 不是質數")
+                
     @commands.command(aliases=["MH","mathhelp","MATHHELP"])
     async def MathHelp(self,ctx):
         mathhelp_embed = discord.Embed(
@@ -78,6 +99,26 @@ class Math(commands.Cog):
         mathhelp_embed.add_field(name="complex(float, float)",value="由實部和虛部組成的複數",inline=False)
         mathhelp_embed.add_field(name="contains(np.str, np.str)",value="對於op1包含 的每個字符串返回 True op2",inline=False)
         await interaction.response.send_message(embed=mathhelp_embed)          
+        
+    @app_commands.command(name="primenumber", description="!PrimeNumber [整數] - 判斷是否為質數")
+    async def primenumber(self, interaction: discord.Interaction, num: int):
+        if num < 2:
+            await interaction.response.send_message(f"{num} 不是質數")
+        elif num == 2:
+            await interaction.response.send_message(f"{num} 是質數")
+        elif num % 2 == 0:
+            await interaction.response.send_message(f"{num} 不是質數")
+        else:
+            is_prime = True
+            sqrt_num = int(math.sqrt(num))
+            for i in range(3, sqrt_num + 1, 2):
+                if num % i == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                await interaction.response.send_message(f"{num} 是質數")
+            else:
+                await interaction.response.send_message(f"{num} 不是質數")
         
 async def setup(bot: commands.Bot):
     await bot.add_cog(Math(bot))

@@ -10,6 +10,7 @@
 Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是以 Python 撰寫的多功能 Discord 機器人
 
 ## 公告
+- ### 1.6.2 將對 cogs 進行大幅度整合，刪除重複度高的 cogs 並將類似功能的 cogs 整合在一起，這樣可以大幅縮短擴展的加載時間。
 
 ## 近期變動
 ### 1.6.1 (2024 年 2 月 26 日)
@@ -213,33 +214,30 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 ## 待辦事項
 - [ ] **高優先度：**
   - [x] 用户指南。
+  - [x] 整合重複或的相似功能。
 
 - [ ] **功能:**
   - 整合/指令
     - [ ] Audio.py
-    - [ ] CheckSMS.py
+    - [ ] CheckSMS.py (檢查網址會導致程式超時，暫時跳過添加/指令)
     - [x] Choices.py
     - [x] CustomCommands.py
-    - [ ] Del.py
-    - [ ] Dice.py
+    - [x] Del.py
+    - [X] Dice.py
     - [x] DM.py
     - [ ] FestivalEvent.py
     - [ ] GenerateCode.py
-    - [ ] Greeting.py
-    - [ ] GuessingGame.py
+    - [ ] Game.py
     - [ ] Help.py
     - [ ] Image.py
     - [x] Level.py
     - [x] Math.py
-    - [ ] Ping.py
-    - [ ] PrimeNumber.py
-    - [ ] SuperDeformed.py
+    - [X] Ping.py
     - [x] Tarot.py
     - [x] Translate.py
-    - [ ] Userinfo.py
     - [x] Version.py
-    - [ ] VideoToGif.py
-    - [ ] Vote.py
+    - [ ] Video.py
+    - [x] Vote.py
     - [x] Weather.py
     - [ ] Youtube.py
      

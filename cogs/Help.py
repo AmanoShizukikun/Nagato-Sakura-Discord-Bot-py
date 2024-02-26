@@ -8,7 +8,7 @@ class Help(commands.Cog):
     def __init__(self,bot):
         self.bot = bot
         self.view = View(timeout=None)
-        self.button_click_counts = {}  # 共用的按下次數的字典
+        self.button_click_counts = {} 
     
     @commands.command()
     async def Help(self,ctx):
@@ -30,17 +30,14 @@ class Help(commands.Cog):
         help_embed.add_field(name="Dice",value="!Dice [骰子面數] [擲骰次數] - 擲骰子",inline=False)
         help_embed.add_field(name="DM",value="!DM - 邀請長門櫻私訊",inline=False)
         help_embed.add_field(name="GenerateCode",value="!GenerateBarCode [12位數字] - 生成EAN13條碼 \n !GenerateQRCode [內容] [數字] - 生成QRCode",inline=False)
-        help_embed.add_field(name="Greeting",value="!Greeting [文字] - 自製小型AI模型判斷文字是否為打招呼",inline=False)
-        help_embed.add_field(name="GuessingGame",value="!GuessingGameStart - 開啟猜數字遊戲 \n !Guess [數字] - 猜數字",inline=False)
+        help_embed.add_field(name="Game",value="!GuessingGameStart - 開啟猜數字遊戲 \n !Guess [數字] - 猜數字",inline=False)
         help_embed.add_field(name="Level",value="!Level - 顯示個人資料卡",inline=False)
-        help_embed.add_field(name="Math",value="!Math [計算公式] - 長門櫻幫您計算數學",inline=False)
+        help_embed.add_field(name="Math",value="!Math [計算公式] - 長門櫻幫您計算數學 \n !PrimeNumber [整數] - 判斷是否為質數",inline=False)
         help_embed.add_field(name="Ping",value="!Ping - 長門櫻在Discord WebSocket協議的延遲 \n !PingIP [網址] - 查詢網站 IP",inline=False)
-        help_embed.add_field(name="PrimeNumber",value=" !PrimeNumber [整數] - 判斷是否為質數",inline=False)
         help_embed.add_field(name="Tarot",value="!Tarot - 抽塔羅牌",inline=False)
         help_embed.add_field(name="Translate",value="!Translate [翻譯內容] - 自動中翻英，英翻中 \n !TranslateTo [語系] [翻譯內容] - 將翻譯內容翻譯成所選語系 \n !TranslateHelp - 顯示可翻譯語系",inline=False)
-        help_embed.add_field(name="Userinfo",value="!Userinfo [用戶名稱] - 顯示詳細用戶資訊",inline=False)
         help_embed.add_field(name="Version",value="!Version - 顯示出長門櫻當前版本",inline=False)
-        help_embed.add_field(name="VideoToGif",value="!VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif",inline=False)
+        help_embed.add_field(name="Video",value="!VideoToGif [附加影片檔] [寬] [高] [起始時間] [結束時間] [幀數] - 將影片生成Gif",inline=False)
         help_embed.add_field(name="Vote",value="!VoteCreate [問題] [選項1] [選項2] [選項N] - 創建投票 \n !Vote [問題] [選項名稱] - 投票 \n  !VoteResult [問題] - 顯示投票結果",inline=False)
         help_embed.add_field(name="Weather",value="!Weather - 顯示六都的天氣預報 \n !Weather [縣市名稱] - 顯示指定縣市天氣 \n !AllWeather - 顯示所有縣市的天氣預報",inline=False)
         help_embed.add_field(name="Youtube",value="!Join - 長門櫻進入語音聊天室 \n !Leave - 長門櫻離開語音聊天室 \n !Play [網址] - 長門櫻播放音樂(目前支援以下平台:Youtube) \n !List - 長門櫻顯示撥放清單 \n !Skip [數字] - 跳過 [數字] 首歌",inline=False)

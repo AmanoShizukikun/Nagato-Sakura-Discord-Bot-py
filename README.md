@@ -59,7 +59,7 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 ### 已知問題
 - 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
-### [所有變動](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
+[所有變動](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
 
 ## 快速開始
  **粗體** 的是強制要求的。

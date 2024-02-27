@@ -28,11 +28,11 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 - 【移除】!Userinfo [用戶名稱] - 由於與 !Level 功能過於類似故將其移除。
 - 【移除】!Greeting [文字] - 該程式為 AutoReply.py 判斷的前身，他已經完美完成了他的任務是時候讓他走了。
 ### 新增功能
-- 【更新】Del.py、Dice.py、Help.py、Ping.py 及 Vote.py 新增了/指令。
+- 【更新】Del.py、Dice.py、Help.py、Ping.py、Vote.py 及 Youtube.py新增了/指令。
 - 【更新】!Version - 更新為符合新版資產的輸出格式。
 - 【更新】!Help.py - 刪除了按鈕並且重新改寫了鑲入內容。
 ### 已知問題
-- N/A
+- 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯
 
 ### 1.6.1 (2024 年 2 月 26 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
@@ -162,13 +162,13 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 - [ ] **功能:**
   - 整合/指令
     - [ ] Audio.py
-    - [ ] CheckSMS.py (檢查網址會導致程式超時，暫時跳過添加/指令)
+    - [ ] CheckSMS.py (檢查網址會導致程式超時)
     - [ ] FestivalEvent.py
     - [ ] GenerateCode.py
     - [ ] Game.py
     - [ ] Image.py
     - [ ] Video.py
-    - [ ] Youtube.py
+    - [x] Youtube.py
      
 ## 致謝
 特別感謝以下項目和貢獻者：

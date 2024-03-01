@@ -15,7 +15,7 @@
 - 【更新】Version.py - 更新為符合新版資產的輸出格式。
 - 【更新】Help.py - 刪除了按鈕並且重新改寫了鑲入內容。
 - 【更新】FestivalEvent.py - 新增更多彩蛋內容。
-- 【更新】CheckSMS.py - 現在能判斷出驗證碼簡訊後將驗證碼輸出，並且更新的模型版本。 [詳見:Nagato-Sakura-SMS-Checker-Ver.1.0.4](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
+- 【更新】CheckSMS.py - 現在能判斷出驗證碼簡訊後將驗證碼輸出，並且更新的模型版本。 [詳見分支專案](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
 - 【修復】CheckSMS.py - 修復了將有小數點的訊息誤認成網址的錯誤。
 ### 已知問題
 - 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。

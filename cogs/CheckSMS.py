@@ -11,6 +11,25 @@ import ssl
 import socket
 from urllib.parse import urlparse
 
+class SMSClassifier(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super(SMSClassifier, self).__init__()
+        self.fc1 = nn.Linear(input_size, int(hidden_size * 0.66))
+        self.relu1 = nn.ReLU()
+        self.fc2 = nn.Linear(int(hidden_size * 0.66), int(hidden_size * 0.66))
+        self.relu2 = nn.ReLU()
+        self.fc3 = nn.Linear(int(hidden_size * 0.66), output_size)
+        self.softmax = nn.Softmax(dim=-1)
+
+    def forward(self, x):
+        x = self.fc1(x)
+        x = self.relu1(x)
+        x = self.fc2(x)
+        x = self.relu2(x)
+        x = self.fc3(x)
+        x = self.softmax(x)
+        return x
+
 class CheckSMS(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -43,7 +62,34 @@ class CheckSMS(commands.Cog):
             if word in self.vocab:
                 vector[self.vocab.index(word)] = 1
         return vector
-
+    
+    def predict_SMS(self, text):
+        input_vector = self.text_to_vector(text)
+        input_vector = torch.tensor(input_vector, dtype=torch.float).unsqueeze(0).to(self.device)
+        output = self.model(input_vector)
+        predicted_class = torch.argmax(output).item()
+        predicted_probs = output.squeeze().tolist()
+        predicted_label = [label for label, index in self.label_mapping.items() if index == predicted_class][0]
+        phone_numbers = re.findall(r'(\(?0\d{1,2}\)?[-\.\s]?\d{3,4}[-\.\s]?\d{3,4})', text)
+        urls = re.findall(r'\b(?:https?://)?(?:www\.)?[\w\.-]+\.[a-zA-Z]{2,}(?:/[^\s]*)?(?![\w\.-])\b', text)
+        verification_codes = re.findall(r'(?<!\d)(\d{4,6})(?!\d)(?<!/)', text)
+        result = f"主人~長門櫻已將簡訊解析完成，以下是解析的結果:\n"
+        result += f"【簡訊內容】: {text}\n"
+        result += f"【預測結果】: {predicted_label}\n"
+        result += f"【預測概率】: {predicted_probs}\n"
+        if phone_numbers:
+            result += f"【偵測電話】: {phone_numbers}\n"
+        if urls:
+            for url in urls:
+                result += f"{self.check_url_safety(url)}\n"
+        if predicted_label == 'Captcha SMS':
+            if verification_codes:
+                result += f"【驗證碼】: {verification_codes}\n"
+            else:
+                print("【驗證碼】:未找到驗證碼。")
+                result += f"【驗證碼】:未找到驗證碼。\n"
+        return result
+        
     def check_url_safety(self, url):
         try:
             if not url.startswith(("http://", "https://")):
@@ -81,27 +127,6 @@ class CheckSMS(commands.Cog):
         except Exception as e:
             return f"【錯誤】 {url}: {str(e)}"
 
-    def predict_SMS(self, text):
-        input_vector = self.text_to_vector(text)
-        input_vector = torch.tensor(input_vector, dtype=torch.float).unsqueeze(0).to(self.device)
-        output = self.model(input_vector)
-        predicted_class = torch.argmax(output).item()
-        predicted_probs = output.squeeze().tolist()
-        predicted_label = [label for label, index in self.label_mapping.items() if index == predicted_class][0]
-        phone_numbers = re.findall(r'(\(?0\d{1,2}\)?[-\.\s]?\d{3,4}[-\.\s]?\d{3,4})', text)
-        urls = re.findall(r'\b(?:https?://)?(?:www\.)?[\w\.-]+\.[a-zA-Z]{2,}\b', text)
-        result = f"主人~長門櫻已將簡訊解析完成，以下是解析的結果:\n"
-        result += f"【簡訊內容】: {text}\n"
-        result += f"【預測結果】: {predicted_label}\n"
-        result += f"【預測概率】: {predicted_probs}\n"
-        
-        if phone_numbers:
-            result += f"【偵測電話】: {phone_numbers}\n"
-        if urls:
-            for url in urls:
-                result += f"{self.check_url_safety(url)}\n"
-        return result
-
     @commands.command(aliases=["checksms","CHECKSMS","SMS"])
     async def CheckSMS(self, ctx, *, text=None):
         if text is None:
@@ -109,25 +134,6 @@ class CheckSMS(commands.Cog):
             return
         result = self.predict_SMS(text)
         await ctx.send(result)
-
-class SMSClassifier(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
-        super(SMSClassifier, self).__init__()
-        self.fc1 = nn.Linear(input_size, int(hidden_size * 0.66))
-        self.relu1 = nn.ReLU()
-        self.fc2 = nn.Linear(int(hidden_size * 0.66), int(hidden_size * 0.66))
-        self.relu2 = nn.ReLU()
-        self.fc3 = nn.Linear(int(hidden_size * 0.66), output_size)
-        self.softmax = nn.Softmax(dim=-1)
-
-    def forward(self, x):
-        x = self.fc1(x)
-        x = self.relu1(x)
-        x = self.fc2(x)
-        x = self.relu2(x)
-        x = self.fc3(x)
-        x = self.softmax(x)
-        return x
 
 async def setup(bot):
     await bot.add_cog(CheckSMS(bot))

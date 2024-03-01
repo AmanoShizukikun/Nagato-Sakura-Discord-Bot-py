@@ -1,5 +1,90 @@
 [
   {
+    "instruction": "由於您的資金流向了澳門永利娛樂城，所以我們的追回方式比較特殊，但是每位受害者的追回金額都跟相關部門備案過，追回方式和追回的資金都是安全有保障，是需要技術員協助您去平台通過科技技術手段幫您操作才能順利完成追回自己的損失",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "我是之前幫你瘦身的姐姐,因為你的檔案沒有完結,現在需要你完結好才能不追究責任,聯絡賴",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "我需要幫助，完成後可以給 到 的酬金，當天領錢，不需要支付任何費用也不是騙人的，有興趣可以搜索賴添加好友",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "全台找人手幫忙 不影響正職 薪資當晚領取 諮詢 ID:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "最新消息:內部漲停票公 布,預計趴以上,領取代 碼的添加LINE:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "歐美陸續解封 傳產、電子湧現新 商機,點擊連結添加瀨,領取明日 早盤的飆股唷 ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "早安 週一推薦精聯已獲利 趴!下一檔飆股盤中即將買進 加我賴領取唷! ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "你好,我是之 前與你通聯 的國泰證券 的許小姐, 麻煩你聯繫我： ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "超強短線標的已出《XX》賴 我可以免費領取 ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "首創三優戰法,實時教學,定期 熱點分析預測,個檔分享月均綜 合收益穩定超趴,領下檔請 加賴 ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "中纖,東鹼,宏達電連續三檔打 板,你是否成功上車?跟上節 奏,請加賴 ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "您好 我是元大的投資顧問,以前 有給您打過電話,需要更多飆股 資訊可以赖我领取唷: ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "你好我是元大投顧之前聯繫過您怎麼還 沒有加我 自營商導師免費三檔報牌送給 你唷: ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "你好,我是近期給你打電話的陳 小姐,我把今天的明牌發給你, 請添加我: ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "您好,打擾您了,我是兆 豐合作工作室股票投資顧 問陳小姐,看到訊息請添 加一下我",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "【台灣自來水公司】貴 戶本期水費已逾期,合 計新台幣元整,詳 情繳費: 務請於月 日前處理繳費,若再 逾上述日期,將終止供 水。",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "提醒您已獲萬新台幣借款 資格。每一萬塊月利息只需塊。月繳無壓力!無需照會,無 需保人,沒有手續費。當天辦理當天入賬!年口 碑第一貸款公司。添加信貸專員免費咨詢改善 財務問題 LINE : ",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
     "instruction": "繳滿三期，不看負債聯徵，免財力，三天撥款，汽車萬月付 元機車 萬， %起，我是之前幫你簽核的車貸李經理☎️賴",
     "input": "",
     "output": "Scam SMS"
@@ -30,6 +115,71 @@
     "output": "Scam SMS"
   },
   {
+    "instruction": "中華電信:您的門號尚 有 點將於今日到 期,請盡快兌換獎品:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "中華電信:會員回饋提示,您的 賬戶 積分將於今日內到 期,逾期將作廢,請及時兌換獎 品 請回复 激活鏈接領取",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "(中華電信通知)您的點數即將到 期可抵換以下商品請於 前使用:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "台灣大哥大-會員回饋您的號碼 積分 將於今日到期,請盡 快兌換獎品,逾期作廢  (回復 激活鏈 接領取)",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "台灣大無限,台灣大哥大與台灣 之星即將合併,提醒您門號尚 有 點將於今日到期,請盡 快兌換獎品,逾期作廢:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "遠傳電信溫馨提示愛的用戶您好,截止 年 月 日您的遠傳幣餘額:  將於三個工作日內到 期,為避免影響,請及時兌換 獎賞。請回复 激活鏈接領取",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "【交通違規罰鍰】您有-筆交通 罰款逾期未到案,請  前繳納,查詢及繳費請點此 回覆 啟動連結查詢",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "【遠通電收】您的eTag 賬單自動扣款失敗,為 保證您正常的使用請手 動結清,詳細信息請訪 問:",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "Myfone提醒您：截止月號，您門號尚餘,點積分,於今日到期，點擊連結立即兌換獎品！",
+    "input": "",
+    "output": "Scam SMS"
+  },
+  {
+    "instruction": "《封神異世錄》 x 《山海有妖獸》三週年活動連結開啟，元氣滿滿一起科目「三」給大人獻上禮包碼 ，進入遊戲立即領取！ 官方粉絲頁還有超級實體大獎等你來喔！封神異世錄鏈接： 山海有妖獸鏈接：",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【紅包領好領滿靠這招】有預感過年期間有長輩想發紅包給你！快來註冊iPASS MONEY（一卡通公司電子支付帳戶）準備好迎接新年財運，遠距拜年就用LINE輕鬆領紅包！立即註冊加入年節搶紅包行列，還有更多驚喜活動等你唷＞  ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "「iPhone卡緊收」最高回饋 等你拿 立即申請網址：  ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "[遠傳總經理井琪致遠傳用戶的一封信]親愛的用戶，您好！遠傳亞太將於   年  月  日合併。「新遠傳」將成為「頻譜三冠王」，網路也將逐步整併，讓您享受「加碼加量不加價」的網路升級體驗。完整信件詳見  ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
     "instruction": "【勤益課務組通知】本學期期末教學反應意見調查，填答期限僅至本週日()止，填答所有科目且為有效問卷者，即有機會抽中禮券 元唷!",
     "input": "",
     "output": "Advertise SMS"
@@ -56,6 +206,11 @@
   },
   {
     "instruction": "台積電實習說明會，請有意願參加同學於 月 日前報名 勤益分機 ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "遠傳易付卡，一個門號享有一次「首次儲值」重要權益別錯過：遠傳易付卡首次儲值 天上網吃到飽，直接送 天上網，快趁歲末領取這超值的實用回饋！並推薦到官網、心生活APP儲值，有金融帳戶、超商付現等多元支付，隨時隨地都能儲",
     "input": "",
     "output": "Advertise SMS"
   },
@@ -135,7 +290,32 @@
     "output": "Advertise SMS"
   },
   {
+    "instruction": "台中偉文通知:三年級的你還在猶豫嗎?春班即將開課嘍!選組問題/進度規劃等任何問題，諮詢 就享有專人課程規劃及特別優惠活動哦!:",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "台中偉文開學團報最優惠!即日起來班或線上諮詢研究所/轉學考課程並報名，就送完整<多益英文課程>!!詳情可線上諮詢",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
     "instruction": "歡迎您加入 人力銀行，下載「找工作app」，最新職缺、邀約訊息，讓您即時掌握不漏接",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【恭喜獲得最新資訊】定期醫療險+意外險一次補齊，意外總保障最高 萬   免費索取資料",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【新資訊】一張保單享醫療+意外，雙倍保障最安心，眼科雷射處置都給付！  歲都能保   索取資料",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【守護您和全家人的幸褔】一張保單享醫療+意外雙重保障， 歲都能投保   免費索取資料",
     "input": "",
     "output": "Advertise SMS"
   },
@@ -145,9 +325,114 @@
     "output": "Advertise SMS"
   },
   {
+    "instruction": "【邀請您了解】終身的 萬醫療帳戶，住院、手術、特殊病房皆給付  馬上試算保費",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【恭喜獲得最新資訊】月繳 元，住院、手術皆保障，再享免費健檢， 歲可投保  免費索取資料",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【據統計】植牙 顆 萬，不列在健保給付項目。您覺得牙齒險應有哪些保障？ 免費了解",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【恭喜獲得最新資訊】月繳 元，住院、手術皆保障，再享免費健檢  免費索取資料",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【銅板價意外險】終身保障，意外住院、手術、身故、失能、燒燙傷皆有保，最高理賠 萬  免費索取",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": " 中元普渡線上代辦開跑，大甲鎮瀾宮、新港奉天等 家宮廟，贊普、超拔，免出門即可參加中元普渡，詳情請點",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "《蔚藍色法則》的冒險者們，現正開服中，立即下載遊戲登入：上市即可領取台版紀念服裝！",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "「iPhone」待領取！【暮色雙城】立即預下載！最後小時%得iPhone等→",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【超爆三國志】今日點開服！林心如送千抽，%中十萬金、iPhone等→",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "金庸正版授權武俠《新倚天屠龍記》平臺公測中，登入就送張無忌 ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【月熱門鑽更多】您即將錯過購物金優惠！月使用電信帳單代收滿百享%回饋，最高賺$，名額有限→  twmg.co/cuhr",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
     "instruction": "您好！若您或家人有「往返醫院接送」及「上下樓梯」的需求、並已取得長照資格，可來電洽詢預約訂車，或可參閱台北市社會局網站，亦可致電 照管中心、或詢問您的個管師。北台灣「長照交通車服務」市話 ",
     "input": "",
     "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【新遠傳 迎龍年】愛瑪為您解憂讓您安心過好年~ 看好片 享折扣 還有多重好禮限時申辦通通送給你，快來點網址 歡喜過龍年()",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【momo】新客專屬半價麥當勞，多款餐券、商品專屬新客價！限首次消費會員購買，點擊立即搶",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【中華電信 精采VIP】生日獻禮！中華電信祝您生日快樂！在這個特別的日子，為您準備了會員生日限量好禮Hami Point  點，同時還能登錄抽幸運大獎Hami Point  點，讓當月壽星搖身一變為點數富翁！點我登錄👉  ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "【中華電信 精采VIP】月月抽登錄通知！中華電信會員們～轉生點數富翁「 」點都不難！每月「 」點抽，首獎 點 Hami Point 快樂GET！立即點我登錄👉 ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "[超能勇士]您預約的動漫全明星手遊正式上線下載： 禮包碼： ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "《永劫無間x李小龍》聯動炸裂登場，八款李小龍時裝、春節寶箱全面上架，現在錯過再等十年！即刻登入：  ",
+    "input": "",
+    "output": "Advertise SMS"
+  },
+  {
+    "instruction": "<WeChat > 微信小程序手机号验证码： ， 分钟内有效。为保护账号安全，请勿泄漏。",
+    "input": "",
+    "output": "Captcha SMS"
+  },
+  {
+    "instruction": "【全聯行動會員】驗證碼： ，有效時間為 分鐘，請勿將此驗證碼洩漏給他人。",
+    "input": "",
+    "output": "Captcha SMS"
+  },
+  {
+    "instruction": "【momo購物網】裝置綁定認證碼： ，請於 分鐘內回填完成認證，為確保您的帳戶安全，此認證碼請勿提供給他人!",
+    "input": "",
+    "output": "Captcha SMS"
+  },
+  {
+    "instruction": "【momo購物網】登入驗證認證碼： ，請於 分鐘內回填完成認證，為確保您的帳戶安全，此認證碼請勿提供給他人!",
+    "input": "",
+    "output": "Captcha SMS"
   },
   {
     "instruction": "您的驗證碼:，切勿將驗證碼洩露於他人，驗證碼分鐘內有效",
@@ -238,6 +523,16 @@
     "instruction": "歡迎加入街口，您的驗證碼為：，請於 分鐘內輸入此驗證碼以確認您的會員身分，謝謝。",
     "input": "",
     "output": "Captcha SMS"
+  },
+  {
+    "instruction": "【蝦皮購物】輸入   以登入新裝置，  分鐘內有效。請不要將驗證碼分享給任何人，包括蝦皮員工。",
+    "input": "",
+    "output": "Captcha SMS"
+  },
+  {
+    "instruction": "台灣大哥大 年 月帳單(原台灣之星) 計費期間：  本期應繳： 元 繳款期限：無需繳款 本期用量：網內 分，網外 分，市話 分，網內簡訊 則，網外簡訊 則，上網 MB:",
+    "input": "",
+    "output": "Normal SMS"
   },
   {
     "instruction": "先生為了你牙齒的健康,請於近期內回診所接受醫師的牙結石清除治療康齡牙醫診所預約電話:",

@@ -1,3 +1,26 @@
+# Nagato-Sakura-Discord-Bot-py
+## 所有發行版本
+### 1.6.2 (2024 年 3 月 1 日)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.2.jpg)
+### 重要變更
+- 【重大】儲存庫文件整理，將部分說明文件移至assets/docs中。
+- 【重大】資產調整，將原本的 png 改為 jpg 大幅減少了儲存庫容量並且提升了部分程式在 discord 的回應速度。
+- 【重大】Del.py 移動至 beta - 刪除權限過大個人認為不適合在一般模式使用他，避免惡意使用。
+- 【整合】Game.py 整合了 GuessingGame.py 及 SnakeGame.py 以後遊戲相關的功能將全部整合在這裡。
+- 【整合】Image.py 整合了 Image.py 及 SuperDeformed.py 以後圖像相關的功能將全部整合在這裡。
+- 【整合】Math.py 整合了 Math.py 及 PrimeNumber.py 以後計算相關的功能將全部整合在這裡。
+- 【移除】!Userinfo [用戶名稱] - 由於與 !Level 功能過於類似故將其移除。
+- 【移除】!Greeting [文字] - 該程式為 AutoReply.py 判斷的前身，他已經完美完成了他的任務是時候讓他走了。
+### 新增功能
+- 【更新】Del.py、Dice.py、Help.py、Ping.py、Vote.py 及 Youtube.py新增了/指令。
+- 【更新】Version.py - 更新為符合新版資產的輸出格式。
+- 【更新】Help.py - 刪除了按鈕並且重新改寫了鑲入內容。
+- 【更新】FestivalEvent.py - 新增更多彩蛋內容。
+- 【更新】CheckSMS.py - 現在能判斷出驗證碼簡訊後將驗證碼輸出，並且更新的模型版本。 [詳見:Nagato-Sakura-SMS-Checker-Ver.1.0.4](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
+- 【修復】CheckSMS.py - 修復了將有小數點的訊息誤認成網址的錯誤。
+### 已知問題
+- 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
+
 ### 1.6.1 (2024 年 2 月 26 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### 重要變更

@@ -1,6 +1,5 @@
-# Nagato-Sakura-Discord-Bot-py
-## 所有發行版本
-### 1.6.2 (2024 年 3 月 1 日)
+# Nagato-Sakura-Discord-Bot-py 所有發行版本
+## 1.6.2 (2024 年 3 月 1 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.2.jpg)
 ### 重要變更
 - 【重大】儲存庫文件整理，將部分說明文件移至assets/docs中。
@@ -21,7 +20,7 @@
 ### 已知問題
 - 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
 
-### 1.6.1 (2024 年 2 月 26 日)
+## 1.6.1 (2024 年 2 月 26 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### 重要變更
 - N/A
@@ -35,7 +34,7 @@
 ### 已知問題
 - N/A
 
-### 1.6.0 (2024 年 2 月 17 日)
+## 1.6.0 (2024 年 2 月 17 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.0.jpg)
 ### 重要變更
 - 【重大】main_beta.py 新增了 載入指令程式檔案、卸載指令檔案、重新載入程式檔案、載入斜線指令。
@@ -46,7 +45,7 @@
 ### 已知問題
 - 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
-### 1.5.ν (2024 年 1 月 30 日)
+## 1.5.ν (2024 年 1 月 30 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BD.jpg)
 ### 重要變更
 - N/A
@@ -65,7 +64,7 @@
 ### 已知問題
 - N/A
   
-### 1.5.μ (2024 年 1 月 9 日)
+## 1.5.μ (2024 年 1 月 9 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BC.jpg)
 ### 重要變更
 - 【重大】刪除了Music.py改為Youtube.py。(不再支持streetvoice)
@@ -77,7 +76,7 @@
 ### 已知問題
 - N/A 
 
-### 1.5.λ (2024 年 1 月 3 日)
+## 1.5.λ (2024 年 1 月 3 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BB.jpg)
 ### 重要變更
 - 【重大】新增beta分類以及新增main_beta.py，能更直觀的看出哪些是測試功能哪些是一般功能。
@@ -90,7 +89,7 @@
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 - 【錯誤】!Help - 幫助訊息過長無法傳出。
 
-### 1.5.κ (2024 年 1 月 1 日)
+## 1.5.κ (2024 年 1 月 1 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BA.jpg)
 ### 重要變更
 - 【重大】TAG 長門櫻 並且附加檔案上去後，長門櫻會自動把檔案下載到運行伺服器上。
@@ -106,7 +105,7 @@
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 - 【錯誤】!Help - 幫助訊息過長無法傳出。
 
-### 1.5.ι (2023 年 12 月 22 日)
+## 1.5.ι (2023 年 12 月 22 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B9.jpg)
 ### 重要變更
 - 【重大】首個 Github 公開版本。
@@ -117,7 +116,7 @@
 - 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
-### 1.5.θ (2023 年 12 月 21 日)
+## 1.5.θ (2023 年 12 月 21 日)
 ![t2i](assets/preview/1.5.θ.jpg)
 ### 重要變更
 - 【重大】調整伺服器資料的儲存方式。(AI模型該為從models資料夾讀取而非根目錄)
@@ -128,7 +127,7 @@
 - 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
-### 1.5.η (2023 年 10 月 22 日)
+## 1.5.η (2023 年 10 月 22 日)
 ![t2i](assets/preview/1.5.η.jpg)
 ### 重要變更
 - N/A 
@@ -138,7 +137,7 @@
 - 【錯誤】!play [網址] - Youtube 複數影片清單無法播放。
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
-### 1.5.ζ (2023 年 10 月 1 日)
+## 1.5.ζ (2023 年 10 月 1 日)
 ![t2i](assets/preview/1.5.ζ.jpg)
 ### 重要變更
 - N/A 
@@ -147,7 +146,7 @@
 ### 已知問題
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
-### 1.5.ε (2023 年 9 月 28 日)
+## 1.5.ε (2023 年 9 月 28 日)
 ![t2i](assets/preview/1.5.ε.jpg)
 ### 重要變更
 - N/A 
@@ -157,7 +156,7 @@
 ### 已知問題
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
-### 1.5.δ (2023 年 9 月 27 日)
+## 1.5.δ (2023 年 9 月 27 日)
 ![t2i](assets/preview/1.5.δ.jpg)
 ### 重要變更
 - N/A 
@@ -167,7 +166,7 @@
 ### 已知問題
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
-### 1.5.γ (2023 年 9 月 25 日)
+## 1.5.γ (2023 年 9 月 25 日)
 ![t2i](assets/preview/1.5.γ.jpg)
 ### 重要變更
 - N/A 
@@ -178,7 +177,7 @@
 ### 已知問題
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
-### 1.5.β (2023 年 9 月 21 日)
+## 1.5.β (2023 年 9 月 21 日)
 ![t2i](assets/preview/1.5.β.jpg)
 ### 重要變更
 - 【重大】CustomCommands.py 更改為無法在私人訊息觸發 (影響範圍: !Add、!Edit、!Remove)
@@ -191,7 +190,7 @@
 ### 已知問題
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
-### 1.5.α (2023 年 9 月 20 日)
+## 1.5.α (2023 年 9 月 20 日)
 ![t2i](assets/preview/1.5.α.jpg)
 ### 重要變更
 - 【重大】調整伺服器資料的儲存方式 (存放方式改為將資料存到server/伺服器ID/資料伺服器ID.json)
@@ -204,7 +203,7 @@
 ### 已知問題
 - N/A 
 
-### 1.4 (2023 年 9 月 17 日) (該版本已遺失)
+## 1.4 (2023 年 9 月 17 日) (該版本已遺失)
 ![t2i](assets/preview/1.3.jpg)
 ### 重要變更
 - N/A 
@@ -216,7 +215,7 @@
 ### 已知問題
 - N/A 
 
-### 1.3 (2023 年 9 月 16 日)
+## 1.3 (2023 年 9 月 16 日)
 ![t2i](assets/preview/1.3.jpg)
 ### 重要變更
 - N/A 
@@ -231,7 +230,7 @@
 ### 已知問題
 - N/A 
 
-### 1.2 (2023 年 9 月 15 日)
+## 1.2 (2023 年 9 月 15 日)
 ![t2i](assets/preview/1.2.jpg)
 ### 重要變更
 - 【重大】實裝「等級系統」 - 踴躍發言可以獲得經驗值來提升等級
@@ -243,7 +242,7 @@
 - 【錯誤】!Help - 顯示幫助信息下方的按鈕無法正確回傳參數 
 - 【錯誤】!DM - 私聊傳送至當前頻道
 
-### 1.1 (2023 年 9 月 14 日)
+## 1.1 (2023 年 9 月 14 日)
 ![t2i](assets/preview/1.1.jpg)
 ### 重要變更
 - 【重大】使用!Del指令後會公開刪除者
@@ -260,7 +259,7 @@
 ### 已知問題
 - N/A 
 
-### 1.0 (2023 年 9 月 13 日)
+## 1.0 (2023 年 9 月 13 日)
 ![t2i](assets/preview/1.0.jpg)
 ### 重要變更
 - 【重大】底層程式碼從NODE.js更改為Python。

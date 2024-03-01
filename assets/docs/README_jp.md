@@ -10,49 +10,57 @@
 Nagato-Sakura-Discord-Bot-py は「長門桜計画」の一部で、Pythonで書かれた多機能Discordボットです。
 
 ## 公告
+- ### バージョン1.6.2では、cogsを大幅に統合し、重複度の高いcogsを削除し、類似した機能のcogsを一緒に統合することで、拡張の読み込み時間を大幅に短縮することができます。
+- ### バージョン1.6.2では、アセットを調整し、元々のpngをjpgに変更することで、リポジトリのサイズを大幅に減少させ、一部のプログラムのdiscordでの応答速度を向上させました。
 
 ## 最近の変更
-### 1.6.1（2024年2月26日）
+### 1.6.2 (2024年3月1日)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.2.jpg)
+### 重要な変更
+- 【重要】リポジトリのファイルを整理し、一部の説明書をassets/docsに移動しました。
+- 【重要】アセットの調整。pngからjpgに変更することで、リポジトリの容量が大幅に削減され、一部のプログラムのdiscordでの応答速度が向上しました。
+- 【重要】Del.pyをbetaに移動。一般モードでの悪用を避けるため、削除権限が高すぎると個人的に考えられるためです。
+- 【統合】Game.pyにGuessingGame.pyとSnakeGame.pyを統合し、今後のゲーム関連の機能はすべてここに統合されます。
+- 【統合】Image.pyにImage.pyとSuperDeformed.pyを統合し、今後の画像関連の機能はすべてここに統合されます。
+- 【統合】Math.pyにMath.pyとPrimeNumber.pyを統合し、今後の計算関連の機能はすべてここに統合されます。
+- 【削除】!Userinfo [ユーザー名] - !Level機能と類似しているため、削除されました。
+- 【削除】!Greeting [テキスト] - このプログラムはAutoReply.pyの前身であり、役割を完了したため、削除されました。
+### 新機能
+- 【更新】Del.py、Dice.py、Help.py、Ping.py、Vote.py、Youtube.pyに/コマンドが追加されました。
+- 【更新】Version.py - 新しいアセットの出力形式に更新されました。
+- 【更新】Help.py - ボタンを削除し、埋め込みコンテンツを再書き込みました。
+- 【更新】FestivalEvent.py - より多くのイースターエッグコンテンツが追加されました。
+- 【更新】CheckSMS.py - 驗證コードのテキストメッセージを検出し、コードを出力し、モデルのバージョンが更新されました。[ブランチプロジェクトの詳細はこちら](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
+- 【修正】CheckSMS.py - 小数点を含むメッセージを誤ってURLとして認識する問題が修正されました。
+### 既知の問題
+- 【エラー】Youtube.pyの/play [URL]コマンドを使用すると、再生リストの場合にタイムアウトエラーが高確率で発生します。プログラムのタイムアウトによるエラーを回避するため、再生リストを使用する場合は!Play [URL]を使用することをお勧めします。
+
+### 1.6.1 (2024年2月26日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.1.jpg)
 ### 重要な変更
 - N/A
 ### 新機能
-- 【追加】!SuperDeformed - 長門さくらのチビキャラ画像をランダムに抽出できます。
-- 【更新】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py、Weather.pyに「/」コマンドを追加しました。
-- 【更新】!CheckSMS [テキスト] - モデルバージョンを更新し、今ではSMSの種類、電話番号、URLの検出、およびURLの安全性を判断できます。
+- 【新規】!FacialFeaturesDetection 画像を添付して - 顔の特徴を検出し、マーキングします
+- 【新規】!FacialFeaturesDetectMultiScale 画像を添付して - 顔の特徴を検出し、マーキングします（緑の枠で目、赤の枠で口、青の枠で鼻）
+- 【新規】!SuperDeformed - 長門サクラのチビ画像をランダムに選択できます。
+- 【新規】Choices.py、CustomCommands.py、Level.py、Translate.py、Version.py、Weather.pyに/コマンドが追加されました。
+- 【更新】!CheckSMS [テキスト] - モデルのバージョンが更新され、テキストメッセージの種類、電話番号、およびURLを検出し、URLの安全性を確認できるようになりました。
 - 【テスト】!SnakeGame - スネークゲームをプレイします。!SnakeGameReset - スネークゲームをリセットします。
-###既知の問題
+### 既知の問題
 - N/A
 
-### 1.6.0（2024年2月17日）
+### 1.6.0 (2024年2月17日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.6.0.jpg)
 ### 重要な変更
-- 【重要】main_beta.pyにコマンドファイルの読み込み、アンインストール、ファイルの再読み込み、スラッシュコマンドの追加が追加されました。
+- 【重要】main_beta.pyに、コマンドファイルのロード、アンロード、再ロード、およびスラッシュコマンドのロードが追加されました。
 - 【調整】一部のプログラムの行数を大幅に削減し、プログラムの効率を向上させました。
 ### 新機能
-- 【追加】!FestivalEvent - 特別な日にはイースターエッグが表示されます。
-- 【更新】DM.pyおよびTarot.pyに「/」コマンドを追加しました。
+- 【新規】!FestivalEvent - 特別な日にイースターエッグが表示されます。
+- 【更新】DM.pyとTarot.pyに/コマンドが追加されました。
 ### 既知の問題
-- 【エラー】!Tarot - 正しい画像を生成できず、正逆がカードの意味に反映されません。
+- 【エラー】!Tarot - 正しい画像を生成できず、正逆のカードの意味がわかりません。
 
-### 1.5.ν（2024年1月30日）
-![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%BD.jpg)
-### 重要な変更
-- N/A
-### 新機能
-- 【追加】!AudioInfo - 音声ファイルを添付して音楽情報を表示し、波形を表示します。
-- 【追加】!AudioReverse - 音声ファイルを逆再生します。
-- 【追加】!AudioSpeed [スピード] - 音声の速度を調整します。
-- 【追加】!AudioBit [ビット] - 音声のビットを調整します。
-- 【追加】!Sharpen [1〜100の整数] - 画像のシャープネスを調整します。
-- 【追加】!Blur [1〜100の整数] - 画像のぼかしを調整します。
-- 【追加】!Mosaic [整数] - 画像にモザイク効果を適用します。
-- 【追加】!Brightness [0〜100の整数] - 明るさを調整します。
-- 【追加】!Contrast [0〜100の整数] - コントラストを調整します。
-- 【追加】!Color [0〜100の整数] - 彩度を調整します。
-- 【追加】!Icon [透明度(0〜100の整数)] - 透かしを追加します。
-### 既知の問題
-- N/A
+[すべてのリリースバージョン](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
 
 ## クイックスタート
  **太字** は必須項目です。
@@ -76,7 +84,7 @@ Nagato-Sakura-Discord-Bot-py は「長門桜計画」の一部で、Pythonで書
   - ダウンロード: [cuDNN](https://developer.nvidia.com/cudnn)
 - **FFMPEG**
   - ダウンロード: [FFMPEG](https://ffmpeg.org/download.html)
-  
+- Python
 ```shell
 python3 -m pip install -U discord.py
 python3 -m pip install -U discord.py[voice]
@@ -105,8 +113,13 @@ C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
 
 ### youtube_dl修復
 1. youtube-dlのyoutube.pyを見つける
+Microsoft Store版のパス
 ```shell
 "C:\Users\ユーザー名\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\youtube_dl\extractor\youtube.py"
+```
+一般版のパス
+```shell
+"C:\Users\ユーザー名\AppData\Local\Programs\Python\<Pythonバージョン>\Lib\site-packages\youtube_dl\extractor\youtube.py"
 ```
 2. youtube.pyを編集し、1794行目を修正:
 ```shell
@@ -118,11 +131,15 @@ C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
 ```
 3. youtube.pyを保存
 
-
 ### Translate.py修復（11月のGoogle更新後の新しいエラー）
-1. googletransのclient.pyを探す
+1. Googletransのclient.pyを探す
+Microsoft Store版のパス
 ```shell
-"C:\Users\ユーザー名\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\googletrans\client.py"
+"C:\Users\ユーザー名\AppData\Local\Packages\PythonSoftwareFoundation.<Pythonバージョン>\LocalCache\local-packages\Python310\site-packages\googletrans\client.py"
+```
+一般版のパス
+```shell
+"C:\Users\ユーザー名\AppData\Local\Programs\Python\<Pythonバージョン>\Lib\site-packages\googletrans\client.py"
 ```
 2. client.pyを編集し、57行目を変更:
 ```shell
@@ -135,41 +152,25 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 3. client.pyを保存
 
 ## タスクリスト
-- [ ] **高優先度:**
+- [ ] **高優先度：**
   - [x] ユーザーガイド。
+  - [x] 重複した機能の統合。
+  - [x] アセットの調整。
 
 - [ ] **機能:**
   - 統合/コマンド
     - [ ] Audio.py
-    - [ ] CheckSMS.py
-    - [x] Choices.py
-    - [x] CustomCommands.py
-    - [ ] Del.py
-    - [ ] Dice.py
-    - [x] DM.py
+    - [ ] CheckSMS.py (URLのチェックはプログラムのタイムアウトを引き起こす可能性があります)
     - [ ] FestivalEvent.py
     - [ ] GenerateCode.py
-    - [ ] Greeting.py
-    - [ ] GuessingGame.py
-    - [ ] Help.py
+    - [ ] Game.py
     - [ ] Image.py
-    - [x] Level.py
-    - [x] Math.py
-    - [ ] Ping.py
-    - [ ] PrimeNumber.py
-    - [ ] SuperDeformed.py
-    - [x] Tarot.py
-    - [x] Translate.py
-    - [ ] Userinfo.py
-    - [x] Version.py
-    - [ ] VideoToGif.py
-    - [ ] Vote.py
-    - [x] Weather.py
-    - [ ] Youtube.py
+    - [ ] Video.py
      
 ## 謝辞
-以下のプロジェクトと貢献者に特別な感謝をします：
+以下のプロジェクトと貢献者に特別な感謝を申し上げます：
 
+### プロジェクト
 - [dlib-models](https://github.com/davisking/dlib-models)
 - [FFmpeg](https://github.com/FFmpeg/FFmpeg)
 - [moviepy](https://github.com/Zulko/moviepy)
@@ -182,8 +183,8 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
 - [requests](https://github.com/psf/requests)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
-## すべての貢献者に感謝します
-
+### 貢献者
 <a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/graphs/contributors" target="_blank">
   <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Discord-Bot-py" />
 </a>
+

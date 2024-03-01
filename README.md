@@ -9,11 +9,9 @@
 ## 介紹
 Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是以 Python 撰寫的多功能 Discord 機器人
 
-
 ## 公告
 - ### 1.6.2 版本將對 cogs 進行大幅度整合，刪除重複度高的 cogs 並將類似功能的 cogs 整合在一起，這樣可以大幅縮短擴展的加載時間。
 - ### 1.6.2 版本將對資產進行調整，將原本的 png 改為 jpg 大幅減少了儲存庫容量並且提升了部分程式在 discord 的回應速度。
-
 
 ## 近期變動
 ### 1.6.2 (2024 年 3 月 1 日)
@@ -32,7 +30,7 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 - 【更新】Version.py - 更新為符合新版資產的輸出格式。
 - 【更新】Help.py - 刪除了按鈕並且重新改寫了鑲入內容。
 - 【更新】FestivalEvent.py - 新增更多彩蛋內容。
-- 【更新】CheckSMS.py - 現在能判斷出驗證碼簡訊後將驗證碼輸出，並且更新的模型版本。 [詳見:Nagato-Sakura-SMS-Checker-Ver.1.0.4](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
+- 【更新】CheckSMS.py - 現在能判斷出驗證碼簡訊後將驗證碼輸出，並且更新的模型版本。 [詳見分支專案](https://github.com/AmanoShizukikun/Nagato-Sakura-SMS-Checker/blob/main/assets/docs/Changelog.md#1042024-%E5%B9%B4-3-%E6%9C%88-1-%E6%97%A5)
 - 【修復】CheckSMS.py - 修復了將有小數點的訊息誤認成網址的錯誤。
 ### 已知問題
 - 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
@@ -62,11 +60,10 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 ### 已知問題
 - 【錯誤】!Tarot - 無法產生正確圖片及正逆為牌意。
 
-[所有變動](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
+[所有發行版本](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
 
 ## 快速開始
  **粗體** 的是強制要求的。
-
 ### 系統需求
 - 系統需求: 64-bit Windows
 - **處理器**: 64 位元的處理器
@@ -76,20 +73,18 @@ Nagato-Sakura-Discord-Bot-py 是「長門櫻計畫」的其中一個分支，是
 
 ### 環境設置
 - **Python 3**
-- 下載: https://www.python.org/downloads/windows/
+  - 下載: https://www.python.org/downloads/windows/
 - **PyTorch**
-- 下載: https://pytorch.org/
- ```shell
-- pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
+  - 下載: https://pytorch.org/
 - NVIDIA GPU驅動程式
-- 下載: https://www.nvidia.com/zh-tw/geforce/drivers/
+  - 下載: https://www.nvidia.com/zh-tw/geforce/drivers/
 - NVIDIA CUDA Toolkit
-- 下載: https://developer.nvidia.com/cuda-toolkit
+  - 下載: https://developer.nvidia.com/cuda-toolkit
 - NVIDIA cuDNN
-- 下載: https://developer.nvidia.com/cudnn
+  - 下載: https://developer.nvidia.com/cudnn
 - **FFMPEG**
-- 下載: https://ffmpeg.org/download.html
+  - 下載: https://ffmpeg.org/download.html
+- Python庫
 ```shell
 py -3 -m pip install -U discord.py
 py -3 -m pip install -U discord.py[voice]
@@ -110,10 +105,12 @@ pip install matplotlib
 pip install dlib
 pip install opencv-python
 ```
+
 ### 環境變數
 ```shell
 C:\Program Files\ffmpeg-master-latest-win64-gpl\bin
 ```
+
 ### youtube_dl修復
 1. 尋找youtube-dl中的youtube.py
 Microsoft Store 版本路徑
@@ -124,7 +121,6 @@ Microsoft Store 版本路徑
 ```shell
 "C:\Users\使用者名稱\AppData\Local\Programs\Python\<Python版本>\Lib\site-packages\youtube_dl\extractor\youtube.py"
 ```
-
 2. 修改youtube.py 修改第1794行 :
 ```shell
 'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
@@ -145,7 +141,6 @@ Microsoft Store 版本路徑
 ```shell
 "C:\Users\使用者名稱\AppData\Local\Programs\Python\<Python版本>\Lib\site-packages\googletrans\client.py"
 ```
-
 2. 修改client.py 修改第57行 :
 ```shell
 proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,
@@ -171,7 +166,6 @@ proxies: typing.Dict[str, httpcore.AsyncHTTPProxy] = None,
     - [ ] Game.py
     - [ ] Image.py
     - [ ] Video.py
-    - [x] Youtube.py
      
 ## 致謝
 特別感謝以下項目和貢獻者：

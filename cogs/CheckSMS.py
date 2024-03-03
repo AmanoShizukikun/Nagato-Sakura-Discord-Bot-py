@@ -9,7 +9,6 @@ import re
 import requests
 import ssl
 import socket
-from urllib.parse import urlparse
 
 class SMSClassifier(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
@@ -38,6 +37,7 @@ class CheckSMS(commands.Cog):
         self.VOCAB_PATH = os.path.abspath('./models/CheckSMS/tokenizer.json')
         self.CONFIG_PATH = os.path.abspath('./models/CheckSMS/config.json')
         self.LABEL_PATH = os.path.abspath('./models/CheckSMS/labels.txt')
+        self.BLACKLIST_PATH = os.path.abspath('./models/CheckSMS/blacklist.txt')
         self.model, self.vocab, self.label_mapping = self.load_model(self.MODEL_PATH, self.VOCAB_PATH, self.CONFIG_PATH, self.LABEL_PATH, self.device)
 
     def load_model(self, model_path, vocab_path, config_path, label_path, device):
@@ -81,12 +81,17 @@ class CheckSMS(commands.Cog):
             result += f"【偵測電話】: {phone_numbers}\n"
         if urls:
             for url in urls:
+                with open(self.BLACKLIST_PATH, "r", encoding="utf-8") as file:
+                    blacklist = set(line.strip() for line in file)
+                for blacklisted_url in blacklist:
+                    if blacklisted_url in urls:
+                        result += f"【黑名單】 {urls} 在黑名單中\n"
+                        break 
                 result += f"{self.check_url_safety(url)}\n"
         if predicted_label == 'Captcha SMS':
             if verification_codes:
                 result += f"【驗證碼】: {verification_codes}\n"
             else:
-                print("【驗證碼】:未找到驗證碼。")
                 result += f"【驗證碼】:未找到驗證碼。\n"
         return result
         
@@ -96,21 +101,9 @@ class CheckSMS(commands.Cog):
                 url = "https://" + url
             if not url.startswith("https://"):
                 return f"【警告】 {url} 使用不安全的協議"
-            suspicious_patterns = ["phishing", "malware", "hack"]
+            suspicious_patterns = ["phishing", "malware", "hack", "top"]
             if any(pattern in url.lower() for pattern in suspicious_patterns):
                 return f"【警告】 {url} 的路徑包含可疑模式"
-            parsed_url = urlparse(url)
-            hostname = parsed_url.hostname
-            ip_address = socket.gethostbyname(hostname)
-            hostname_from_ip = socket.gethostbyaddr(ip_address)
-            context = ssl.create_default_context()
-            context.check_hostname = False
-            with context.wrap_socket(socket.socket(), server_hostname=url) as s:
-                s.settimeout(5)
-                s.connect((hostname, 443))
-                cert = s.getpeercert()
-            cert_start_date = cert['notBefore']
-            cert_end_date = cert['notAfter']
             response = requests.get(url, timeout=5)
             if response.status_code == 200:
                 return f"【安全】 {url} 是安全的"

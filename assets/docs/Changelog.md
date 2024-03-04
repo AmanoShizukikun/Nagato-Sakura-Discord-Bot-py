@@ -117,7 +117,7 @@
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
 ## 1.5.θ (2023 年 12 月 21 日)
-![t2i](assets/preview/1.5.θ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B8.jpg)
 ### 重要變更
 - 【重大】調整伺服器資料的儲存方式。(AI模型該為從models資料夾讀取而非根目錄)
 - 【重大】模型優化調整，新增CUDA模式，提高模型效率
@@ -128,7 +128,7 @@
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
 ## 1.5.η (2023 年 10 月 22 日)
-![t2i](assets/preview/1.5.η.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B7.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -138,7 +138,7 @@
 - 【錯誤】!play [網址] - Youtube 無法累加播放清單。
 
 ## 1.5.ζ (2023 年 10 月 1 日)
-![t2i](assets/preview/1.5.ζ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B6.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -147,7 +147,7 @@
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
 ## 1.5.ε (2023 年 9 月 28 日)
-![t2i](assets/preview/1.5.ε.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B5.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -167,7 +167,7 @@
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
 ## 1.5.γ (2023 年 9 月 25 日)
-![t2i](assets/preview/1.5.γ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B3.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -204,7 +204,7 @@
 - N/A 
 
 ## 1.4 (2023 年 9 月 17 日) (該版本已遺失)
-![t2i](assets/preview/1.3.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.4.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -216,7 +216,7 @@
 - N/A 
 
 ## 1.3 (2023 年 9 月 16 日)
-![t2i](assets/preview/1.3.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.3.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -231,7 +231,7 @@
 - N/A 
 
 ## 1.2 (2023 年 9 月 15 日)
-![t2i](assets/preview/1.2.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.2.jpg)
 ### 重要變更
 - 【重大】實裝「等級系統」 - 踴躍發言可以獲得經驗值來提升等級
 ### 新增功能
@@ -243,7 +243,7 @@
 - 【錯誤】!DM - 私聊傳送至當前頻道
 
 ## 1.1 (2023 年 9 月 14 日)
-![t2i](assets/preview/1.1.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.1.jpg)
 ### 重要變更
 - 【重大】使用!Del指令後會公開刪除者
 ### 新增功能

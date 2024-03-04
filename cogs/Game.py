@@ -1,4 +1,5 @@
 import discord
+from discord import app_commands
 from discord.ext import commands
 import random
 
@@ -143,7 +144,39 @@ class Game(commands.Cog):
                 self.snake_pos.append((next_row, next_col))
 
             direction_message = await self.draw_game_board(ctx)
-    
-async def setup(bot):
+            
+    @app_commands.command(name="guessinggamestart", description="!GuessingGameStart - 開啟猜數字遊戲")
+    async def guessinggamestart(self, interaction: discord.Interaction):
+        if not self.game_started:
+            self.secret_num = random.randint(0, 99)
+            self.game_started = True
+            await interaction.response.send_message("主人~猜數字遊戲已經開始~❤ 請使用 `!Guess ` [數字] 來猜數字。")
+        else:
+            await interaction.response.send_message("遊戲已經開始了，請繼續猜數字。")
+            
+    @app_commands.command(name="guess", description="!Guess [數字] - 猜數字")
+    async def guess(self, interaction: discord.Interaction, number: int):
+        if not self.game_started:
+            await interaction.response.send_message("主人~請先使用 `!GuessingGameStart` 命令來開始遊戲。")
+            return
+
+        self.guess_count += 1
+        if self.guess_count <= self.guess_limit:
+            self.guess = number
+            if self.guess > self.secret_num:
+                await interaction.response.send_message("再小一點喔~❤")
+            elif self.guess < self.secret_num:
+                await interaction.response.send_message("再大一點喔~❤")
+        else:
+            self.out_of_limit = True
+
+        if self.out_of_limit or self.guess == self.secret_num:
+            if self.out_of_limit:
+                await interaction.response.send_message(f"看來是你輸了主人！嘿嘿~正確答案是 {self.secret_num}~❤")
+            else:
+                await interaction.response.send_message("恭喜主人你贏了~❤")
+            self.reset_game()
+            
+async def setup(bot: commands.Bot):
     await bot.add_cog(Game(bot))
     print("Game.py is ready")

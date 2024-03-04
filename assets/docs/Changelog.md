@@ -157,7 +157,7 @@
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
 ## 1.5.δ (2023 年 9 月 27 日)
-![t2i](assets/preview/1.5.δ.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B4.jpg)
 ### 重要變更
 - N/A 
 ### 新增功能
@@ -178,7 +178,7 @@
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
 ## 1.5.β (2023 年 9 月 21 日)
-![t2i](assets/preview/1.5.β.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B2.jpg)
 ### 重要變更
 - 【重大】CustomCommands.py 更改為無法在私人訊息觸發 (影響範圍: !Add、!Edit、!Remove)
 ### 新增功能
@@ -191,7 +191,7 @@
 - 【錯誤】!Play [網址] - Youtube 無法播放 
 
 ## 1.5.α (2023 年 9 月 20 日)
-![t2i](assets/preview/1.5.α.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.5.%CE%B1.jpg)
 ### 重要變更
 - 【重大】調整伺服器資料的儲存方式 (存放方式改為將資料存到server/伺服器ID/資料伺服器ID.json)
 - 【重大】重製等級系統，所有等級歸0，大幅降低每等所需經驗值 (原本6等級^4/2.5改為6等級^2/2.5)
@@ -260,7 +260,7 @@
 - N/A 
 
 ## 1.0 (2023 年 9 月 13 日)
-![t2i](assets/preview/1.0.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/1.0.jpg)
 ### 重要變更
 - 【重大】底層程式碼從NODE.js更改為Python。
 - 【重大】更改機器人的回覆方式

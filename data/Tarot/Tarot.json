@@ -1,0 +1,134 @@
+{
+    "0": {
+        "roman_num": "O",
+        "name": "愚者 ( The Fool )",
+        "upright_position": "開端、自由、純真、獨創性、冒險、理想主義、自發性",
+        "reverse_position": "魯莽、粗心、心煩意亂、天真、愚蠢、輕信、陳舊、乏味"
+    },
+    "1": {
+        "roman_num": "I",
+        "name": "魔術師 ( The Magician )",
+        "upright_position": "意志力、慾望、足智多謀、技能、能力、專注、表現",
+        "reverse_position": "操縱、狡猾、詭計、浪費天賦、錯覺、欺騙"
+    },
+    "2": {
+        "roman_num": "II",
+        "name": "女祭司 ( The High Priestess )",
+        "upright_position": "無意識、直覺、神秘、靈性、更高的力量、內在的聲音",
+        "reverse_position": "被壓抑的直覺、隱藏的動機、膚淺、困惑、認知失調"
+    },
+    "3": {
+        "roman_num": "III",
+        "name": "皇后 ( The Empress )",
+        "upright_position": "神聖的女性、性感、生育力、培育、創造力、美麗、豐富、自然",
+        "reverse_position": "不安全、專橫、疏忽、窒息、缺乏成長、缺乏進步"
+    },
+    "4": {
+        "roman_num": "IV",
+        "name": "皇帝 ( The Emperor )",
+        "upright_position": "穩定性、結構、保護、權威、控制、實用性、重點、紀律",
+        "reverse_position": "暴君、霸道、死板、固執、缺乏紀律、魯莽"
+    },
+    "5": {
+        "roman_num": "V",
+        "name": "教皇 ( The Hierophant )",
+        "upright_position": "傳統、社會群體、約定俗成、從眾、教育、知識、信仰",
+        "reverse_position": "叛逆、非常規、不循規蹈矩、新方法、無知"
+    },
+    "6": {
+        "roman_num": "VI",
+        "name": "戀人 ( The Lovers )",
+        "upright_position": "愛、工會、夥伴關係、關係、選擇、浪漫、平衡、團結",
+        "reverse_position": "不和諧、不平衡、衝突、超脫、錯誤的選擇、優柔寡斷"
+    },
+    "7": {
+        "roman_num": "VII",
+        "name": "戰車 ( The Chariot )",
+        "upright_position": "成功、雄心、決心、意志力、控制力、自律、專注",
+        "reverse_position": "沒有方向，沒有控制，無力，侵略，障礙"
+    },
+    "8": {
+        "roman_num": "VIII",
+        "name": "力量 ( Strength )",
+        "upright_position": "勇氣，勇敢，自信，同情，內在力量",
+        "reverse_position": "自我懷疑、軟弱、低信心、不足、怯懦、強硬"
+    },
+    "9": {
+        "roman_num": "IX",
+        "name": "隱者 ( The Hermit )",
+        "upright_position": "自我反省、內省、沉思、退縮、孤獨、尋找自我",
+        "reverse_position": "孤獨、孤立、隱居、反社會、拒絕、回歸社會"
+    },
+    "10": {
+        "roman_num": "X",
+        "name": "命運之輪 ( The Wheel of Fortune )",
+        "upright_position": "變化、週期、命運、決定性時刻、運氣、財富、突發事件",
+        "reverse_position": "運氣不好，缺乏控制，執著於控制，不受歡迎的變化，延誤"
+    },
+    "11": {
+        "roman_num": "XI",
+        "name": "正義 ( Justice )",
+        "upright_position": "正義、業力、後果、責任、法律、真相、誠實、正直、因果",
+        "reverse_position": "正義、業力、後果、責任、法律、真相、誠實、正直、因果"
+    },
+    "12": {
+        "roman_num": "XII",
+        "name": "吊人 ( The Hanged Man )",
+        "upright_position": "犧牲、等待、不確定、缺乏方向、視角、沉思",
+        "reverse_position": "拖延、漠不關心、停滯不前、避免犧牲、冷漠"
+    },
+    "13": {
+        "roman_num": "XIII",
+        "name": "死神 ( Death )",
+        "upright_position": "轉變、結局、改變、過渡、放手、釋放",
+        "reverse_position": "害怕改變，重複消極的模式，抵制改變，停滯不前，腐朽"
+    },
+    "14": {
+        "roman_num": "XIV",
+        "name": "節制 ( Temperance )",
+        "upright_position": "平衡、和平、耐心、適度、平靜、安寧、和諧",
+        "reverse_position": "不平衡、過度、極端、不和諧、魯莽、倉促"
+    },
+    "15": {
+        "roman_num": "XV",
+        "name": "惡魔 ( The Devil )",
+        "upright_position": "壓迫、成癮、痴迷、依賴、過度、無力、局限",
+        "reverse_position": "獨立、自由、啟示、釋放、收回權力、收回控制"
+    },
+    "16": {
+        "roman_num": "XVI",
+        "name": "高塔 ( The Tower )",
+        "upright_position": "災難、破壞、劇變、創傷、突變、混亂",
+        "reverse_position": "避免災難，延遲不可避免的，抵制變化"
+    },
+    "17": {
+        "roman_num": "XVII",
+        "name": "星星 ( The Star )",
+        "upright_position": "希望、靈感、積極性、信念、更新、治愈、復興",
+        "reverse_position": "絕望、消極、缺乏信心、沮喪"
+    },
+    "18": {
+        "roman_num": "XVIII",
+        "name": "月亮 ( The Moon )",
+        "upright_position": "錯覺、直覺、不確定性、困惑、複雜性、秘密、無意識",
+        "reverse_position": "恐懼、欺騙、焦慮、誤解、清晰、理解"
+    },
+    "19": {
+        "roman_num": "XIX",
+        "name": "太陽 ( The Sun )",
+        "upright_position": "幸福、成功、樂觀、活力、喜悅、自信、真理",
+        "reverse_position": "幸福受阻、過度熱情、悲觀、不切實際的期望、自負"
+    },
+    "20": {
+        "roman_num": "XX",
+        "name": "審判 ( Judgement )",
+        "upright_position": "自我評價、覺醒、更新、目的、反思、清算",
+        "reverse_position": "自我懷疑，缺乏自我意識，未能吸取教訓，自我厭惡"
+    },
+    "21": {
+        "roman_num": "XXI",
+        "name": "世界 ( The World )",
+        "upright_position": "完成、成就、成就感、歸屬感、整體性、和諧",
+        "reverse_position": "缺乏封閉感，缺乏成就感，感覺不完整，空虛"
+    }
+}

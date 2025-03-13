@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from moviepy.editor import *
+from moviepy import *
 import os
 
 class Video(commands.Cog):

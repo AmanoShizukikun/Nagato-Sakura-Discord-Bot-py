@@ -1,7 +1,7 @@
 import discord
 from discord import app_commands
 from discord.ext import commands
-import youtube_dl
+import yt_dlp as youtube_dl
 import datetime
 import time
 import asyncio
@@ -21,25 +21,16 @@ class Youtube(commands.Cog):
         self.embed_color = 0xFF0000
 
     async def join_voice_channel(self, ctx_or_interaction):
-        if isinstance(ctx_or_interaction, discord.Interaction):
-            voice_channel = ctx_or_interaction.user.voice.channel
-        else:
-            voice_channel = ctx_or_interaction.author.voice.channel
+        voice_channel = ctx_or_interaction.user.voice.channel if isinstance(ctx_or_interaction, discord.Interaction) else ctx_or_interaction.author.voice.channel
 
         if voice_channel:
             self.voice = await voice_channel.connect()
             guild_id = ctx_or_interaction.guild.id if isinstance(ctx_or_interaction, commands.Context) else ctx_or_interaction.guild_id
             self.song_queue[guild_id] = []
             self.now_playing[guild_id] = None
-            if isinstance(ctx_or_interaction, discord.Interaction):
-                await ctx_or_interaction.response.send_message("長門櫻已加入語音頻道")
-            else:
-                await ctx_or_interaction.send("長門櫻已加入語音頻道")
+            await self.send_message(ctx_or_interaction, "長門櫻已加入語音頻道")
         else:
-            if isinstance(ctx_or_interaction, discord.Interaction):
-                await ctx_or_interaction.response.send_message("請先加入一個語音頻道再使用!Join來邀請長門櫻喔~")
-            else:
-                await ctx_or_interaction.send("請主人先加入一個語音頻道再使用!Play來添加歌曲")
+            await self.send_message(ctx_or_interaction, "請先加入一個語音頻道再使用!Join來邀請長門櫻喔~")
 
     async def leave_voice_channel(self, ctx_or_interaction):
         if self.voice and self.voice.is_connected():
@@ -48,21 +39,12 @@ class Youtube(commands.Cog):
             self.song_queue.pop(guild_id, None)
             self.now_playing.pop(guild_id, None)
             self.queue.clear()
-            if isinstance(ctx_or_interaction, commands.Context):
-                await ctx_or_interaction.send("長門櫻已離開語音頻道")
-            else:
-                await ctx_or_interaction.response.send_message("長門櫻已離開語音頻道")
+            await self.send_message(ctx_or_interaction, "長門櫻已離開語音頻道")
         else:
-            if isinstance(ctx_or_interaction, commands.Context):
-                await ctx_or_interaction.send("長門櫻未加入任何語音頻道")
-            else:
-                await ctx_or_interaction.response.send_message("長門櫻未加入任何語音頻道")
-                
+            await self.send_message(ctx_or_interaction, "長門櫻未加入任何語音頻道")
+
     async def play_join_voice_channel(self, ctx_or_interaction):
-        if isinstance(ctx_or_interaction, discord.Interaction):
-            voice_channel = ctx_or_interaction.user.voice.channel
-        else:
-            voice_channel = ctx_or_interaction.author.voice.channel
+        voice_channel = ctx_or_interaction.user.voice.channel if isinstance(ctx_or_interaction, discord.Interaction) else ctx_or_interaction.author.voice.channel
 
         if voice_channel:
             if not self.voice or not self.voice.is_connected():
@@ -84,6 +66,8 @@ class Youtube(commands.Cog):
                 'format': 'bestaudio/best',
                 'noplaylist': False,
                 'quiet': True,
+                'socket_timeout': 10,  # 增加超時設置
+                'retries': 3,  # 增加重試次數
             }
             try:
                 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -91,31 +75,21 @@ class Youtube(commands.Cog):
                     if 'entries' in info:
                         for entry in info['entries']:
                             self.queue.append(entry)
-                        end_time = time.time()
-                        elapsed_time = round(end_time - start_time, 2)
-                        if isinstance(ctx_or_interaction, discord.Interaction):
-                            await ctx_or_interaction.response.send_message(f"長門櫻已添加 {len(info['entries'])} 首歌進佇列。（處理時間：{elapsed_time} 秒）")
-                        else:
-                            await ctx_or_interaction.send(f"長門櫻已添加 {len(info['entries'])} 首歌進佇列。（處理時間：{elapsed_time} 秒）")
+                            await self.send_message(ctx_or_interaction, f"長門櫻已添加 {entry['title']} 進佇列。")
+                        elapsed_time = round(time.time() - start_time, 2)
+                        await self.send_message(ctx_or_interaction, f"長門櫻已添加 {len(info['entries'])} 首歌進佇列。（處理時間：{elapsed_time} 秒）")
                     else:
                         self.queue.append(info)
-                        if isinstance(ctx_or_interaction, discord.Interaction):
-                            await self.send_single_song_embed(ctx_or_interaction, info, info['url'], info['channel'], info['title'], info['duration'], str(ctx_or_interaction.user.display_name))
-                        else:
-                            await self.send_single_song_embed(ctx_or_interaction, info, info['url'], info['channel'], info['title'], info['duration'], str(ctx_or_interaction.author))
+                        await self.send_single_song_embed(ctx_or_interaction, info, info['url'], info['channel'], info['title'], info['duration'], str(ctx_or_interaction.user.display_name if isinstance(ctx_or_interaction, discord.Interaction) else ctx_or_interaction.author))
 
                     if not self.voice.is_playing():
                         await self.play_next(ctx_or_interaction)
             except youtube_dl.DownloadError:
-                if isinstance(ctx_or_interaction, discord.Interaction):
-                    await ctx_or_interaction.response.send_message("抱歉啊主人~長門櫻無法尋找或下載到該影片。請確認主人確認提供的網址是否有效。")
-                else:
-                    await ctx_or_interaction.send("抱歉啊主人~長門櫻無法尋找或下載到該影片。請確認主人確認提供的網址是否有效。")
+                await self.send_message(ctx_or_interaction, "抱歉啊主人~長門櫻無法尋找或下載到該影片。請確認主人確認提供的網址是否有效。")
+            except Exception as e:
+                await self.send_message(ctx_or_interaction, f"發生錯誤: {str(e)}")
         else:
-            if isinstance(ctx_or_interaction, discord.Interaction):
-                await ctx_or_interaction.response.send_message("請主人先加入一個語音頻道再使用!Play來添加歌曲")
-            else:
-                await ctx_or_interaction.send("請主人先加入一個語音頻道再使用!Play來添加歌曲")
+            await self.send_message(ctx_or_interaction, "請主人先加入一個語音頻道再使用!Play來添加歌曲")
 
     async def play_next(self, ctx_or_interaction, retry_count=3):
         if not self.voice or not self.voice.is_connected():
@@ -136,10 +110,10 @@ class Youtube(commands.Cog):
                 else:
                     break
             if retries == retry_count:
-                await ctx_or_interaction.send(f"抱歉啊主人，長門櫻嘗試播放音樂失敗，跳過 {song_info['title']}")
+                await self.send_message(ctx_or_interaction, f"抱歉啊主人，長門櫻嘗試播放音樂失敗，跳過 {song_info['title']}")
                 await self.play_next(ctx_or_interaction)
         else:
-            await ctx_or_interaction.send("主人的播放清單已播放完畢。長門櫻偷偷溜出了語音頻道。")
+            await self.send_message(ctx_or_interaction, "主人的播放清單已播放完畢。長門櫻偷偷溜出了語音頻道。")
             await self.leave_voice_channel(ctx_or_interaction)
 
     async def send_single_song_embed(self, ctx_or_interaction, video_info, url, channel_name, video_title, video_length, added_by):
@@ -158,7 +132,19 @@ class Youtube(commands.Cog):
         if isinstance(ctx_or_interaction, commands.Context):
             await ctx_or_interaction.send(embed=embedMsg)
         elif isinstance(ctx_or_interaction, discord.Interaction):
-            await ctx_or_interaction.response.send_message(embed=embedMsg)
+            if ctx_or_interaction.response.is_done():
+                await ctx_or_interaction.followup.send(embed=embedMsg)
+            else:
+                await ctx_or_interaction.response.send_message(embed=embedMsg)
+
+    async def send_message(self, ctx_or_interaction, message):
+        if isinstance(ctx_or_interaction, commands.Context):
+            await ctx_or_interaction.send(message)
+        elif isinstance(ctx_or_interaction, discord.Interaction):
+            if ctx_or_interaction.response.is_done():
+                await ctx_or_interaction.followup.send(message)
+            else:
+                await ctx_or_interaction.response.send_message(message)
 
     @commands.command(aliases=["JOIN", "join"])
     async def Join(self, ctx):
@@ -232,4 +218,4 @@ class Youtube(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(Youtube(bot))
-    print("Youtube.py is ready")
+    print("Youtube_dlp.py is ready")

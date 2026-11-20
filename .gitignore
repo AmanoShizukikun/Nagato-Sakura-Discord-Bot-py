@@ -1,0 +1,28 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── 金鑰：只放在本機，永遠不上傳（範本見 .env.example）──
+.env
+
+# ── 執行時產生的檔案 ──
+discord.log*
+server/
+data/Chat/temp/
+data/Audio/*.mp3
+data/Audio/spectrogram.png
+
+# ── 舊式資料夾備份（改用 git 歷史與 tag）──
+backup/
+
+# ── 大型模型權重：放 F:\Data 或 Hugging Face，不進 Git ──
+data/Chat/lora/
+data/ChatNSLM/models/
+*.bin
+*.onnx
+*.safetensors
+*.pt
+*.pth
+*.dat

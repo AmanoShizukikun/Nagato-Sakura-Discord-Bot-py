@@ -3,10 +3,11 @@ from discord import app_commands
 from discord.ext import commands
 import requests
 import json
+import os
 
-token = "CWA-93DC75ED-ACED-4F94-A28C-260480D30A6F" # 替換為您的API授權碼
+token = os.getenv("CWA_API_KEY", "")  # 氣象署 API 授權碼，從 .env 讀取
 locations = ["臺北市", "新北市", "桃園市", "臺中市", "臺南市", "高雄市"]
-api_url = f"YOUR API"
+api_url = f"https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization={token}&format=JSON&locationName=&elementName=&sort=time"
 
 class Weather(commands.Cog):
     def __init__(self, bot):

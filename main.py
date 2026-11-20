@@ -2,9 +2,13 @@ import discord
 from discord.ext import commands, tasks 
 import logging
 import logging.handlers
+from itertools import cycle
 import os
 import random
-from itertools import cycle
+from dotenv import load_dotenv
+
+# 從 .env 讀取金鑰（.env 不會上傳到 GitHub）
+load_dotenv()
 
 # 配置機器人的日誌
 logger = logging.getLogger('discord')
@@ -13,8 +17,8 @@ logging.getLogger('discord.http').setLevel(logging.INFO)
 handler = logging.handlers.RotatingFileHandler(
     filename='discord.log',
     encoding='utf-8',
-    maxBytes=32 * 1024 * 1024,  # 32 MiB
-    backupCount=5,  # 保留5個日誌檔案
+    maxBytes=32 * 1024 * 1024, 
+    backupCount=5,
 )
 dt_fmt = '%Y-%m-%d %H:%M:%S'
 formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: {message}', dt_fmt, style='{')
@@ -30,15 +34,25 @@ intents.guilds = True
 bot = commands.Bot(command_prefix=["!", "！"],intents=discord.Intents.all())
 
 # 機器人狀態
-bot_status = cycle(["Your bot event"])
-@tasks.loop(hours=24)
+bot_status = cycle([
+    "為主人服務中", 
+    "常夜界守護者", 
+    "!Help 查看指令",
+    "與 {guilds} 個伺服器互動"
+])
+
+@tasks.loop(hours=1)  # 每小時更換一次狀態
 async def change_status():
-    await bot.change_presence(activity=discord.Game(next(bot_status)))
+    status_text = next(bot_status)
+    if "{guilds}" in status_text:
+        status_text = status_text.format(guilds=len(bot.guilds))
+    await bot.change_presence(activity=discord.Game(status_text))
 
 # 定義事件處理程序
 @bot.event
 async def on_ready():
-    print(f'已成功登錄為 {bot.user}')
+    bot.bot_name = "長門櫻" # 使用者自訂機器人名稱
+    print(f'已成功登錄為 {bot.user} ({bot.bot_name})')
     change_status.start()
     print('------正在加載擴展')
     await load()
@@ -73,4 +87,7 @@ async def load():
     print('------一般擴展加載完畢')
                 
 #運行機器人
-bot.run('Your bot token')
+token = os.getenv("DISCORD_TOKEN")
+if not token:
+    raise SystemExit("找不到 DISCORD_TOKEN：請把 .env.example 複製成 .env 並填入機器人 Token")
+bot.run(token)

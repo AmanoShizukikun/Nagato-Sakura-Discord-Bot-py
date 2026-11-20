@@ -1,15 +1,9 @@
 discord.py
 discord.py[voice]
-
-accelerate
-bitsandbytes
-openai-whisper
-OpenCC
-sentencepiece
-transformers==4.30.2
+python-dotenv
 
 beautifulsoup4
-dlib==19.24.2
+#dlib==19.24.2
 googletrans==3.1.0a0
 matplotlib
 moviepy
@@ -19,4 +13,7 @@ python-barcode
 pydub
 qrcode
 requests
-youtube_dl
+yt-dlp
+
+# 新增的系統監控套件
+psutil

@@ -1,0 +1,12 @@
+{
+    "_name_or_path": "AmanoShizukikun/Nagato-Sakura-AutoReply",
+    "model_type": "Nagato-Sakura-AutoReply",
+    "architectures": [
+        "Nagato-Sakura-AutoReply"
+    ],
+    "version": "AutoReply_V3",
+    "input_size": 352,
+    "hidden_size": 2048,
+    "output_size": 230,
+    "learning_rate": 2
+}

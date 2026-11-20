@@ -16,7 +16,18 @@
 - 調整了倉庫檔案配置方式，將 models 整合進了 data ， 重新調整了預設 cogs 的內容，只保留了最基礎的功能。
 
 ## 近期變動
-### 2.0.0 (2024 年 6 月  日)
+### 2.1.0 (2025 年 9 月 17 日)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/2.0.1.jpg)
+### 重要變更
+- 【重大】由於 transformer 的更新，透過 stream_chat 的呼叫方式不再被支援，將 ChatV1 系列移至 old_version。
+- 【重大】由於 Youtube_dl 出現問題所以用 Youtube_dlp 來重寫了程式。
+### 新增功能
+- 【更新】VideoToGif.py - 更新 moviepy 庫的呼叫方式。
+### 已知問題
+- 【錯誤】Youtube_dl.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
+- 【錯誤】Youtube_dl.py 異常無法正確撥放音樂。
+
+### 2.0.0 (2024 年 6 月 7 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/preview/2.0.0.jpg)
 ### 重要變更
 - 【重大】重新上傳了庫，移除了 2.0.0 以前的版本以及模型檔案，減少倉庫空間提升 git clone 速度。
@@ -27,7 +38,7 @@
 - 【新增】!Chat - 輸入文字和模型聊天，也可以附上錄音檔和模型聊天。
 - 【新增】!ChatClear - 清除模型的記憶。
 ### 已知問題
-- 【錯誤】Youtube.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
+- 【錯誤】Youtube_dl.py 使用/play [網址] 指令時，如果是播放清單會高機率報錯 (處理超時) ，建議使用播放清單時使用 !Play [網址] 來避免程式超時導致的報錯。
 
 [所有發行版本](https://github.com/AmanoShizukikun/Nagato-Sakura-Discord-Bot-py/blob/main/assets/docs/Changelog.md)
 
@@ -61,6 +72,37 @@ pip install -r requirements.txt
 > [!IMPORTANT]
 > 此為必要步驟。
 ### 環境修復
+<details><summary>Chat環境設定</summary>
+由於大語言模型對於環境有不同要求所以在此要添加額外環境
+1. 基本環境
+```shell
+pip install discord.py  
+pip install discord.py[voice]
+```
+2. 適用於 ChatGLM3
+```shell
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+pip install transformers==4.48.3
+pip install bitsandbytes  
+pip install peft
+pip install sentencepiece
+```
+3. 適用於 Qwen3
+```shell
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+pip install transformers
+pip install accelerate
+pip install bitsandbytes 
+pip install peft 
+```
+4. 選用功能
+```shell
+pip install OpenCC
+pip install openai-whisper
+```
+
+</details>
+
 <details><summary>youtube_dl修復</summary>
 
 1. 尋找youtube-dl中的youtube.py
